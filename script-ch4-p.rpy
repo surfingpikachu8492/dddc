@@ -103,7 +103,7 @@ label ch4_prologue:
 
     "Class went by faster than I anticipated. The teacher gave us our assignments and left the class."
     "Masses of students started heading to the cafeteria."
-    "In a matter of minutes, I find myself standing at a crowded cafeteria along with Sayori."
+    "In a matter of minutes, I find myself standing in a crowded cafeteria along with Sayori."
 
     show sayori 1m at t11
     s "Wow... There's a lot of people here... I wonder if I'll be able to squeeze through and get something..."
@@ -239,7 +239,7 @@ label ch4_prologue:
 
     "After lunch, we all go back to our respective classes."
     "And shortly after, the classes are over."
-    "I'm once again going to the clubroom, curious what this day has to offer."
+    "I'm once again going to the clubroom, curious about what this day has to offer."
     "I also can't help but to feel a bit anxious. I catch myself checking if I forgot to bring my poem every few minutes."
     mc "*sigh*"
     mc "I really hope this one is finally somewhat decent..."

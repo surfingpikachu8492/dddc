@@ -260,7 +260,7 @@ label ch1:
     "We start off a typical, insignificant morning chat, which my mind doesn't even record, keeping up the conversation completely autonomously."
     "Sayori and I have been good friends since we were children. And to be quite honest, I couldn't even imagine befriending her now, if I hadn't already known her for so long."
     "I mean, while I'm just being your stereotypical, unremarkable high-schooler..."
-    "...whose interests are limited mostly (if not exclusively) to only the most refined and sophisticated form of media..."
+    "...whose interests are limited mostly (if not exclusively) to only the most refined and sophisticated forms of media..."
     "...(in other words, video games and anime)..."
     "Sayori, on the other hand is..."
     "Well..."
@@ -268,7 +268,7 @@ label ch1:
     "Even on the most boring and uneventful day, this little girl can remain cheerful, capable of finding joy in the smallest of things."
     "It's quite adorable, contagious even. Not that I mind it..."
     "The point is, with us being almost complete opposites, it's funny that we've managed to even preserve our friendship through so many years..."
-    "...let alone care for each other's well being."
+    "...let alone care for each other's well-being."
     "I guess there {i}are{/i} some things in this world that you just accept the way the are, without looking for some explanation..."
 
 
@@ -302,7 +302,7 @@ label ch1:
     "Sayori runs in front of me, twirling as she goes."
 
     show sayori 1x with dissolve_chr
-    s "There is a whole new, sunny day ahead of you! And you get to hang out with people, maybe meet some new friends..."
+    s "There is a whole new sunny day ahead of you! And you get to hang out with people, maybe meet some new friends..."
     s "..."
     show sayori 1b with dissolve_chr
     s "..."
@@ -488,11 +488,11 @@ label ch1:
     "During our morning chat, I completely forgot that Sayori is the vice president of the Literature Club."
     "To be honest, I can hardly see how Sayori and literature even mix..."
     "But I guess that every club just needs someone as passionate and proactive as her every now and then."
-    "Besides, I'm pretty sure the main reason for her being so enthusiastic about it was just the opportunity to help start start a new club."
+    "Besides, I'm pretty sure the main reason for her being so enthusiastic about it was just the opportunity to help start a new club."
 
     show sayori 5a with dissolve_chr
     s "I just thought that it could help you make up your mind..."
-    s "And I've already told everyone that I will bring a new member with me..."
+    s "And I've already told everyone that I would bring a new member with me..."
 
     "Huh?"
 
@@ -695,13 +695,13 @@ label ch1:
 
 
     if persistent.playthrough == 0:
-        "As she swings open the classroom door, I feel some fleeting and extremely weird feeling."
+        "As she opens the classroom door, I feel some fleeting and extremely weird feeling."
         "A feeling of..."
         "{i}Déjà vu...{/i}"
         "..."
         "Still oblivious to the reason of {i}why{/i} all of it feels so familiar, I follow Sayori into the clubroom."
     else:
-        "Sayori swings open the classroom door with such enthusiasm as if she's entering a candy store."
+        "Sayori opens the classroom door with such enthusiasm as if she's entering a candy store."
         "She leaves it wide open, though, and I guess that implies that I have to follow her."
 
         mc "*sigh*"
@@ -726,7 +726,7 @@ label ch1:
     y "Oh... I-It's a pleasure meeting you."
 
     "The first member I see is a tall girl with long purple hair, sitting at a desk near the window."
-    "She appears to have been reading a book, and by looking at her behaviour, I can clearly see that she's not entirely comfortable with me being here."
+    "She appears to have been reading a book, and by looking at her behavior, I can clearly see that she's not entirely comfortable with me being here."
 
     show yuri 2A at t33
     $ n_name = "Girl 2"
@@ -826,7 +826,7 @@ label ch1:
     show yuri 4C at t33
 
     "...who are already standing right in front of me."
-    "...I can also hear Monika behind me, standing up from the teacher desk."
+    "...I can also hear Monika behind me, standing up from the teacher's desk."
 
     mc "*gulp*"
 
@@ -1004,7 +1004,7 @@ label ch1:
     show monika 1a at t21
     show sayori 1a at t22
 
-    "Em, define \"we\"..."
+    "Um, define \"we\"..."
 
     show sayori 2x with dissolve_chr
     s "Yeah! Come on, [player], we can arrange the desks to form a table, so that everyone can take a seat!"
@@ -1224,7 +1224,7 @@ label ch1:
     show natsuki 1x zorder 3 at f43
     n "Gnnnn!!"
 
-    "Now you did it, Sayori..."
+    "Now you've done it, Sayori..."
 
     show natsuki 4v at hf43
     n "Manga IS literature!!!"
@@ -1416,7 +1416,7 @@ label ch1:
     show yuri 2v with dissolve_chr
     y "They make you feel all those emotions that characters have to experience... Their shock, their anxiety..."
     show yuri 1w with dissolve_chr
-    y 1w "...and quite often, these stories can even make you ponder about your own ideology, changing the way you look at the world."
+    y 1w "...and quite often, these stories can even make you ponder your own ideology, changing the way you look at the world."
 
     show monika 3d at t21
     show yuri 1w at t22

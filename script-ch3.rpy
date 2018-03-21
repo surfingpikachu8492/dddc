@@ -91,7 +91,7 @@ label ch3:
     show natsuki 3h with dissolve_chr
     n "Anyway, are you gonna help me out or not?"
 
-    mc "Yeah, yeah. I'll help you out.. Though not for free..."
+    mc "Yeah, yeah. I'll help you out. Though not for free..."
 
     show natsuki 1p with dissolve_chr
     n "Huh?!"
@@ -199,14 +199,14 @@ label ch3:
     mc "You're not even going to help me put them where {i}you{/i} want to see them?"
 
     show natsuki 4e with dissolve_chr
-    n "Quit it, will you? You've brought them here already, don't make a girl do ther rest of your job for you!"
+    n "Quit it, will you? You've brought them here already, don't make a girl do the rest of your job for you!"
 
     "Oh, so it's mine now? I don't recall getting a job offer."
     "But thankfully, I know certain weak spots of your kind..."
 
     mc "Let me run it by you again, Natsuki."
     show natsuki 4c with dissolve_chr
-    mc "You're asking {i}me,{/i} to start messing around {i}your{/i} locker, putting {i}your{/i} books into it?"
+    mc "You're asking {i}me{/i} to start messing around {i}your{/i} locker, putting {i}your{/i} books into it?"
     mc "Is that what you want?"
 
     show natsuki 3o with dissolve_chr
@@ -221,17 +221,17 @@ label ch3:
     show natsuki zorder 1 at thide
     hide natsuki
 
-    "With surprisng ease, Natsuki snatches the books from my hands and starts putting them in her locker."
+    "With surprising ease, Natsuki snatches the books from my hands and starts putting them in her locker."
     "{i}Nice one, [player]! Now you've really earned yourself a cookie!{/i}"
     "An age-old trick, and yet it never fails..."
     "After all, how could a girl possibly let a boy get a glance of her sacred inner world?"
-    "And when it comes to girls like Natsuki, that mistrust is only amplified."
+    "And when it comes to girls like Natsuki, that distrust is only amplified."
     mc "Heh..."
     "Guess watching so much anime isn't that bad, after all..."
     mc "..."
     "Great..."
-    "I'm judging a girl based on anime sterotypes..."
-    "Never thought I would fall so low..."
+    "I'm judging a girl based on anime stereotypes..."
+    "Never thought I would stoop so low..."
 
     scene bg corridor with wipeleft_scene
 
@@ -351,7 +351,7 @@ label ch3:
     show sayori 3E with dissolve
     s "Have you ever seen her getting cranky or annoyed?"
 
-    mc "Ummm... n-no, I don't think I had..."
+    mc "Ummm... n-no, I don't think I have..."
 
     show sayori 4D with dissolve_chr
     s "Trust me, she looks soooo cute when she's all frustrated!"
@@ -369,7 +369,7 @@ label ch3:
     s "I know I can be a blabbermouth at times..."
 
     show monika 2j at f21
-    m "That you are. The trick is: same goes can be said about me.."
+    m "That you are. The trick is: same goes can be said about me..."
 
     show monika at t21
     show sayori 1b at f22
@@ -450,7 +450,7 @@ label ch3:
 
     mc "Hmm... if you say so..."
 
-    "Yeah, sure... you called in sick in the morning, and yet you already \"feel much better\" in the afternoon..."
+    "Yeah, sure... you called in sick in the morning, and yet you're already \"feeling much better\" in the afternoon..."
     "And now I also have to pry it out of you, which only makes it even more suspicious..."
     "In other words, I still don't buy it, but knowing Yuri's gentle and private personality, pushing her any further won't lead to anything good."
 
@@ -601,7 +601,7 @@ label ch3:
     show natsuki 4y with dissolve_chr
     n "And you were oh-so-blushing when I told you he was your boyfriend!"
 
-    "Is that really happening?"
+    "Is this really happening?"
 
     show monika 1r with dissolve_chr
     m "Girls..."
@@ -1181,7 +1181,7 @@ label ch3:
     mc "I'm still stuck on what I'd like to write about..."
 
     show sayori 1b with dissolve_chr
-    s "Oh, I see.."
+    s "Oh, I see..."
     show sayori 1c with dissolve_chr
     s "Well, just like Monika said, I think you need to finally sort things out..."
 
@@ -1361,7 +1361,7 @@ label ch3_sayori:
     show sayori 1y with dissolve_chr
     s "I found Monika, though... or rather {i}she{/i} found {i}me{/i} and got my mind off it by inviting me to help her with starting a new club..."
     show sayori 1k with dissolve_chr
-    s "But still... it wasn't quite enough... there was still certain emptiness inside me..."
+    s "But still... it wasn't quite enough... there was still a certain emptiness inside me..."
     show sayori 1d with dissolve_chr
     s "The bottom line is that I've {i}missed{/i} having you around. So thank you for joining us."
 
@@ -1395,8 +1395,8 @@ label ch3_sayori:
     show sayori zorder 1 at thide
     hide sayori
     "I let her go and turn away from her."
-    "I think I've said that to myself many times already, but I've really missed having Sayori in my life."
-    "Even those visibly minor, immature or even ridiculous moments we share with her..."
+    "I think I've said it to myself many times already, but I've really missed having Sayori in my life."
+    "Even those visibly minor, immature or even ridiculous moments I share with her..."
     "...they end up being some pleasant memories."
 
     scene bg club_day with wipeleft_scene
@@ -1472,7 +1472,7 @@ label ch3_natsuki:
     n "Yeah, yeah, I know..."
 
     mc "Why don't we try to start it all over again?"
-    mc "After all, I've helped you ealier today..."
+    mc "After all, I've helped you earlier today..."
 
     show natsuki 3s with dissolve_chr
     n "{i}I've already thanked you for that...{/i}"
@@ -1839,7 +1839,7 @@ label ch3_monika:
 
     mc "And Yuri... well... I'm still not sure whether she's just being polite or she's actually glad that I'm here..."
     mc "She acts more or less confident when she has you three around, or whenever we're talking about literature..."
-    mc "But whenever one of those conditions aren't met, {i}poof...{/i}"
+    mc "But whenever one of those conditions isn't met, {i}poof...{/i}"
     mc "...and Yuri goes back into hiding into that shell of hers..."
     mc "I suppose we just need to give her time. With her closed nature, you can't be certain of anything. It's best to just wait for {i}her{/i} to become more open."
 

@@ -316,10 +316,10 @@ label poemresponse_2_sayori_appeal_monika:
 label poemresponse_2_yuri:
     if poemsread == 0:
         "If I'm to be pragmatic about this, then my first choice should definitely be Yuri."
-        "Out of all members, she's clearly the one with most experience; at least when it comes to literature."
+        "Out of all members, she's clearly the one with the most experience, at least when it comes to literature."
         "Besides, knowing her shyness, I hardly expect her to be too harsh to me..."
         "..."
-        "Who am I kidding -- that girl probably expects {i}me{/i} to be harsh to {i}her.{/i}"
+        "Who am I kidding? That girl probably expects {i}me{/i} to be harsh to {i}her.{/i}"
 
     show yuri 2t at t11
     y "Oh, h-hi, [player]..."
@@ -333,7 +333,7 @@ label poemresponse_2_yuri:
     show yuri 3w with dissolve_chr
     y "So... I assume you would like us to... s-share our poems?"
 
-    "I can't help but smile. At least I'm not the only one embarrassed about that whole... activity Monika came up with."
+    "I can't help but smile. At least I'm not the only one embarrassed about this whole... activity Monika came up with."
 
     show yuri 3n with dissolve_chr
     y "W-Why are you s-smiling?"
@@ -366,7 +366,7 @@ label poemresponse_2_yuri:
     mc "So... ladies first, then?"
 
     show yuri 1k with dissolve_chr
-    y "Tsk-tsk-tsk! [player], you do know that this is a type of trick a {i}real{/i} gentleman would never use?"
+    y "Tsk-tsk-tsk! [player], you do know that this is the type of trick a {i}real{/i} gentleman would never use?"
 
     mc "Haha... well, you can't blame me for trying..."
 
@@ -926,7 +926,7 @@ label poemresponse_2_natsuki:
     show natsuki 5u with dissolve
     n "..."
 
-    "Ughhh... another side note to myself, approaching Natsuki kindly when she's pissed (actually, is there a time when she's not pissed?) seems to cause her to malfunction..."
+    "Ughhh... another side note to myself: Approaching Natsuki kindly when she's pissed (actually, is there a time when she's not pissed?) seems to cause her to malfunction..."
 
     mc "You're going to be okay here?"
 
@@ -1488,7 +1488,7 @@ label poemresponse_2_monika_appeal_monika:
     m "..."
     m "A p-peculiar choice... to say the least..."
 
-    mc "This isn't the way you pronounce \"completely random and unconscious\", Monika."
+    mc "That isn't the way you pronounce \"completely random and unconscious\", Monika."
 
     show monika 5a with dissolve_chr
     m "Is that so? So you mean to tell me... you had {i}no{/i} idea what you were doing while writing this?"

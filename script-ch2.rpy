@@ -103,7 +103,7 @@ label ch2:
     mc "Do you have amnesia or something?"
 
     show sayori 1h with dissolve_chr
-    s "Eh? What's amn... nesia?"
+    s "Eh? What's am...nesia?"
 
     show monika 2e at t31
     show sayori 1g at t32
@@ -402,11 +402,11 @@ label ch2:
     show monika 3n with dissolve_chr
     m "Yeah, sorry for interrupting your chat like that..."
     show monika 1e with dissolve_chr
-    m "I just really need Sayori's help to come up with a plan of what our club's contribution for the upcoming festival shall be..."
+    m "I just really need Sayori's help to come up with a plan of what our club's contribution for the upcoming festival will be..."
     show monika 2e with dissolve_chr
     m "You should understand that it is very important for us."
     show monika 4j with dissolve_chr
-    m "Not only we're a club, but we're a {i}Literature{/i} Club, after all!"
+    m "Not only are we a club, but we're a {i}Literature{/i} Club, after all!"
 
 
     "Ah, yes, {i}the{/i} festival..."
@@ -751,7 +751,7 @@ label ch2:
     y "That {i}is{/i} true, Natsuki, but..."
     show yuri 3v with dissolve_chr
     y "There's a reason we have so many deep and expressive words in our language."
-    y "It's the only way to convey complex feelings and meaning most effectively."
+    y "It's the only way to convey complex feelings and meanings most effectively."
     show yuri 1t with dissolve_chr
     y "Avoiding them is not only unnecessarily limiting yourself... it's also a waste!"
 
@@ -837,7 +837,7 @@ label ch2:
     y "N-Natsuki, there's no need, really..."
 
     show natsuki 3c with dissolve_chr
-    n "Oh, come on! He got a look on all of our writing styles and heard what we've got to say!"
+    n "Oh, come on! He got a look at all of our writing styles and heard what we've got to say!"
     n "So he should have a bigger picture."
     show natsuki 5g with dissolve_chr
     n "And while he's definitely not an expert, at least his opinion shouldn't be biased, right?"
@@ -1015,7 +1015,7 @@ label ch2:
     show natsuki 5H with dissolve_chr
     show yuri 1u with dissolve_chr
     "..."
-    "But I guess they're definitely not the only ones here who fall into the that category..."
+    "But I guess they're definitely not the only ones here who fall into that category..."
     "I mean, just look at those two: as different as night and day, and yet both are in the same club."
     "Of course, I can't call them close friends or anything, especially after what I've witnessed just a few minutes ago."
     "But they still manage to get along just fine. And I'm glad that now I, too, got a chance to join all four of them."
@@ -1254,9 +1254,9 @@ label ch2:
     "{i}You've got a poem to write, remember?{/i}"
     mc "Yeah... that's true..."
     "It wasn't so bad, now that I think of it."
-    "I should defnitely give it another try."
+    "I should definitely give it another try."
     "After all, I've heard a lot of stuff from the others today, learned so much new..."
     "So who knows, it might even turn out better than the last one..."
-    "...but I wouln't hold my breath on it."
+    "...but I wouldn't hold my breath on it."
 return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

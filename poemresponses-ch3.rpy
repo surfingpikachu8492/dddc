@@ -1777,7 +1777,7 @@ label poemresponse_3_monika:
     show monika 3e with dissolve_chr
     m "You see, this whole poem is one huge metaphor for how we search for our place in this world, the way we wish to follow..."
     show monika 3a with dissolve_chr
-    m "As I said, I was experimenting, looking forward to try out something new."
+    m "As I said, I was experimenting, looking forward to trying out something new."
     m "And I wished to convey that exact feeling into this poem."
     show monika 2a with dissolve
     m "That is why I started playing with the space I had, that is why it's so freeform and so different from my usual, methodical approach to things."
@@ -2056,7 +2056,7 @@ label poemresponse_3_monika_appeal_monika:
     show monika 4b with dissolve_chr
     m "That's the spirit! This is something I can definitely relate to!"
     show monika 2a with dissolve_chr
-    m "Never thought you got that in you, [player]."
+    m "Never thought you had that in you, [player]."
     mc "Heh, {i}birds of a feather{/i}, huh?"
     show monika 1m with dissolve_chr
     m "Yeah, most likely..."
