@@ -55,7 +55,7 @@ label poemresponse_2_sayori:
     call showpoem (poem_s_1)
 
 
-    show sayori 1a at t11
+    show sayori 1a with dissolve
     mc "..."
     mc "Man, that brings back memories..."
 
@@ -388,7 +388,7 @@ label poemresponse_2_yuri:
 
     call showpoem (poem_y_1)
 
-    show yuri 4a at t11
+    show yuri 4a with dissolve
 
     mc "..."
 
@@ -840,7 +840,7 @@ label poemresponse_2_natsuki:
 
     call showpoem (poem_n_1)
 
-    show natsuki 5s at t11
+    show natsuki 5s with dissolve
     mc "..."
 
     show natsuki 5u with dissolve_chr
@@ -1271,7 +1271,7 @@ label poemresponse_2_monika:
 
     call showpoem (poem_m_1)
 
-    show monika 4a at t11
+    show monika 4a with dissolve
     m "So, [player], I think it's time {i}I{/i} get some feedback from {i}you.{/i}"
 
     mc "Well... I'm no expert, obviously, but I can definitely tell you have skill."

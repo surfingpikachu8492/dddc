@@ -295,6 +295,7 @@ label poem_(transition=True):
 
     $ config.allow_skipping = True
     $ allow_skipping == True
+    stop music fadeout 4.0
     scene black with dissolve_scene_full
 
 

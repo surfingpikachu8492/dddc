@@ -314,7 +314,7 @@ label splashscreen:
         "The original game, Doki Doki Literature Club, is property of its rightful owners, Team Salvato."
         "For any additional info, please visit\n- {a=https://ddlc.moe/}https://ddlc.moe/{/a}\n- {a=http://teamsalvato.com/}http://teamsalvato.com{/a}"
         "This mod is not suitable for children or those who are easily disturbed."
-        "Individuals suffering from anxiety or depression may not have a safe experience playing this mod. For content warnings, please visit: {a=http://ddlc.moe/warning.html}http://ddlc.moe/warning.html{/a}"
+        "Individuals suffering from anxiety or depression may not have a safe experience playing this mod. For content warnings, please visit: {a=http://ddlc.moe/warning.html}http://ddlc.moe/warning.html{/a}."
         "It is also highly recommended that you complete the original game before playing this mod."
         menu:
             "By playing Doki Doki Date Club, you agree that you are at least 13 years of age, you have completed the original game, and you consent to your exposure of highly disturbing content."

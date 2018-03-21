@@ -590,7 +590,7 @@ label ch2:
     m "As an alternative, I suggest we do it like this:"
     m "We'll split in pairs and exchange our poems. Once we're done, we'll all switch partners."
     show monika 2k with dissolve_chr
-    m "That way, we should all get some feedback from each member of the club, but none of us will have to be put on spot!"
+    m "That way, we should all get some feedback from each member of the club, but none of us will have to be put on the spot!"
     show monika 2a with dissolve_chr
     m "Is everyone okay with that?"
 

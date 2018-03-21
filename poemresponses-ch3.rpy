@@ -82,7 +82,7 @@ label poemresponse_3_sayori:
 
     call showpoem (poem_s_2)
 
-    show sayori 1a at t11
+    show sayori 1a with dissolve
     mc "..."
 
     show sayori 3x with dissolve_chr
@@ -777,7 +777,7 @@ label poemresponse_3_yuri:
 
     call showpoem (poem_y_2)
 
-    show yuri 3s at t11
+    show yuri 3s with dissolve
     mc "..."
     show yuri 3t with dissolve_chr
     y "Ummm, did you enjoy it?"
@@ -858,8 +858,6 @@ label poemresponse_3_yuri:
     hide yuri
     "Saying that Yuri is an unusual person would be an understatement..."
     "But I'm still glad we're making some slow, but steady progress."
-
-    scene bg club_day with wipeleft_scene
     return
 
 
@@ -1273,7 +1271,7 @@ label poemresponse_3_natsuki:
 
     call showpoem (poem_n_2)
 
-    show natsuki 3c at t11
+    show natsuki 3c with dissolve
     mc "..."
 
     n "So, what do you think of this one?"
@@ -1369,8 +1367,6 @@ label poemresponse_3_natsuki:
     "That was really unexpected. I still feel like an idiot and I can't even tell why."
     "But most importantly, I feel sorry for her."
     "Because it seems that I've accidentally scratched the surface of some topic that I really shouldn't bring up."
-
-    scene bg club_day with wipeleft_scene
     return
 
 label poemresponse_3_natsuki_appeal_sayori:
@@ -1714,7 +1710,7 @@ label poemresponse_3_monika:
 
     call showpoem (poem_m_2)
 
-    show monika 2a at t11
+    show monika 2a with dissolve
     m "..."
     show monika 2j with dissolve_chr
     m "So, what do you think?"
@@ -1821,7 +1817,6 @@ label poemresponse_3_monika:
     "I can't say I know Monika very well, but I was under the impression that she's actually quite an easy one to understand."
     "But the more I talk to her, the more complex her nature seems to me."
 
-    scene bg club_day with wipeleft_scene
     return
 
 label poemresponse_3_monika_appeal_sayori:

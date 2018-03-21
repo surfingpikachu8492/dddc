@@ -1007,7 +1007,7 @@ label ch1:
     "Em, define \"we\"..."
 
     show sayori 2x with dissolve_chr
-    "Yeah! Come on, [player], we can arrange the desks to form a table, so that everyone can take a seat!"
+    s "Yeah! Come on, [player], we can arrange the desks to form a table, so that everyone can take a seat!"
 
     show sayori zorder 1 at thide
     hide sayori
