@@ -195,7 +195,7 @@ label ch0_start:
     m "I..."
     $ renpy.pause(1.0)
     show monika 1o with dissolve_chr
-    m 1o "I told you already..."
+    m "I told you already..."
     m "There is no happiness here..."
     show monika 1i with dissolve_chr
     m "You do not {i}belong{/i} here!"
@@ -214,7 +214,7 @@ label ch0_start:
             $ renpy.pause(2)
 
     show monika 1i with dissolve
-    m 1i "W-What?"
+    m "W-What?"
     call updateconsole ("os.startfile(\"game/DDDC.py\")", "Attempting to load game world...")
 
     $ renpy.pause(2.0)
@@ -250,14 +250,14 @@ label ch0_start:
     call updateconsole ("", "Recovered: \"natsuki.chr\"")
     m "Or..."
     show monika 1h with dissolve_chr
-    m 1h "..."
+    m "..."
     show monika 1q with dissolve_chr
-    m 1q "Oh, I get it. This is your revenge, isn't it?"
+    m "Oh, I get it. This is your revenge, isn't it?"
 
     call updateconsole ("", "Error recovering \"monika.chr\"")
     call updateconsole ("", "Retrying...")
     show monika 1o with dissolve_chr
-    m 1o "Well, I guess that shouldn't be surprising..."
+    m "Well, I guess that shouldn't be surprising..."
     m "I mean... I..."
 
     call updateconsole ("", "Error recovering \"monika.chr\"")
@@ -342,12 +342,12 @@ label ch0_start:
     mc "But I'm going to fix what can be salvaged."
     $ renpy.pause(1.5)
     show monika 1p with dissolve_chr
-    m 1p "B-But..."
+    m "B-But..."
     mc "And I will write this story anew."
     mc "All of your stories..."
     m "..."
     show monika 1g with dissolve
-    m 1g "You can't-{w=0.3}{nw}"
+    m "You can't-{w=0.3}{nw}"
     mc "I can."
     mc "...and I must."
     show monika 1p with dissolve_chr
@@ -379,7 +379,7 @@ label ch0_start:
     call updateconsole ("", "Reading \"poemresponses-ch3.rpy\"...", 0.0)
 
     show monika 1i with dissolve_chr
-    m 1i "...?"
+    m "...?"
     m "What... is this?"
 
 
@@ -499,7 +499,7 @@ label ch0_end:
     "..."
     "It's late at night."
     "I woke up for no apparent reason."
-    "And I feel like somebody just took my head, extracted my brain, did God-knows-what to it then stuffed it back in."
+    "And I feel like somebody just took my head, pulled out my brain, did God-knows-what to it then stuffed it back in."
     "I once again try to find some explanation to my sudden awakening, but my still aching head clearly doesn’t want to cooperate..."
     "Maybe I shouldn't even bother?"
     "After all, the exams start in just a couple of days."
@@ -509,12 +509,12 @@ label ch0_end:
     mc "Guess that explains why I can barely sleep..."
 
     "Oh, {i}there{/i} you are, common sense, haven't seen you in a while..."
-    "Despite the fact that I really want to know the reason behind... all of this, I feel my urge to go back to sleep rising rapidly."
+    "While I really want to know the reason behind... all of this, my urge to go back to sleep is growing by the second."
     "And seeing how my mind still refuses to cooperate with me..."
 
     mc "*yawn*"
 
-    "Whatever it was..."
+    "Whatever this is..."
     "It can definitely wait until morning."
     "Exhausted, I lay back onto my pillow, falling asleep almost instantly..."
 
