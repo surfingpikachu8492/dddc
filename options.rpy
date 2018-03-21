@@ -11,7 +11,6 @@
 
 
 
-
 define config.name = "Doki Doki Date Club!"
 
 
@@ -23,7 +22,7 @@ define gui.show_name = False
 
 
 
-define config.version = "0.1.2"
+define config.version = "0.2.1"
 
 
 
@@ -36,7 +35,7 @@ define gui.about = _("")
 
 
 
-define build.name = "DDDateClub"
+define build.name = "DDLC"
 
 
 
@@ -120,8 +119,8 @@ default preferences.text_cps = 50
 
 default preferences.afm_time = 15
 
-default preferences.music_volume = 0.50
-default preferences.sfx_volume = 0.50
+default preferences.music_volume = 0.75
+default preferences.sfx_volume = 0.75
 
 
 
@@ -137,7 +136,8 @@ default preferences.sfx_volume = 0.50
 
 
 
-define config.save_directory = "DD_Date_Club!"
+
+define config.save_directory = "DDLC-1454445547"
 
 
 
@@ -153,7 +153,7 @@ define config.allow_skipping = True
 define config.has_autosave = False
 define config.autosave_on_quit = False
 define config.autosave_slots = 0
-define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'front' ]
+define config.layers = [ 'master', 'transient', 'screens', 'overlay', 'clayer', 'front' ]
 define config.image_cache_size = 64
 define config.predict_statements = 50
 define config.rollback_enabled = config.developer
@@ -165,8 +165,8 @@ init python:
     if len(renpy.loadsave.location.locations) > 1: del(renpy.loadsave.location.locations[1])
     renpy.game.preferences.pad_enabled = False
     def replace_text(s):
-        s = s.replace('--', u'\u2014') 
-        s = s.replace(' - ', u'\u2014') 
+        s = s.replace('--', u'\u2014')
+        s = s.replace(' - ', u'\u2014')
         return s
     config.replace_text = replace_text
 
@@ -186,54 +186,23 @@ init python:
 
 
 
-
-
 init python:
+    build.archive("scripts", "all")
+    build.archive("images", "all")
+    build.archive("audio", "all")
+    build.archive("fonts", "all")
 
+    build.classify("game/**.jpg", "images")
+    build.classify("game/**.png", "images")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    build.classify("game/mod_assets/**",build.name)
-
-    build.classify("game/**.rpyc",build.name) 
-    build.classify("README.html",build.name) 
-
-
-    build.classify("game/gui/button/tutorial_hover_background.png",build.name)
-    build.classify("game/gui/button/tutorial_idle_background.png",build.name)
-
-
-    build.classify('**.rpy','source')
-    build.package(build.directory_name + "source",'zip','source',description='Source Code Archive')
-
-    build.package(build.directory_name + "Mod",'zip',build.name,description='DDLC Compatible Mod')
+    build.classify("game/**.rpyc", "scripts")
+    build.classify("game/**.txt", "scripts")
+    build.classify("game/**.chr", "scripts")
+    build.classify("game/**.wav", "audio")
+    build.classify("game/**.mp3", "audio")
+    build.classify("game/**.ogg", "audio")
+    build.classify("game/**.ttf", "fonts")
+    build.classify("game/**.otf", "audio")
 
     build.classify('**~', None)
     build.classify('**.bak', None)
@@ -248,14 +217,29 @@ init python:
     build.classify('script-regex.txt', None)
     build.classify('/game/10', None)
     build.classify('/game/cache/*.*', None)
-    build.classify('**.rpa',None)
+
+
+
+
+
 
 
 
 
     build.documentation('*.html')
     build.documentation('*.txt')
-    build.documentation('*.md')
 
     build.include_old_themes = False
+
+
+
+
+
+
+
+
+
+
+
+define build.itch_project = "teamsalvato/ddlc"
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

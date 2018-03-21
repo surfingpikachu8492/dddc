@@ -309,4 +309,15 @@ image s_kill2_zoom:
         linear 0.25 alpha 0.6
         linear 0.25 alpha 0.4
         repeat
+
+
+
+
+
+image mod_s_cg1_base = im.Composite(None, (0, 0), "cg/mod/mod_s_cg1_base.png", (0, 0), "cg/mod/mod_s_cg1_exp0.png")
+image mod_s_cg1_exp0 = im.Composite(None, (0, 0), "cg/mod/mod_s_cg1_base.png", (0, 0), "cg/mod/mod_s_cg1_exp0.png")
+image mod_s_cg1_exp1 = im.Composite(None, (0, 0), "cg/mod/mod_s_cg1_base.png", (0, 0), "cg/mod/mod_s_cg1_exp1.png")
+image mod_s_cg1_exp2 = im.Composite(None, (0, 0), "cg/mod/mod_s_cg1_base.png", (0, 0), "cg/mod/mod_s_cg1_exp2.png")
+image mod_s_cg1_exp3 = im.Composite(None, (0, 0), "cg/mod/mod_s_cg1_base.png", (0, 0), "cg/mod/mod_s_cg1_exp3.png")
+image mod_s_cg1_exp4 = im.Composite(None, (0, 0), "cg/mod/mod_s_cg1_base.png", (0, 0), "cg/mod/mod_s_cg1_exp4b.png")
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

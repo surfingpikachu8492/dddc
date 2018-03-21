@@ -1,210 +1,201 @@
-#File format:  word,sPoint,nPoint,yPoint,mPoint
-
-#Sayori winning words
-
-vigour,3,1,1,1
-confidence,3,2,1,1
-inquisitive,3,1,2,1
-happiness,3,2,1,2
-fun,3,2,1,2
-lazy,3,2,1,1
-raincloud,3,2,1,2
-happy,3,2,1,2
-sunny,3,2,1,2
-silly,3,2,1,2
-treasure,3,2,1,1
-awesome,3,2,1,1
-joy,3,1,2,1
-loud,3,2,1,1
-peaceful,3,1,2,1
-cheerful,3,2,1,1
-smile,3,2,1,1
-shame,3,1,2,1
-daydream,3,1,2,1
-clumsy,3,1,2,1
-color,3,2,1,1
-warm,3,2,1,1
-sing,3,2,1,1
-laugh,3,2,1,2
-rose,3,1,2,1
-fireflies,3,2,1,1
-rainbow,3,2,1,1
-play,3,2,1,1
-promise,3,2,2,2
-vitality,3,2,1,2
-pure,3,2,2,1
-excitement,3,2,1,2
-childhood,3,2,1,1
-comfort,3,1,2,2
-dance,3,2,1,2
-laugh,3,2,1,2
-wonderful,3,2,1,2
-bliss,3,2,1,2
-vibrant,3,2,1,2
-fireworks,3,2,1,2
-hope,3,1,2,2
-party,3,2,1,1
-unrequited,3,1,2,2
-together,3,2,1,2
-precious,3,2,1,2
-bittersweet,3,1,1,1
-funny,3,1,1,1
-belief,3,1,1,1
-hope,3,2,1,1
-sunset,3,2,1,1
-lucky,3,2,1,1
-
-#Natsuki words
-manga,1,3,2,1
-pink,2,3,1,1
-kitty,2,3,1,1
-jumpy,3,1,1,1
-puppy,2,3,1,1
-fluffy,2,3,1,1
-candy,2,3,1,1
-strawberry,2,3,1,1
-marshmallow,2,3,1,1
-games,2,3,1,2
-boop,2,3,1,1
-bunny,2,3,1,1
-anime,2,3,1,1
-jump,2,3,1,1
-mouse,1,3,2,1
-lollipop,2,3,1,1
-skipping,2,3,1,1
-cute,2,3,1,2
-kawaii,2,3,1,1
-cupcake,2,3,2,2
-kind,3,2,2,2
-relax,3,1,2,2
-happiness,3,2,2,2
-denial,2,3,1,1
-small,1,3,1,1
-young,2,3,1,1
-fox,1,3,1,1
-shopping,2,3,1,1
-hop,2,3,1,1
-poof,2,3,1,1
-bubbles,2,3,1,1
-whisper,2,3,1,1
-giggle,2,3,1,2
-sticky,2,3,1,1
-peace,2,3,1,1
-nibble,2,3,1,1
-sugar,2,3,1,2
-playground,2,3,1,1
-petite,1,3,1,1
-magenta,1,3,1,1
-chocolate,2,3,1,2
-clouds,2,3,1,2
-fierce,1,3,2,1
-twintails,1,3,1,1
-tsundere,1,3,1,1
-proud,2,3,2,2
-arrogant,1,3,1,1
-opinionated,1,3,1,1
-
-#Yuri words
-raindrops,2,1,3,2
-dream,2,2,3,2
-intellectual,1,1,3,2
-heavensent,2,1,3,1
-imagination,2,1,3,2
-question,1,2,3,1
-time,2,1,2,3
-universe,2,1,2,3
-horror,2,1,3,2
-tea,2,2,3,2
-culture,1,1,3,2
-study,1,1,3,2
-amazing,1,1,3,2
-education,1,1,3,2
-purple,1,1,3,1
-novel,1,2,3,2
-infinite,2,1,3,2
-shy,1,2,3,1
-fantasy,1,1,3,1
-polite,1,1,3,1
-courteous,1,1,3,1
-cool,2,1,3,2
-pleasure,1,1,3,2
-knowledge,1,1,3,2
-classy,1,1,3,2
-blush,1,2,3,1
-bounce,1,1,3,2
-bookworm,1,2,3,2
-crimson,1,1,3,2
-essence,2,1,3,1
-philosophy,1,1,3,2
-aura,2,1,3,2
-infallible,1,1,3,2
-vivid,2,1,3,2
-unrestrained,2,1,3,2
-smart,1,1,3,2
-violet,1,1,3,1
-nature,2,2,3,2
-covet,1,1,3,2
-unrestrained,1,1,3,2
-journey,2,1,3,2
-portrait,2,1,3,2
-landscape,2,1,3,2
-eternity,2,1,3,2
-time,2,1,3,2
-genius,1,1,3,2
-quiet,1,1,3,1
-beautiful,2,2,2,3
-talent,1,1,3,2
-silence,2,1,3,1
-
-#Monika words
-caring,2,2,2,3
-destiny,2,1,2,3
-socks,2,2,2,3
-parfait,2,2,2,3
-special,2,2,1,3
-charm,2,2,1,3
-melody,1,2,1,3
-hair,2,2,2,3
-sweet,2,2,2,3
-doki-doki,2,2,1,3
-literacy,1,1,2,3
-inspection,1,1,2,3
-lipstick,1,1,2,3
-ribbon,2,2,1,3
-skirt,2,2,1,3
-twitter,1,2,1,3
-green,1,2,1,3
-kindness,2,2,2,3
-generous,2,1,1,3
-literature,1,1,2,3
-friendly,2,1,2,3
-helpful,1,1,2,3
-emerald,1,2,1,3
-email,2,2,1,3
-attentional,1,1,2,3
-music,1,2,1,3
-piano,1,1,1,3
-determination,1,1,2,3
-freedom,2,1,1,3
-omniscience,1,2,1,3
-calm,2,1,2,3
-athletic,1,1,1,3
-tease,1,2,1,3
-ponytail,1,2,1,3
-confident,2,1,1,3
-observant,2,1,1,3
-idol,1,1,1,3
-opinion,2,1,2,3
-optional,2,2,2,3
-respect,1,1,2,3
-labor,2,1,1,3
-intentions,2,1,2,3
-revolution,1,1,1,3
-experience,1,1,2,3
-support,2,1,2,3
-lovely,2,2,2,3
-potentiality,1,1,2,3
-artistic,1,1,2,3
-brilliant,2,2,2,3
-musical,1,1,2,3
-evolution,1,1,2,3
+# Word	S	N	Y	M
+adorable	2	3	1	1
+adventure	3	1	1	2
+advice	2	1	2	3
+afterimage	1	1	3	1
+agonizing	2	1	3	2
+alone	3	1	2	2
+amazing	3	2	1	2
+ambient	1	1	3	2
+analysis	1	1	3	2
+anger	2	3	1	2
+animal	2	3	1	1
+arrogant	1	3	1	1
+artistic	1	2	2	3
+athletic	1	1	1	3
+atone	2	1	3	2
+awesome	3	2	1	2
+baking	1	3	1	1
+beautiful	2	2	2	3
+belief	3	1	1	2
+bittersweet	3	1	1	2
+bliss	3	1	2	2
+bookworm	1	2	3	2
+boop	2	3	1	1
+brilliant	1	1	3	2
+bubbles	2	3	1	1
+bunny	2	3	1	1
+calm	2	1	1	3
+caring	3	1	1	2
+charm	2	1	1	3
+cheerful	3	1	1	2
+childhood	3	2	1	1
+chocolate	2	3	2	2
+circus	2	3	1	1
+classy	1	1	3	2
+clouds	3	2	1	1
+clumsy	3	1	2	1
+comfort	3	1	2	2
+confidence	1	2	1	3
+cookie	2	3	1	1
+courteous	1	1	3	2
+covet	1	1	3	2
+cry	3	2	1	2
+culture	1	1	3	2
+cupcake	2	3	1	2
+cute	2	3	1	1
+dance	3	1	1	2
+dark	2	1	3	1
+daydream	3	1	2	1
+defeat	2	1	3	2
+demise	2	1	3	1
+denial	2	3	1	2
+depression	3	1	2	2
+despise	2	1	3	2
+destiny	2	1	2	3
+determination	1	1	2	3
+diligent	1	1	2	3
+disarray	2	1	3	1
+disoriented	2	1	3	1
+effulgent	2	1	3	2
+embrace	3	1	1	1
+emerald	1	1	1	3
+entropy	1	1	3	2
+essence	1	1	3	2
+eternity	2	1	3	2
+excitement	3	2	2	2
+existence	2	1	3	2
+experience	1	1	2	3
+extraordinary	2	1	3	2
+family	3	1	2	1
+fantasy	1	1	3	2
+father	1	3	2	1
+fierce	1	3	2	1
+fireworks	3	2	2	2
+fluffy	2	3	1	1
+flying	2	1	1	3
+forgive	3	1	2	2
+fox	1	3	1	1
+friendly	2	1	2	3
+fun	3	2	1	2
+games	3	2	1	2
+generous	2	1	1	3
+genius	1	1	3	2
+giggle	2	3	1	2
+happiness	3	2	1	2
+heavensent	2	1	3	1
+helpful	2	1	1	3
+hit	2	3	1	1
+hop	2	3	1	1
+hope	3	1	2	2
+horror	1	1	3	2
+identity	1	1	2	3
+imagination	2	1	3	2
+impulsive	1	3	1	1
+incongruent	1	1	3	1
+infallible	1	1	3	2
+inferno	1	1	3	1
+infinite	1	1	3	2
+inquisitive	2	1	3	2
+insight	1	1	2	3
+intellectual	1	1	3	2
+intentions	2	1	1	3
+jazz	1	1	2	3
+judgment	1	1	2	3
+jump	2	3	1	1
+kawaii	2	3	1	1
+kick	1	3	1	1
+kind	3	1	1	2
+kitty	2	3	1	1
+landscape	2	1	3	2
+lavender	1	1	3	1
+leader	2	1	1	3
+lipstick	1	2	1	3
+literature	1	2	3	2
+lollipop	2	3	1	1
+loud	2	3	1	1
+lucky	1	1	1	3
+lust	1	1	3	2
+manga	1	3	1	1
+marshmallow	2	3	1	1
+massacre	1	1	3	2
+meager	2	1	3	2
+melancholy	2	1	3	2
+melody	1	2	1	3
+memories	2	1	1	3
+mindful	1	1	2	3
+misery	3	2	2	1
+misfortune	2	2	3	1
+mouse	2	3	1	1
+music	1	2	1	3
+nature	2	1	3	1
+nibble	2	3	1	1
+nightgown	1	1	3	2
+novel	1	1	3	2
+parfait	1	3	1	2
+party	3	2	1	1
+passion	1	2	2	3
+peace	3	1	2	2
+perfectionist	1	1	2	3
+petite	2	3	1	1
+philosophical	1	1	2	3
+piano	1	1	1	3
+pink	2	3	1	1
+play	3	2	1	1
+playground	2	3	1	1
+polite	2	1	3	2
+ponytail	1	2	1	3
+poof	2	3	1	1
+popular	1	1	1	3
+pout	2	3	1	1
+precious	3	2	1	2
+pride	1	3	1	2
+promise	3	1	1	2
+punch	2	3	1	1
+puppy	2	3	1	1
+quiet	1	1	3	2
+rainbow	3	2	1	1
+raincloud	3	1	1	2
+reputation	1	2	1	3
+ribbon	1	2	1	3
+rose	3	2	1	2
+sadness	3	1	1	2
+secretive	2	2	2	3
+shame	3	1	2	1
+shopping	1	2	1	3
+shy	1	2	3	1
+silly	3	2	1	1
+sing	2	1	1	3
+skipping	2	3	1	1
+skirt	2	3	1	2
+small	2	3	1	1
+smile	2	1	1	3
+sparkle	3	2	1	1
+spinning	3	2	1	1
+strawberry	2	3	1	1
+study	1	1	3	2
+sugar	2	3	1	1
+summer	3	2	1	1
+sunny	3	2	1	1
+sunrise	3	2	1	1
+sunset	3	2	2	1
+support	2	1	2	3
+sweet	2	2	1	3
+swimsuit	2	2	1	3
+tears	3	2	1	1
+tease	2	2	1	3
+tenacious	1	1	2	3
+time	2	1	2	3
+together	3	2	2	2
+tragedy	2	1	3	1
+twintails	1	3	1	1
+twirl	3	2	1	1
+unending	3	1	2	2
+universe	2	1	2	3
+valentine	2	2	1	3
+vanilla	2	3	1	1
+victory	1	1	2	3
+warm	3	2	2	1
+whirlwind	3	1	2	1
+whisper	2	3	1	1
+yellow	3	1	1	1

@@ -6,86 +6,178 @@ init python:
             self.text = text
             self.yuri_2 = yuri_2
             self.yuri_3 = yuri_3
+        
+        @property
+        def num_words(self):
+            replaced = self.text.replace("\n", " ").replace("-", "")
+            words = [word for word in replaced.split(" ") if word]
+            return len(words)
+        
+        def read(self, character):
+            for line in self.text.split("\n"):
+                if line:
+                    renpy.say(character, "{i}" + line + "{/i}")
 
-    poem_y1 = Poem(
-    author = "yuri",
-    title = "Nature's gift.",
-    text = """\
-Mother nature gave us hope.
-She gave us a shelter.
-With the azure sky she granted upon our heads.
-Such beauty in simplicity.
 
-The flowing water.
-The thundering waterfall.
-The calm motionless lake.
+    poem_m_1 = Poem(author="monika", title="Just Another World", text="""\
+Life that idles
+Swiftly floats into the abyss,
+The dark abyss known as stagnation.
+Within it, life decays, bringing but pain and sorrow.
+It tears through us, in a slow, endless torment,
+Through the mind, body, and soul.
 
-Snow capped mountains stood broadly.
-Wooden houses in Taiga biomes.
-Soft, cold snow on roofs.
+Life that storms
+Leaves a scar,
+The one that scarred another world.
+The air of this new world flows through us -
+A breeze that brings purpose and satisfaction
+Through the mind, body, and soul.
 
-The true nature's delight.
-Broadcasted upon the world.
-Sharing our home to one another.
-Beauty in simplicity."""
-    )
+We long for a revelation,
+An answer we shall bring ourselves to accept.
+The reality between us and the world we dream of -
+None of it is real.
+This world isn't ours -
+Only our lives are.
 
-    poem_n1 = Poem(
-    author = "natsuki",
-    title = "Sly Fox",
-    text = """\
-The Fox hunted.
-In the woods where birds chirp.
-It hunted with it's claws.
-But sometimes hunted with it's thoughts.
+Our world is just another world.""")
 
-The Fox thought of ways to hunt.
-Even tricking a lion from it's meal.
-Even escaping the lion's fearsome attacks.
+    poem_m_2 = Poem(author="monika", title="Quaver", text="""\
+Half a beat.
+One-and
+       Two-and
+              Three-and
+                       Four.
 
-The Fox was smart. 
-And became one of the smartest animals in the world."""
-    )
+Or a beat itself.
+One-two-three
+             Four-five-six.
 
-    poem_s1 = Poem(
-    author = "sayori",
-    title = "A Windy Day.",
-    text = """\
-I felt a soft breeze.
-My clothes flew with the wind in the park.
-The trees shattered with it's leaves slowly floating to the ground.
-I took a deep breath.
+The same, yet different.
+Both in form and feel.
 
-The air that purified my troubled mind.
-My mind became clear.
-Everything I see was clear.
-I can finally be at peace.
-And relax on the green grass.
+Listen to the music
+Synthesizing your emotions.
+Let yourself explore.
 
-Peace and blessings be upon me.
-My mind was at peace."""
-    )
+Each genre is a note, each note with its place in the piece
+Transpose it up or down,
+But that experience never falls flat.""")
 
-    poem_m1 = Poem(
-    author = "monika",
-    title = "Another Life in Another World",
-    text = """\
-Life that idles,
-Swiftly floats into the abyss.
-Life that storms,
-Leaves a scar.
+    poem_y_1 = Poem(author="yuri", title="Fading Light", text="""\
+The setting sun’s amber stream casts now elongated shadows.
+Paying it no mind, I lose myself in the expansive worlds beside me,
+No - inside me, now, as I explore them.
 
-A scar that scarred a different world.
-The air in a new world flows through the mind.
-It is life that brings satisfaction.
-Through the mind, body and soul.
+The light’s hue changes from yellow to orange to black to white,
+The only indication of passing time,
+Imperceptible at first.
 
-We shall bring upon ourselves to accept.
-The reality between us, and the world we dream of.
+But it is only as that hue fades back again
+That I make any observation.
 
-The world is just another world."""
-    )
+I must now return to exploring my own.""")
 
+    poem_y_2 = Poem(author="yuri", title="Aurora", text="""\
+Far from everything she finds herself,
+A lone, hooded figure traversing the open tundra,
+An outcast, desperate to stay warm.
+The harsh winds of winter strike at her frame –
+Behind little shelter she cowers, almost whimpering.
+It is little wonder her path is nearly bare of travel.
+
+She perseveres, placing one foot forward, mechanically,
+The burdens she carries, neglected by others, ignored at last.
+The vibrant blurs of green and pink dare her to look at the once-dark sky above.
+The harsh winds of winter match not the wild flare of solar winds.
+With these brilliant colors from a conflict born,
+It is great wonder her path is nearly bare of travel.""")
+
+    poem_n_1 = Poem(author="natsuki", title="{color=#FF1493}Not Your Cupcakes!{/color}", text="""\
+{color=#FF1493}I like baking cupcakes,
+Mixing the batter...
+Watching them in the oven...
+Making the frosting…
+Decorating...
+They look so good!
+
+I like when people want my cupcakes,
+It makes me feel quite proud.
+But when people try to take them
+And don’t pay me any mind,
+It makes me feel like they don’t care,
+So I won’t share - They’re mine!{/color}""")
+
+    poem_n_2 = Poem(author="natsuki", title="The Fox", text="""\
+The lion was proud
+And its prey feared its strength.
+The birds hid in fear.
+The rabbits hid in fear.
+The zebras hid in fear.
+But the fox didn’t hide.
+The fox ran.
+The lion chased.
+The fox and lion ran around a corner.
+And the lion fell in a trap.
+And the fox didn’t need to run anymore.""")
+
+    poem_s_1 = Poem(author="sayori", title="A Day on the Ice", text="""\
+I stand out in the rink, a giant ring of ice,
+Bundled up in my favorite coat and hat.
+I'm kinda scared that I'll fall and get hurt,
+So I’m gonna stay close to the wall.
+
+I skate --
+Around and around,
+Around and around.
+
+I decide to move away from the wall,
+Still a little afraid I'll fall down.
+
+...I fall down.
+
+I'm fine: My coat softens the blow.
+I get up again and dust myself off
+And start off towards the end of the rink.
+
+Left foot, right foot, left foot, right.
+I laugh as I skate around.
+My fear left me long ago.
+
+I'm almost sad when it's time to go home,
+I wish I could stay forever.
+But I can come back another day.
+
+And besides...
+
+I'm cold.
+I want hot chocolate.""")
+
+    poem_s_2 = Poem(author="sayori", title="It's Just a Little Raincloud", text="""\
+It's a beautiful day --
+The sun is shining bright,
+The birds are singing,
+The breeze blows through the trees.
+
+It's a lazy day --
+I sit in the park, barefoot in the grass,
+Leaning against the trunk of a large oak tree.
+I watch the patterns in the white cotton clouds.
+
+This one looks like a dolphin,
+This one's a feather,
+This one's a smiling face,
+This is a heart.
+
+But that dark gray one might ruin my game,
+I'd have to go back inside.
+No more watching clouds.
+
+But, hey, it's just a little raincloud.
+It's the only one.
+And even if it rains today,
+There'll be puddles to jump in tomorrow.""")
 
 image paper = "images/bg/poem.jpg"
 image paper_glitch = LiveComposite((1280, 720), (0, 0), "paper_glitch1", (0, 0), "paper_glitch2")
@@ -207,15 +299,19 @@ label showpoem(poem=None, music=True, track=None, revert_music=True, img=None, w
     window hide
     if paper:
         show screen poem(poem, paper=paper)
-        with Dissolve(1)
     else:
         show screen poem(poem)
-        with Dissolve(1)
+    if not persistent.first_poem:
+        $ persistent.first_poem = True
+        show expression "gui/poem_dismiss.png" as poem_dismiss:
+            xpos 1050 ypos 590
+    with Dissolve(1)
     $ pause()
     if img:
         $ renpy.hide(poem.author)
         $ renpy.show(img, at_list=[where])
     hide screen poem
+    hide poem_dismiss
     with Dissolve(.5)
     window auto
     if music and revert_music:

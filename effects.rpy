@@ -8,7 +8,7 @@ init python:
         srf = screenshot_srf()
         inv = renpy.Render(srf.get_width(), srf.get_height()).canvas().get_surface()
         inv.fill((255,255,255,255))
-        inv.blit(srf, (0,0), None, 2) 
+        inv.blit(srf, (0,0), None, 2)
         return inv
 
     class Invert(renpy.Displayable):

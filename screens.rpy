@@ -445,7 +445,8 @@ init -501 screen navigation():
 
             if main_menu:
 
-                if persistent.playthrough == 1:
+                if not persistent.seen_intro:
+
                     textbutton _("ŔŗñĮ¼»ŧþŀÂŻŕěōì«") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
                 else:
                     textbutton _("New Game") action If(persistent.playername, true=Start(), false=Show(screen="name_input", message="Please enter your name", ok_action=Function(FinishEnterName)))
@@ -514,15 +515,38 @@ init -501 screen main_menu() tag menu:
 
     style_prefix "main_menu"
 
-    if persistent.ghost_menu:
-        add "white"
-        add "menu_art_y_ghost"
-        add "menu_art_n_ghost"
-    else:
+    if persistent.seen_intro:
         add "menu_bg"
         add "menu_art_y"
         add "menu_art_n"
+        add "menu_art_s"
+        add "menu_art_m"
         frame
+        use navigation
+
+        add "menu_particles"
+        add "menu_particles"
+        add "menu_particles"
+        add "menu_logo"
+    else:
+
+
+        add "menu_notfound"
+        add "glitched_frame"
+
+        use navigation
+        add "menu_art_y_ghost"
+        add "menu_art_n_ghost"
+        add "menu_art_s_ghost"
+        add "menu_art_m_glitch"
+        add "menu_logo_glitched"
+
+
+
+
+
+
+
 
 
 
@@ -538,23 +562,23 @@ init -501 screen main_menu() tag menu:
             text "[config.version]":
                 style "main_menu_version"
 
-    if not persistent.ghost_menu:
-        add "menu_particles"
-        add "menu_particles"
-        add "menu_particles"
-        add "menu_logo"
-    if persistent.ghost_menu:
-        add "menu_art_s_ghost"
-        add "menu_art_m_ghost"
-    else:
-        if persistent.playthrough == 1 or persistent.playthrough == 2:
-            add "menu_art_s_glitch"
-        else:
-            add "menu_art_s"
-        add "menu_particles"
-        if persistent.playthrough != 4:
-            add "menu_art_m"
-        add "menu_fade"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     key "K_ESCAPE" action Quit(confirm=False)
 

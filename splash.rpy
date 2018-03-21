@@ -1,20 +1,19 @@
-
-
-
-
-
-
-
-
-
 init python:
     menu_trans_time = 1
-
-    splash_message_default = "This game is not suitable for those who like Horror,\nThose who like to play Original DDLC."
-
+    splash_message_default = base64encode("Leave this place")
     splash_messages = [
-    "Please support Doki Doki Literature Club."
-    "Monika is watching you code."
+    "You are my sunshine,\nMy only sunshine",
+    "I missed you.",
+    "Play with me",
+    "It's just a game, mostly.",
+    "This game is not suitable for children\nor those who are easily disturbed?",
+    "sdfasdklfgsdfgsgoinrfoenlvbd",
+    "null",
+    "I have granted kids to hell",
+    "PM died for this.",
+    "It was only partially your fault.",
+    "This game is not suitable for children\nor those who are easily dismembered.",
+    "Don't forget to backup Monika's character file."
     ]
 
 image splash_warning = ParameterizedText(style="splash_text", xalign=0.5, yalign=0.5)
@@ -23,6 +22,16 @@ image menu_bg:
     topleft
     "gui/menu_bg.png"
     menu_bg_move
+
+image menu_notfound:
+    topleft
+    "gui/menu_notfound.png"
+
+
+image glitched_frame:
+    topleft
+    "gui/overlay/main_menu_blood.png"
+    menu_nav_move
 
 image game_menu_bg:
     topleft
@@ -97,6 +106,14 @@ image menu_art_m_ghost:
     zoom 1.00
     menu_art_move(1.00, 1000, 1.00)
 
+image menu_art_m_glitch:
+    subpixel True
+    "gui/menu_art_s_break.png"
+    xcenter 1000
+    ycenter 640
+    zoom 1.00
+    menu_art_move(1.00, 1000, 1.00)
+
 image menu_art_s_glitch:
     subpixel True
     "gui/menu_art_s_break.png"
@@ -109,8 +126,20 @@ image menu_nav:
     "gui/overlay/main_menu.png"
     menu_nav_move
 
+image menu_nav_glitched:
+    "gui/overlay/main_menu_blood.png"
+    menu_nav_move
+
 image menu_logo:
     "gui/logo.png"
+    subpixel True
+    xcenter 240
+    ycenter 120
+    zoom 0.60
+    menu_logo_move
+
+image menu_logo_glitched:
+    "gui/logo-glitch.png"
     subpixel True
     xcenter 240
     ycenter 120
@@ -177,20 +206,43 @@ transform menu_art_move(z, x, z2):
         pause 0.75
         ease 1.5 zoom z2 xoffset 0
 
+
 image intro:
     truecenter
     "white"
     0.5
-    "bg/splash.png" with Dissolve(0.5, alpha=True)
-    2.5
-    "white" with Dissolve(0.5, alpha=True)
+    "bg/salvato.png" with Dissolve(0.5, alpha=True)
     0.5
+    "bg/salvato-glitch2.png" with vpunch
+    0.1
+    "bg/salvato-glitch.png" with hpunch
+    0.1
+    "bg/silverjack-glitch.png" with hpunch
+    0.25
+    "bg/silverjack-glitch2.png" with blinds
+    0.25
+    "bg/silverjack.png" with hpunch
+    1
+    "bg/silverjack-glitch3.png" with vpunch
+    0.07
+    "bg/silverjack.png" with vpunch
+    2.13
+    "white" with Dissolve(0.5, alpha=True)
+
+image glitch_intro:
+    truecenter
+    "white"
+    0.5
+    "bg/salvato-glitch.png" with Dissolve(0.5, alpha=True)
+    4.5
+    "white" with Dissolve(0.5, alpha=True)
+
 
 image warning:
     truecenter
     "white"
     "splash_warning" with Dissolve(0.5, alpha=True)
-    2.5
+    2.0
     "white" with Dissolve(0.5, alpha=True)
     0.5
 
@@ -198,28 +250,24 @@ image tos = "bg/warning.png"
 image tos2 = "bg/warning2.png"
 
 
-init python:
-    if not persistent.do_not_delete:
-        if persistent.playthrough <= 2:
-            try: renpy.file("../characters/monika.chr")
-            except: open(config.basedir + "/characters/monika.chr", "wb").write(renpy.file("monika.chr").read())
-        if persistent.playthrough <= 1 or persistent.playthrough == 4:
-            try: renpy.file("../characters/natsuki.chr")
-            except: open(config.basedir + "/characters/natsuki.chr", "wb").write(renpy.file("natsuki.chr").read())
-            try: renpy.file("../characters/yuri.chr")
-            except: open(config.basedir + "/characters/yuri.chr", "wb").write(renpy.file("yuri.chr").read())
-        if persistent.playthrough == 0 or persistent.playthrough == 4:
-            try: renpy.file("../characters/sayori.chr")
-            except: open(config.basedir + "/characters/sayori.chr", "wb").write(renpy.file("sayori.chr").read())
-        if persistent.playthrough == 0 or persistent.playthrough == 4:
-            try: renpy.file("../characters/silverzone.chr")
-            except: open(config.basedir + "/characters/silverzone.chr", "wb").write(renpy.file("silverzone.chr").read())
-        if persistent.playthrough == 0 or persistent.playthrough == 4:
-            try: renpy.file("../characters/jackburst.chr")
-            except: open(config.basedir + "/characters/jackburst.chr", "wb").write(renpy.file("jackburst.chr").read())
-
-
 label splashscreen:
+
+    python:
+        process_list = []
+        currentuser = ""
+        if renpy.windows:
+            try:
+                process_list = subprocess.check_output("wmic process get Description", shell=True).lower().replace("\r", "").replace(" ", "").split("\n")
+            except:
+                pass
+            try:
+                for name in ('LOGNAME', 'USER', 'LNAME', 'USERNAME'):
+                    user = os.environ.get(name)
+                    if user:
+                        currentuser = user
+            except:
+                pass
+
 
     python:
         firstrun = ""
@@ -229,7 +277,7 @@ label splashscreen:
             with open(config.basedir + "/game/firstrun", "wb") as f:
                 pass
     if not firstrun:
-        if persistent.first_run and not persistent.do_not_delete:
+        if persistent.first_run:
             $ quick_menu = False
             scene black
             menu:
@@ -246,155 +294,226 @@ label splashscreen:
 
         python:
             if not firstrun:
-                with open(config.basedir + "/game/firstrun", "w") as f:
-                    f.write("1")
+                try:
+                    with open(config.basedir + "/game/firstrun", "w") as f:
+                        f.write("1")
+                except:
+                    renpy.jump("readonly")
 
-
-
-
-
-    default persistent.first_run = False
     if not persistent.first_run:
+        python:
+            restore_all_characters()
         $ quick_menu = False
         scene white
         pause 0.5
         scene tos
         with Dissolve(1.0)
         pause 1.0
-        "[config.name] is a Doki Doki Literature Club fan mod created by SilverZone430"
-        "It is designed to be played only after the official game has been completed, and might contains spoilers for the official game."
-        "The mod is designed to be like a dating sim. Your choices on a waifu depends on the poem you write."
+        "Doki Doki Date Club is a fan-made mod created by Team SilverJack, based around the idea of turning the original game into a regular Visual Novel."
+        "This project is not commercial by any means and it's completely free for distribution."
+        "The original game, Doki Doki Literature Club, is property of its rightful owners, Team Salvato."
+        "For any additional info, please visit\n- {a=https://ddlc.moe/}https://ddlc.moe/{/a}\n- {a=http://teamsalvato.com/}http://teamsalvato.com{/a}"
+        "This mod is not suitable for children or those who are easily disturbed."
+        "Individuals suffering from anxiety or depression may not have a safe experience playing this mod. For content warnings, please visit: {a=http://ddlc.moe/warning.html}http://ddlc.moe/warning.html{/a}"
+        "It is also highly recommended that you complete the original game before playing this mod."
         menu:
-            "By playing [config.name] you agree that you have completed Doki Doki Literature Club and accept any spoilers contained within."
+            "By playing Doki Doki Date Club, you agree that you are at least 13 years of age, you have completed the original game, and you consent to your exposure of highly disturbing content."
             "I agree.":
                 pass
-            "I don't care just get into the GOD DAMN GAME ALREADY!":
-                "Woah... CHILL! I'm opening it!"
+        menu:
+            "Be advised that this is only a v[config.version] demo version of Doki Doki Date Club. All the content you’re about to see is subject to change."
+            "I understand.":
                 pass
-            "I don't agree.":
-                "Disagree huh..."
-                "Well done."
-                "Can't believe you disagree it."
-                "You know, i try to think of it..."
-                "You actually haven't finish the game right?"
-                "Maybe?... I don't know.."
-                $ style.say_dialogue = style.edited
-                "{cps=*3}Did you come back and see what is this message?{/cps}{nw}"
-                "{cps=*3}Maybe you have already tried a lot of time to see this messages.{/cps}{nw}"
-                $ style.say_dialogue = style.normal
-                "Press OK to get out of this Disagreement."
-                "Don't you ever press that again."
-                $ renpy.call_screen("dialog", "OK.", ok_action=Return())
-                $ renpy.call_screen("dialog", "Ok...", ok_action=Return())
-                $ renpy.call_screen("dialog", "Okay.", ok_action=Return())
-                $ renpy.call_screen("dialog", "Okay...", ok_action=Return())
-                $ renpy.call_screen("dialog", "What...", ok_action=Return())
-                $ renpy.call_screen("dialog", "What the heck?", ok_action=Return())
-                "Just now I was thinking on it.."
-                "Why do you disagree this?"
-                "Is it because you trying to know what happen when you press disagree?"
-                "I see..."
-                "I want you to be honest, alright?"
-                menu:
-                    "Are you really really Disagree with this?"
-                    "Yes.":
-                        "I see..."
-                        "I SEE!!!"
-                        "DISAGREE????"
-                        "I finally know the feeling when a developer trying to warning us and we just skip all of those {i}EULA{/i} for no reason."
-                        $ renpy.call_screen("dialog", "What the heck do you want?", ok_action=Return())
-                        "Nothing."
-                        "Cause you disagree the {i}EULA{/i}, I'mma tell you something."
-                        "I won't tell you that you are about to enter the game."
-                        "But I'm sorry, you're not allowed to enter the mod."
-                        $ persistent.first_run = True
-                        $ renpy.call_screen("dialog", "Goodbye.", ok_action=Quit())
-                    "No.":
-                        "I see..."
-                        "What a great honest."
-                        "But i call it a {i}LIE{/i}"
-                        "Because i don't trust people."
-                        "But except you."
-                        "But you pressed {i}'I don't agree'{/i}."
-                        "I kinda Triggered."
-                        "But..."
-                        "You're not allowed to enter the mod... yet."
-                        "Cause you pressed {i}I don't agree{/i}."
-                        "We'll meet again.. Shall we?"
-                        $ persistent.first_run = True
-                        $ renpy.call_screen("dialog", "Alright.", ok_action=Return())
-                        $ renpy.call_screen("dialog", "Goodbye.", ok_action=Quit())
-            "I haven't completed the game yet.":
-                "Get the fuck out of the fan mod. before you get killed. Okay?"
-                "I'm sorry someone was messing my files but who is it?"
-                "Oh i'm sorry but you're not allowed to play this mod until you complete the main game."
-                "Goodbye."
-                $ renpy.call_screen("dialog", "Goodbye...", ok_action=Quit())
+        $ persistent.first_run = True
         scene tos2
         with Dissolve(1.5)
         pause 1.0
-
-
-
-
         scene white
-        with Dissolve(1.5)
-
-        $ persistent.first_run = True
 
 
+    python:
+        s_kill_early = None
+        if persistent.playthrough == 0:
+            try: renpy.file("../characters/sayori.chr")
+            except: s_kill_early = True
+        if not s_kill_early:
+            if persistent.playthrough <= 2 and persistent.playthrough != 0:
+                try: renpy.file("../characters/monika.chr")
+                except: open(config.basedir + "/characters/monika.chr", "wb").write(renpy.file("monika.chr").read())
+            if persistent.playthrough <= 1 or persistent.playthrough == 4:
+                try: renpy.file("../characters/natsuki.chr")
+                except: open(config.basedir + "/characters/natsuki.chr", "wb").write(renpy.file("natsuki.chr").read())
+                try: renpy.file("../characters/yuri.chr")
+                except: open(config.basedir + "/characters/yuri.chr", "wb").write(renpy.file("yuri.chr").read())
+            if persistent.playthrough == 4:
+                try: renpy.file("../characters/sayori.chr")
+                except: open(config.basedir + "/characters/sayori.chr", "wb").write(renpy.file("sayori.chr").read())
+
+    if not persistent.special_poems:
+        python hide:
+            persistent.special_poems = [0,0,0]
+            a = range(1,12)
+            for i in range(3):
+                b = renpy.random.choice(a)
+                persistent.special_poems[i] = b
+                a.remove(b)
 
     $ basedir = config.basedir.replace('\\', '/')
 
 
 
-    if persistent.autoload and not _restart:
+    if persistent.autoload:
         jump autoload
 
 
+
     $ config.allow_skipping = False
+
+    if persistent.playthrough == 2 and not persistent.seen_ghost_menu and renpy.random.randint(0, 63) == 0:
+        show black
+        $ config.main_menu_music = audio.ghostmenu
+        $ persistent.seen_ghost_menu = True
+        $ persistent.ghost_menu = True
+        $ renpy.music.play(config.main_menu_music)
+        pause 1.0
+        show end with dissolve_cg
+        pause 3.0
+        $ config.allow_skipping = True
+        return
+
+
+    if s_kill_early:
+        show black
+        play music "bgm/s_kill_early.ogg"
+        pause 1.0
+        show end with dissolve_cg
+        pause 3.0
+        scene white
+        show expression "images/cg/s_kill_early.png":
+            yalign -0.05
+            xalign 0.25
+            dizzy(1.0, 4.0, subpixel=False)
+        show white as w2:
+            choice:
+                ease 0.25 alpha 0.1
+            choice:
+                ease 0.25 alpha 0.125
+            choice:
+                ease 0.25 alpha 0.15
+            choice:
+                ease 0.25 alpha 0.175
+            choice:
+                ease 0.25 alpha 0.2
+            choice:
+                ease 0.25 alpha 0.225
+            choice:
+                ease 0.25 alpha 0.25
+            choice:
+                ease 0.25 alpha 0.275
+            choice:
+                ease 0.25 alpha 0.3
+            pass
+            choice:
+                pass
+            choice:
+                0.25
+            choice:
+                0.5
+            choice:
+                0.75
+            repeat
+        show noise:
+            alpha 0.1
+        with Dissolve(1.0)
+        show expression Text("Now everyone can be happy.", style="sayori_text"):
+            xalign 0.8
+            yalign 0.5
+            alpha 0.0
+            600
+            linear 60 alpha 0.5
+        pause
+        $ renpy.quit()
 
 
     show white
     $ persistent.ghost_menu = False
     $ splash_message = splash_message_default
-    $ config.main_menu_music = audio.t1
-    $ renpy.music.play(config.main_menu_music)
-    show intro with Dissolve(0.5, alpha=True)
-    pause 2.5
-    hide intro with Dissolve(0.5, alpha=True)
 
-    if persistent.playthrough == 2 and renpy.random.randint(0, 3) == 0:
-        $ splash_message = renpy.random.choice(splash_messages)
-    show splash_warning "[splash_message]" with Dissolve(0.5, alpha=True)
-    pause 2.0
-    hide splash_warning with Dissolve(0.5, alpha=True)
+
+
+    if persistent.seen_intro:
+        $ config.main_menu_music = audio.t1
+        $ renpy.music.play(audio.t1)
+        show intro with Dissolve(0.5, alpha=True)
+        pause 0.5
+        play sound "sfx/s_kill_glitch1.ogg"
+        pause 3.5
+        hide intro with Dissolve(0.5, alpha=True)
+    else:
+        $ config.main_menu_music = audio.td
+        $ renpy.music.play(audio.td)
+        show glitch_intro with Dissolve(0.5, alpha=True)
+
+        pause 2.0
+        hide glitch_intro with Dissolve(0.5, alpha=True)
+        show splash_warning "[splash_message_default]" with Dissolve(0.5, alpha=True)
+        pause 1.4
+        hide splash_warning with Dissolve(0.5, alpha=True)
     $ config.allow_skipping = True
     return
 
 label warningscreen:
     hide intro
     show warning
-    pause 3.0
+    pause 1.0
 
 label after_load:
+    if persistent.playthrough == 0:
+        $ restore_all_characters()
     $ config.allow_skipping = allow_skipping
     $ _dismiss_pause = config.developer
     $ persistent.ghost_menu = False
     $ style.say_dialogue = style.normal
 
-    if anticheat != persistent.anticheat:
+    if persistent.yuri_kill > 0 and persistent.autoload == "yuri_kill_2":
+        if persistent.yuri_kill >= 1380:
+            $ persistent.yuri_kill = 1440
+        elif persistent.yuri_kill >= 1180:
+            $ persistent.yuri_kill = 1380
+        elif persistent.yuri_kill >= 1120:
+            $ persistent.yuri_kill = 1180
+        elif persistent.yuri_kill >= 920:
+            $ persistent.yuri_kill = 1120
+        elif persistent.yuri_kill >= 720:
+            $ persistent.yuri_kill = 920
+        elif persistent.yuri_kill >= 660:
+            $ persistent.yuri_kill = 720
+        elif persistent.yuri_kill >= 460:
+            $ persistent.yuri_kill = 660
+        elif persistent.yuri_kill >= 260:
+            $ persistent.yuri_kill = 460
+        elif persistent.yuri_kill >= 200:
+            $ persistent.yuri_kill = 260
+        else:
+            $ persistent.yuri_kill = 200
+        jump expression persistent.autoload
+
+    elif anticheat != persistent.anticheat:
         stop music
         scene black
         "The save file could not be loaded."
         "Are you trying to cheat?"
-
+        $ m_name = "Monika"
+        show monika 1 at t11
+        if persistent.playername == "":
+            m "You're so funny."
+        else:
+            m "You're so funny, [persistent.playername]."
         $ renpy.utter_restart()
     else:
         if persistent.playthrough == 0 and not persistent.first_load and not config.developer:
             $ persistent.first_load = True
             call screen dialog("Hint: You can use the \"Skip\" button to\nfast-forward through text you've already read.", ok_action=Return())
-    return
     return
 
 
@@ -416,8 +535,35 @@ label autoload:
         main_menu = False
         _in_replay = None
 
+    if persistent.yuri_kill > 0 and persistent.autoload == "yuri_kill_2":
+        $ persistent.yuri_kill += 200
 
-    $ renpy.pop_call()
+
+    if renpy.get_return_stack():
+        $ renpy.pop_call()
+    jump expression persistent.autoload
+
+label autoload_yurikill:
+    if persistent.yuri_kill >= 1380:
+        $ persistent.yuri_kill = 1440
+    elif persistent.yuri_kill >= 1180:
+        $ persistent.yuri_kill = 1380
+    elif persistent.yuri_kill >= 1120:
+        $ persistent.yuri_kill = 1180
+    elif persistent.yuri_kill >= 920:
+        $ persistent.yuri_kill = 1120
+    elif persistent.yuri_kill >= 720:
+        $ persistent.yuri_kill = 920
+    elif persistent.yuri_kill >= 660:
+        $ persistent.yuri_kill = 720
+    elif persistent.yuri_kill >= 460:
+        $ persistent.yuri_kill = 660
+    elif persistent.yuri_kill >= 260:
+        $ persistent.yuri_kill = 460
+    elif persistent.yuri_kill >= 200:
+        $ persistent.yuri_kill = 260
+    else:
+        $ persistent.yuri_kill = 200
     jump expression persistent.autoload
 
 label before_main_menu:
@@ -425,75 +571,18 @@ label before_main_menu:
     return
 
 label quit:
+    if persistent.ghost_menu:
+        hide screen main_menu
+        scene white
+        show expression "gui/menu_art_m_ghost.png":
+            xpos -100 ypos -100 zoom 3.5
+        pause 0.01
     return
 
-screen main_menu() tag menu:
-
-
-
-
-    style_prefix "main_menu"
-
-    add "menu_bg"
-    add "menu_art_y"
-    add "menu_art_n"
-    frame
-
-
-
-
-    use navigation
-
-    add "menu_particles"
-    add "menu_particles"
-    add "menu_particles"
-    add "menu_logo"
-    add "menu_art_s"
-    add "menu_particles"
-    add "menu_art_m"
-    add "menu_fade"
-
-    if gui.show_name:
-
-        vbox:
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "v. [config.version]":
-                style "main_menu_version"
-
-
-    key "K_ESCAPE" action Quit(confirm=False)
-
-style main_menu_frame is empty
-style main_menu_vbox is vbox
-style main_menu_text is gui_text
-style main_menu_title is main_menu_text
-style main_menu_version is main_menu_text:
-    color "#000000"
-    size 16
-    outlines []
-
-style main_menu_frame:
-    xsize 310
-    yfill True
-
-    background "menu_nav"
-
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -20
-    xmaximum 800
-    yalign 1.0
-    yoffset -20
-
-style main_menu_text:
-    xalign 1.0
-
-    layout "subtitle"
-    text_align 1.0
-    color gui.accent_color
-
-style main_menu_title:
-    size gui.title_text_size
+label readonly:
+    scene black
+    "The game cannot be run because you are trying to run it from a read-only location."
+    "Please copy the DDLC application to your desktop or other accessible location and try again."
+    $ renpy.quit()
+    return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

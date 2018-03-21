@@ -75,6 +75,7 @@ transform thide(z=0.80):
     on hide:
 
         easein .25 zoom z*0.95 alpha 0.00 yoffset -20
+
 transform lhide:
     subpixel True
     on hide:
@@ -257,13 +258,13 @@ transform face(z=0.80, y=500):
     yoffset y
     zoom z*2.00
 
-transform cgfade:
+transform cgfade(t=0.5):
     on show:
         alpha 0.0
-        linear 0.5 alpha 1.0
+        linear t alpha 1.0
     on hide:
         alpha 1.0
-        linear 0.5 alpha 0.0
+        linear t alpha 0.0
 
 transform n_cg2_wiggle:
     subpixel True
@@ -293,6 +294,7 @@ define dissolve = Dissolve(0.25)
 
 define dissolve_cg = Dissolve(0.75)
 define dissolve_scene = Dissolve(1.0)
+define dissolve_chr = Dissolve(0.15)
 
 define dissolve_scene_full = MultipleTransition([
     False, Dissolve(1.0),
