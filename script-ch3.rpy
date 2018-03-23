@@ -1449,7 +1449,7 @@ label ch3_natsuki:
     mc "You seem to be very concerned about my personal life, Natsuki. Something you want to tell me?"
 
     show natsuki 1o with dissolve_chr
-    n 1o "H-Huh?!"
+    n "H-Huh?!"
 
     "{i}I had to say it, okay?{/i}"
 
@@ -1459,7 +1459,7 @@ label ch3_natsuki:
     show natsuki 1q with dissolve_chr
     n "W-Wait a second..."
     show natsuki 2p with dissolve_chr
-    n "You aren't actually talking to me right now, just because y-{w=0.7}{nw}"
+    n "You aren't actually talking to me right now just because y--{w=0.7}{nw}"
 
     mc "Natsuki..."
     mc "You're currently putting to shame all of the conspiracy theorists {i}combined!{/i}"
