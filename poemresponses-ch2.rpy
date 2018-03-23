@@ -1,6 +1,6 @@
-
-
-
+# -------------------------------------------------------------------------------------------
+# All poem responses for all four girls (with all four appeals) for day 2 (Tuesday)
+# -------------------------------------------------------------------------------------------
 
 label poemresponse_2_sayori:
     if poemsread == 0:
@@ -20,7 +20,7 @@ label poemresponse_2_sayori:
     mc "Hehe... yeah, thanks, Sayori..."
     show sayori 1a with dissolve_chr
     mc "To be fair, I'm still trying to wrap my mind around it."
-    mc "If someone told me yesterday that I'd end up in a club dedicated to literature and that {i}I,{/i} of all people, would be writing poems, I would laugh out loud."
+    mc "If someone told me a week ago that I'd end up in a club dedicated to literature and that {i}I,{/i} of all people, would be writing poems, I would laugh out loud."
 
     show sayori 4s with dissolve_chr
     s "Ahahah! Well, fate works in superior ways!"
@@ -30,19 +30,19 @@ label poemresponse_2_sayori:
     show sayori 3l with dissolve_chr
     s "Y-Yeah, that!"
     show sayori 1x with dissolve_chr
-    s "It doesn't matter! Give me your poem now, I can't wait to see it!"
+    s "It doesn't matter! Let me see your poem now. I can't wait!"
 
-    "I finally give Sayori the notebook where I wrote my poem yesterday."
+    "I give Sayori the notebook where I wrote my poem yesterday."
 
     scene bg club_day with wipeleft_scene
 
     $ renpy.call("poemresponse_2_sayori_appeal_{appeal}".format(appeal=poemwinner[0]))
 
-
+    # REJOIN:
     "Sayori hands me her poem."
     "It's written on a sheet of paper, torn out from a notebook."
     "The sheet is covered in small wrinkles here and there and it~... wait a minute, is that...?"
-    "Yep, it's a small yet visible coffee stain, or at least something that looks like it."
+    "Yep. It's a small yet visible coffee stain, or at least something that looks like it."
 
     mc "Jeez, I haven't read the poem yet, but even the paper you wrote it on already reminds me of you, Sayori..."
 
@@ -52,7 +52,7 @@ label poemresponse_2_sayori:
     mc "Nevermind, let me just read it..."
 
 
-    call showpoem (poem_s_1)
+    call showpoem(poem_s_1)  # "A Day on the Ice"
 
 
     show sayori 1a with dissolve
@@ -99,7 +99,7 @@ label poemresponse_2_sayori:
     show sayori 1m with dissolve_chr
     s "Nothing!"
 
-    show monika zorder 1 at lhide
+    show monika at lhide zorder 1
     hide monika
 
     mc "Heheheh..."
@@ -118,7 +118,7 @@ label poemresponse_2_sayori:
     s "Okay, okay! Just don't tell Monika, alright?"
 
     mc "Oh, I don't know..."
-    mc "What would I get for it?"
+    mc "What would I get out of it?"
 
     show sayori 1j at h11
     s "[player]!"
@@ -127,11 +127,11 @@ label poemresponse_2_sayori:
     show sayori 1i with dissolve_chr
     mc "I have to say, it's actually a very good poem."
     show sayori 1b with dissolve_chr
-    mc "It's nothing fancy, but it feels... just like you, basically."
+    mc "It's nothing fancy, but it feels just like you, basically."
     show sayori 4x with dissolve_chr
     s "Really? And how does it make you feel?"
 
-    mc "Carefree, cheerful... just a bit immature, but overall? Peaceful."
+    mc "Carefree, cheerful... It reminds me of how much fun we used to have."
 
     show sayori 1d with dissolve_chr
     s "Awww..."
@@ -144,7 +144,7 @@ label poemresponse_2_sayori:
     show sayori 4s at s11
     s "Okay, okay, I'll shut up now!"
 
-    show sayori zorder 1 at thide
+    show sayori at thide zorder 1
     hide sayori
     "I chuckle to myself, unable to keep a straight face while watching Sayori's mood swings."
     "Yeah, I guess me being here is really for the best, after all."
@@ -169,19 +169,19 @@ label poemresponse_2_sayori_appeal_sayori:
     mc "Sayori, are you serious right now?!"
 
     show sayori 1l with dissolve_chr
-    s "Y-Yeah, you're right... Sorry about that."
+    s "Y-Yeah, you're right. Sorry about that."
     show sayori 1c with dissolve_chr
-    s "I just... didn't expect it to be that good, to be honest."
+    s "I just didn't expect it to be that good, to be honest."
 
     mc "Ummm... thanks?"
 
     show sayori 1q with dissolve_chr
     s "Heheh~ Don't get cocky, though. It's still pretty rough around the edges..."
     show sayori 1a with dissolve_chr
-    s 1a "But I really like it, anyway!"
+    s "But I really like it anyway!"
     show sayori 4x with dissolve_chr
-    s "And if there's anything that can confirm that I was right about bringing you here, then this is definitely it!"
-    mc "Well, as long as it's not a complete disaster, I guess I'm fine with the results..."
+    s "And if there's anything that proves that I was right about bringing you here, then this is definitely it!"
+    mc "Well, as long as it's not a complete disaster, I guess I'm fine with that..."
     mc "Now... it's your turn, right?"
 
     show sayori 4r with dissolve_chr
@@ -193,7 +193,7 @@ label poemresponse_2_sayori_appeal_natsuki:
     s "..."
     s "Eheheh..."
 
-    mc "Hey! I know it's bad, but I thought that at least you won't laugh at it!"
+    mc "Hey! I know it's bad, but you could at least {i}try{/i} not to laugh at it!"
     show sayori 3r with dissolve_chr
     s "I'm not laughing {i}at{/i} it, [player], it just reminded me of someone..."
 
@@ -213,17 +213,17 @@ label poemresponse_2_sayori_appeal_natsuki:
     show sayori 5b with dissolve_chr
     s "W-Well... at least not all the time..."
 
-    mc "Ah-hah, sure..."
+    mc "Uh-huh, sure..."
     mc "Okay, just tell me. How bad is it?"
 
     show sayori 1a with dissolve_chr
-    s 1a "It's not bad, actually! It's different from what I expected, but it's definitely not bad!"
+    s "It's not bad, actually! It's different from what I expected, but it's definitely not bad!"
     show sayori 1x with dissolve_chr
     s "You have a long way to go, that's for sure, but you've got potential!"
     show sayori 1q with dissolve_chr
     s "I'm really curious what your next poems will look like."
 
-    mc "Well, it's a bit too early for that. Mind if I see your poem now?"
+    mc "Well, it's a bit too early for that. Mind if I read your poem now?"
 
     show sayori 1x at h11
     s "Okay!"
@@ -234,36 +234,36 @@ label poemresponse_2_sayori_appeal_yuri:
     s "..."
     s "Whoa..."
     show sayori 1o with dissolve_chr
-    s "[player], did you seriously write this yourself?"
+    s "[player], did you really write this yourself?"
 
     mc "Sayori, come on! I thought you of all people would give me at least {i}some{/i} credit here!"
 
     show sayori 1l with dissolve_chr
-    s "Y-Yeah, sorry about that."
+    s "Yeah, sorry about that."
     show sayori 1g with dissolve_chr
-    s "It's just... not quite something I was expecting..."
+    s "It's just... not what I was expecting from you..."
     show sayori 1i with dissolve_chr
-    s "It's just so... deep... and complicated..."
+    s "It's just so deep... and complicated..."
     show sayori 3j with dissolve_chr
-    s "You're sure you didn't just find it somewhere on the Internet?"
+    s "Did you just find this somewhere online?"
 
-    mc "Sayori, you do understand that your question is just plain dumb?"
-    mc "And I know that I'm not any good at it yet, but still... you've could at least given me some {i}actual{/i} feedback!"
+    mc "Sayori, you do get how ridiculous that sounds, right?"
+    mc "And I know that I'm not any good at writing yet, but still... you've could at least given me some {i}actual{/i} feedback!"
     mc "You know, something other than your baseless accusations!"
 
     show sayori 4e with dissolve_chr
-    s "S-Sorry! Sorry... I really didn't want to upset you."
+    s "Sorry... I really didn't mean it that way."
     show sayori 4k with dissolve_chr
-    s "I just think it's really weird for you to start off with something like... {i}this{/i}..."
+    s "I just think it's weird for you to start off with something like... {i}this{/i}..."
     show sayori 1o with dissolve_chr
-    s "In all seriousness, I really have no idea what you've written about in your poem!"
+    s "In all seriousness, I really have no idea what you wrote about in your poem!"
 
     "How did you even manage to say the word \"seriousness?\""
     show sayori 3x with dissolve_chr
-    s "But maybe it's not a bad thing! Poems don't always need to have a clear message, right?"
-    s "If you just want to say the stuff you mean, then what's the whole point of writing a poem, right?"
+    s  "But maybe that's not a bad thing! Poems don't always need to have a clear message, right?"
+    s "If you just want to say exactly what you mean, then what's the whole point of writing a poem, right?"
 
-    mc "Yeah, I... guess there's some truth to what you're saying..."
+    mc "Yeah, I... you're probably right..."
 
     show sayori 1a with dissolve_chr
     mc "Okay then... care to share your poem with me?"
@@ -291,12 +291,12 @@ label poemresponse_2_sayori_appeal_monika:
     show sayori 3g with dissolve_chr
     s "And what makes you think I would expect it to su-... {i}be bad{/i}?"
 
-    mc "Well, you said it yourself -- you obviously had some lower expectations."
+    mc "Well, you said it yourself. You obviously had lower expectations."
 
     show sayori 3h with dissolve_chr
-    s "Yeah, but... I never said I expected to be like... \"bad\" bad..."
+    s "Yeah, but... I never said I expected to be, like, \"bad\" bad..."
     show sayori 1x with dissolve_chr
-    s "You know what? I think what matters most right now is that you're making your first steps!"
+    s "You know what? I think what matters most right now is that you're taking your first steps!"
     show sayori 4r with dissolve_chr
     s "And quite nice ones, for that matter!"
 
@@ -309,9 +309,9 @@ label poemresponse_2_sayori_appeal_monika:
     s "Here you go, [player]!"
     return
 
-
-
-
+# ======================================================================================================================================================================================================
+# ======================================================================================================================================================================================================
+# ======================================================================================================================================================================================================
 
 label poemresponse_2_yuri:
     if poemsread == 0:
@@ -380,13 +380,13 @@ label poemresponse_2_yuri:
     scene bg club_day with wipeleft_scene
     $ renpy.call("poemresponse_2_yuri_appeal_{appeal}".format(appeal=poemwinner[0]))
 
-
+    # REJOIN:
     "Yuri hands me her notebook."
     "When I touch it, it takes just a little more effort to get it out of her hand than I expected. She's obviously still having second thoughts about all this."
     "Nevertheless, I finally get my hands on it and start leafing through the pages, looking for her latest poem."
     "Her handwriting is beautiful, almost calligraphic..."
 
-    call showpoem (poem_y_1)
+    call showpoem(poem_y_1)  # "Fading Light"
 
     show yuri 4a with dissolve
 
@@ -492,7 +492,7 @@ label poemresponse_2_yuri:
 
     show yuri 3c with dissolve_chr
     $ renpy.pause(0.7)
-    show yuri zorder 1 at thide
+    show yuri at thide zorder 1
     hide yuri
     "Yuri gives me a sweet smile and then turns away; I guess our conversation is over..."
     return
@@ -722,9 +722,9 @@ label poemresponse_2_yuri_appeal_monika:
     mc "Hmm? Well, yeah, sure."
     return
 
-
-
-
+# ======================================================================================================================================================================================================
+# ======================================================================================================================================================================================================
+# ======================================================================================================================================================================================================
 
 label poemresponse_2_natsuki:
     if poemsread == 0:
@@ -764,7 +764,7 @@ label poemresponse_2_natsuki:
     n "And here you are! Roaming around {i}our{/i} club, eating {i}my{/i} cupcakes and..."
     mc "Ughhhh...{w=0.3}{nw}"
 
-
+    # add screen shake effect
     play sound "sfx/table_hit.ogg"
     show natsuki 1p at h11
     "*SLAM!*"
@@ -833,12 +833,12 @@ label poemresponse_2_natsuki:
 
     $ renpy.call("poemresponse_2_natsuki_appeal_{appeal}".format(appeal=poemwinner[0]))
 
-
+    # REJOIN:
     "Natsuki hands me a sheet of paper with her poem."
     "It's... written in pink ink..."
     "Seriously, how can she expect someone {i}not{/i} to consider her cute when she acts like this even with the smallest things?"
 
-    call showpoem (poem_n_1)
+    call showpoem(poem_n_1)  # "Not Your Cupcakes!"
 
     show natsuki 5s with dissolve
     mc "..."
@@ -1094,7 +1094,7 @@ label poemresponse_2_natsuki_appeal_yuri:
     show natsuki 4e with dissolve_chr
     n "Oh, you know... the way people like you overcomplicate stuff, always making it sound so metaphorical and completely confusing the reader!"
 
-    mc "Well, what's the point of making it plain and straightforward? That's hardly poetic in any way."
+    mc "Well, what's the point of making it plain and straightforward? That's hardly  poetic in any way."
     mc "I mean, how would it make it any different from a casual chat?"
 
     show natsuki 4w with dissolve_chr
@@ -1136,7 +1136,7 @@ label poemresponse_2_natsuki_appeal_monika:
     mc "As for my poem... well... I honestly don't even know how it turned out the way it did. I was just writing... {i}something...{/i}"
 
     show natsuki 3g with dissolve_chr
-    n "Well, just so you know, it's very rough around the edges! And that's not surprising, given your skill level..."
+    n  "Well, just so you know, it's very rough around the edges! And that's not surprising, given your skill level..."
     n "That's why I'm telling you that this is a very tough way to start!"
     show natsuki 3h with dissolve_chr
     n "Besides, poetry isn't about making things classy, it's about having a clear message! A simple but deep one!"
@@ -1149,9 +1149,9 @@ label poemresponse_2_natsuki_appeal_monika:
     n "Hmph... okay... guess it's worth a shot..."
     return
 
-
-
-
+# ======================================================================================================================================================================================================
+# ======================================================================================================================================================================================================
+# ======================================================================================================================================================================================================
 
 label poemresponse_2_monika:
     if poemsread == 0:
@@ -1179,7 +1179,7 @@ label poemresponse_2_monika:
     m "...but I assure you that they're actually really glad that you're now with us! I saw their smiles yesterday. I know what I'm talking about!"
 
     mc "So you mean to tell me that you expected a person who never wanted to join any clubs..."
-    mc "...to fit right into one just like that? Especially with members like these..."
+    mc"...to fit right into one just like that? Especially with members like these..."
 
     show monika 3d with dissolve_chr
     m "Huh? What do you mean?"
@@ -1264,12 +1264,12 @@ label poemresponse_2_monika:
     scene bg club_day with wipeleft_scene
     $ renpy.call("poemresponse_2_monika_appeal_{appeal}".format(appeal=poemwinner[0]))
 
-
+    # REJOIN:
     "Monika hands me her notebook."
     "As I leaf through the pages, I can see her pristine handwriting..."
     "It makes sense: she never settles for second-best. Whenever she does something, it's always going to be top-class."
 
-    call showpoem (poem_m_1)
+    call showpoem(poem_m_1)  # "Just Another World"
 
     show monika 4a with dissolve
     m "So, [player], I think it's time {i}I{/i} get some feedback from {i}you.{/i}"
@@ -1546,4 +1546,3 @@ label poemresponse_2_monika_appeal_monika:
 
     mc "Well, sure, I mean... it's your turn now, after all..."
     return
-# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
