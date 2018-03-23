@@ -170,7 +170,7 @@ label ch1:
         hide screen tear
 
     "Yep, that's definitely her."
-    "Your one and only..."
+    "The one and only..."
 
     $ s_name = "Sayori"
     show sayori 4j at t11 zorder 2
