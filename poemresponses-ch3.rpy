@@ -339,7 +339,7 @@ label poemresponse_3_sayori_appeal_sayori:
     mc "Besides, just like I said yesterday, I don't have even a slightest clue to what I'm doing and if I even have any style to begin with."
 
     show sayori 1a with dissolve
-    s "Yeah, you might be right. But even if your style changes once you actualy... {i}find{/i} yourself, I'll still be happy."
+    s "Yeah, you might be right. But even if your style changes once you actually... {i}find{/i} yourself, I'll still be happy."
     show sayori 4r with dissolve_chr
     s "Because you're now here and {i}that's{/i} what really matters!"
 
