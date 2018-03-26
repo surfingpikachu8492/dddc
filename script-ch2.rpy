@@ -1124,11 +1124,8 @@ label ch2:
     hide yuri
 
     "..."
-    "Alas, the only answer I get is Yuri's barely audible giggle and the sound of tea cups chinking."
+    "The only answer I get is Yuri's barely audible giggle and the sound of tea cups chinking."
     "..."
-    "Really?"
-    "Like... {i}really?{/i}"
-    "That's what I get?"
     mc "Ughhh..."
     "And here I started warming up to them..."
     "...?"
