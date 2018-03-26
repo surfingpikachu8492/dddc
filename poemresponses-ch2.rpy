@@ -261,7 +261,7 @@ label poemresponse_2_sayori_appeal_yuri:
     "How did you even manage to say the word \"seriousness?\""
     show sayori 3x with dissolve_chr
     s  "But maybe that's not a bad thing! Poems don't always need to have a clear message, right?"
-    s "If you just want to say exactly what you mean, then what's the whole point of writing a poem, right?"
+    s "If you just want to say exactly what you mean, then what's the point of writing a poem, right?"
 
     mc "Yeah, I... you're probably right..."
 
