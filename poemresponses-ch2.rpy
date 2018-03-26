@@ -1094,7 +1094,7 @@ label poemresponse_2_natsuki_appeal_yuri:
     show natsuki 4e with dissolve_chr
     n "Oh, you know... the way people like you overcomplicate stuff, always making it sound so metaphorical and completely confusing the reader!"
 
-    mc "Well, what's the point of making it plain and straightforward? That's hardly  poetic in any way."
+    mc "Well, what's the point of making it plain and straightforward? That's hardly poetic in any way."
     mc "I mean, how would it make it any different from a casual chat?"
 
     show natsuki 4w with dissolve_chr
