@@ -63,7 +63,7 @@ label poemresponse_2_sayori:
     s "I know, right?"
     show sayori 1x with dissolve_chr
     s "You see, when I checked my calendar yesterday, I suddenly realized that winter isn't that far away!"
-    s "And the memories just started washing over me!"
+    s "And those memories just started washing over me!"
     show sayori 1a with dissolve_chr
     s "You remember how we were both learning how to ice-skate?"
     show sayori 4r with dissolve_chr
