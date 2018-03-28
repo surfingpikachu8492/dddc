@@ -115,7 +115,7 @@ label poemresponse_2_sayori:
     mc "But I also know that this isn't the first time you've done something like this."
 
     show sayori 1l with dissolve_chr
-    s "Okay, okay! Just don't tell Monika, alright?"
+    s "Okay, okay! Just don't tell Monika...?"
 
     mc "Oh, I don't know..."
     mc "What would I get out of it?"
