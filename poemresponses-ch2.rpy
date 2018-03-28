@@ -125,7 +125,7 @@ label poemresponse_2_sayori:
     mc "Ehehe... Okay, I'm done teasing, relax."
 
     show sayori 1i with dissolve_chr
-    mc "I have to say, it's actually a very good poem."
+    mc "I have to say, it's a very good poem."
     show sayori 1b with dissolve_chr
     mc "It's nothing fancy, but it feels just like you, basically."
     show sayori 4x with dissolve_chr
