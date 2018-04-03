@@ -27,16 +27,12 @@ label ch1:
     play music morning
 
     "I mumble those words into my pillow, before lifting my head slowly."
-    "My eyelids protest as I try to open them, letting my eyes see the sunlight streaming into my room."
-    "I probably look ridiculous as I grimace from the light."
-    "..."
-    "I bet I look like a cat right now, woken from its nap..."
-    "Because I squint my eyes, yawn eagerly, and I can barely suppress an urge to start hissing spitefully at everyone and everything."
+    "I force my eyes open, but the moment I see the sunlight, I shut them and pull the blanket over my head."
     mc "Uuugh..."
 
     play sound pillow
 
-    "I let my head hit the pillow, pressing it in as deep as possible..."
+    "I let my head hit the pillow, burying it as deep as possible..."
 
     play sound pillow
     mc "Need to..."
@@ -56,46 +52,44 @@ label ch1:
     "Somehow, hitting my head against the pillow helps me to feel at least somewhat awake."
 
     if persistent.playthrough == 0:
-        "...and with it, a strange thought comes to mind..."
+        "...and with that, a strange thought comes to mind..."
         "Did I even stay up late yesterday?"
         "And if I didn't, then I should have at least gotten enough sleep, right?"
-        "Unfortunately, my mind's library appears to still be closed, since I can't even remember the events of last night."
+        "Either way, no matter how hard I try to remember, I have no idea what happened last night."
 
-        "It's either me having some weird amnesia, or just being unnaturally sleepy..."
+        "It's either me having some weird amnesia, or just being unusually sleepy..."
 
-    mc "*yawn*"
+    "I let out a wide yawn."
 
     if persistent.playthrough == 0:
-        "...must have been the latter after all."
+        "...It must have been the latter after all."
 
-    "Finally, after mustering enough strength, I push myself off from the bed, letting my feet find the floor."
+    "After mustering enough strength, I push myself off from the bed, letting my feet find the floor."
 
     if persistent.playthrough == 0:
         "...to sit and stare at the window."
         "..."
-        "For some reason I feel like I've been doing the exact same thing just recently..."
+        "For some reason, I feel like I've been doing these exact same things recently..."
 
     mc "School..."
 
     "While my mind is clearly not in condition to form any coherent thoughts..."
-    "It seems that I'm at least capable of prioritizing my tasks..."
+    "I guess I'm at least capable of setting my priorities straight..."
 
     play sound stand_up
 
-    "I finally let my body stand up, acting purely on instinct, the real \"me\" still laying on the bed, trying to fall back to sleep."
-    "I start with my morning routine..."
+    "I finally stand up and start my morning routine on autopilot."
     "Getting dressed..."
     "Brushing my teeth..."
-    "And while I'm, like, 50\% positive that if I were offered to exchange my soul for at least one extra hour of sleep, I would give an enthusiastic \"yes\"..."
-    "Being tired after midterms isn't really an excuse for skipping classes afterwards."
+    "And while I'd kill for an extra hour of sleep..."
+    "Being tired after midterms isn't really an excuse to skip classes afterwards."
 
     if persistent.playthrough == 0:
         "And besides..."
-        "For some reason, I feel like I..."
-        "{i}Need{/i} to go there..."
+        "For some reason, I feel like I need to go there..."
         "..."
 
-    "I'd better get ready fast since I'm already running late..."
+    "I'd better get ready quickly since I'm already running late."
 
     # Team SilverJack Intro
 
@@ -135,12 +129,10 @@ label ch1:
 
 
     # Monday (new beginnings)
-    "Despite the fact that I'm already walking down the street, I'm fairly certain my consciousness fell asleep somewhere on the sofa back at home..."
-    "And while I'm used to starting my school weeks like this, my tiredness seems to be amplified tenfold this time."
+    "Despite the fact that I'm already walking down the street, I feel like I'm still asleep in bed."
+    "And while I'm used to starting my school weeks like this, my exhaustion seems to be ten times worse today."
 
-    mc "*yawn*"
-
-    "Well, let's just hope that my inner GPS still works and I don't wander into a completely different part of the city."
+    "Let's just hope that my inner GPS still works and I don't wander into a completely different part of the city."
 
     $ s_name = "???"
     s "Hey! [player]!"
@@ -159,8 +151,6 @@ label ch1:
 
     mc "Oh no..."
 
-    "As I rub my eyes, barely stopping myself from letting out yet another yawn, I turn around to meet my annoying pursuer."
-
     if persistent.playthrough == 0:
         $ renpy.say(narrator, "I see an ann8ying girl rrunning toWard me f--rom the dIIStance, wavi-" + base64encode("nope, we are not rehashing the original script") + "{nw}")
         show screen tear(20, 0.1, 0.1, 1, 40)
@@ -169,86 +159,83 @@ label ch1:
         stop sound
         hide screen tear
 
+    "I rub my eyes and turn around to meet my annoying pursuer."
     "Yep, that's definitely her."
     "The one and only..."
 
     $ s_name = "Sayori"
     show sayori 4j at t11 zorder 2
-    s "Hey, what was {i}that{/i} all about?!"
+    s "Hey, [player], what was that about??"
     show sayori 2j with dissolve_chr
-    s "Did you seriously just try to ignore me and walk away?"
-    s "...pretending that you didn't hear me?"
+    s "Did you really just try to ignore me and walk away?"
+    s "...and pretend that you didn't hear me?"
     show sayori 6i with dissolve
-    s "That is {i}super{/i} mean, [player]!"
+    s "That's super mean..."
 
-    "Her accusing gaze and her hands on her hips don't go well with her otherwise cute appearance and extremely (sometimes even ridiculously) cheerful personality."
+    "Her accusing stance doesn't go well with her otherwise cute appearance and ridiculously cheerful personality."
 
-    mc "I'm sorry, Sayori, I ju-{w=0.5}{nw}"
-    mc "*yawn*"
+    mc "I'm sorry, Sayori, I ju--"
+    mc "..."
 
     show sayori 1g with dissolve_chr
-    "As I yawn, Sayori's expression quickly shifts from irritated to concerned."
+    "I'm interrupted by my own unwelcome yawn, and Sayori's expression quickly shifts from irritated to concerned."
 
     show sayori 1h with dissolve_chr
     s "Whoa, did you even sleep last night?"
     show sayori 2j with dissolve_chr
-    s "Please don't tell me you stayed up late again just to watch some anime!"
+    s "Please don't tell me you stayed up late again just to watch anime!"
 
-    "...and then it's back to accusations again."
+    "...and it's back to accusations again."
 
     mc "Wow, look who's talking..."
     show sayori 1h with dissolve_chr
     s "Eh?"
 
-    "Sayori seems taken aback by my sudden retaliation."
+    "Sayori seems taken aback by my sudden response."
 
     mc "Sayori, this is the first time in, like, I don't even remember how long..."
-    mc "But it's been a {i}while{/i} since we last met each other before school. Would you like to know why?"
+    mc "But it's been a while since we last met each other before school. Would you like to know why?"
     show sayori 1l with dissolve_chr
     s "Eheheh... Well..."
-    mc "Because whenever I pass by your house, {i}you're{/i} the one who's still sleeping!"
+    mc "Because whenever I pass by your house, you're the one who's still sleeping!"
     mc "Seriously, I can almost hear you snoring. Right here, from the street!"
     show sayori 4p with dissolve_chr
     s "Awww! Okay! Okay!"
     show sayori 5d with dissolve_chr
     s "You win..."
 
-    "She pouts a little and starts twiddling her forefingers."
+    "She pouts and starts twiddling her forefingers."
     "It's her typical gesture whenever she feels embarrassed or guilty..."
     "...or gets busted."
 
     show sayori 5b zorder 2 with dissolve_chr
     s "I just had a... problem with getting up recently..."
     show sayori 2h with dissolve_chr
-    s "A-And that still doesn't get {i}you{/i} off the hook!"
-    s "Seriously, you should always get enough sleep! You look like you've been hit by a truck!"
+    s "A-And that still doesn't get you off the hook!"
+    s "You look like you've been hit by a truck!"
 
     show sayori 1d at f11
-    "She suddenly comes closer and holds me by my wrist, looking into my eyes like a hurt puppy."
+    "She suddenly moves closer and holds me by my wrist, looking into my eyes like a hurt puppy."
 
     show sayori 1e with dissolve_chr
     s "Please, promise me you won't do it anymore, okay?"
 
-    "I chuckle slightly as I pull back from her and put my hand on my heart."
+    "I chuckle as I pull back from her and put my hand on my heart."
 
-    mc "Of course, my {i}darling{/i}, whatever you say."
+    mc "Of course, my darling, whatever you say."
     show sayori 1l at hf11
     s "H-Hey!"
     show sayori at t11
-    s "D-Don't call me that..."
+    s "Don't call me that..."
 
     show sayori 1y with dissolve
-    "A small blush starts appearing on her face."
     s "You make it sound like we're... a couple or something..."
     "As I turn around and start walking away, I let out another chuckle."
     mc "Pff! Not in a million years..."  # except... you might be a couple by the end of the week...
 
     show sayori 3j at h11
-    s "Hey!!!"
-
-    "She hits my back with the bottom of her fist."
-
-    s "Now what was {i}that{/i} supposed to mean?!"
+    s "Hey!"
+    s "Now what was that supposed to mean?!"
     mc "Heheh... Sorry, I guess I'm just a bit grumpy this morning..."
 
     show sayori 1d with dissolve_chr
@@ -256,7 +243,7 @@ label ch1:
 
     show sayori at thide zorder 1
     hide sayori
-    "We start off a typical, insignificant morning chat, which my mind doesn't even record, keeping up the conversation completely autonomously."
+    "We start off a typical, insignificant morning chat, which keep up completely autonomously."
     "Sayori and I have been good friends since we were kids. And to be honest, I couldn't imagine befriending her now, if I hadn't already known her for so long."
     "I mean, while I'm just your stereotypical, unremarkable high-schooler..."
     "...whose interests are limited mostly, if not exclusively, to only the most refined and sophisticated forms of media..."
