@@ -243,7 +243,7 @@ label ch1:
 
     show sayori at thide zorder 1
     hide sayori
-    "We start off a typical, insignificant morning chat, which keep up completely autonomously."
+    "We start off a typical, insignificant morning chat, which I keep up completely autonomously."
     "Sayori and I have been good friends since we were kids. And to be honest, I couldn't imagine befriending her now, if I hadn't already known her for so long."
     "I mean, while I'm just your stereotypical, unremarkable high-schooler..."
     "...whose interests are limited mostly, if not exclusively, to only the most refined and sophisticated forms of media..."
