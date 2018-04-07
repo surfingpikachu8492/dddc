@@ -251,17 +251,15 @@ label ch1:
     "Sayori, on the other hand is..."
     "Well..."
     "Let's just say that the first thing I would compare her to is the Energizer Bunny, with two huge light bulbs instead of eyes."
-    "Even on the most boring and uneventful day, this little girl can remain cheerful, able to find joy in the smallest of things."
+    "Even on the most boring and uneventful day, this girl can stay cheerful, able to find joy in the smallest of things."
     "It's pretty adorable, maybe even a bit contagious. Not that I mind it..."
     "The point is, with us being almost complete opposites, it's funny that we've managed to preserve our friendship through so many years..."
     "...let alone care for each other's well-being."
-    "I guess there {i}are{/i} some things in this world that you just accept the way the are, without looking for some explanation..."
+    "I guess there are some things that don't have to make sense, after all."
 
 
     # Monday (almost at the school)
     scene bg school_day with wipeleft_scene
-
-    "I barely notice that we've almost reached the school..."
 
     show sayori 2j zorder 2 at f11
     s "Helloooo!"
@@ -278,14 +276,16 @@ label ch1:
     show sayori 1j at t11
     s "Quit spacing out, will you?"
 
-    mc "S-Sorry, guess I am still- {w=0.5}*yawn*"
+    mc "S-Sorry, guess I am still--"
+    "As I yawn again, Sayori looks at me, still concerned."
 
     show sayori 4c with dissolve_chr
-    s "Oh, come on, you sleepyhead! We're almost at the school!"
+    s "Oh, come on, you sleepyhead! We're almost there!"
     show sayori 4r at h11
     s "Cheer up!"
 
     "Sayori runs in front of me, twirling as she goes."
+    "I hadn't even noticed that we were this close to the school already."
 
     show sayori 1x with dissolve_chr
     s "There is a whole new sunny day ahead of you! And you get to hang out with people, maybe meet some new friends..."
@@ -296,16 +296,16 @@ label ch1:
     s "..."
 
     "She slowly falls silent, watching a sour grimace appear on my face."
-    "There is no need for me to even say anything to show how skeptical I am."
+    "Even without me saying anything, she can probably tell how skeptical I am."
     show sayori 6j with dissolve
     s "Jeez, you're getting less and less sociable every year!"
-    s "Please don't tell me that you still spend all of your free time playing games!"
+    s "Don't tell me that you still spend all of your free time playing games!"
     show sayori 6i with dissolve_chr
-    s "How can you even live like this?"
+    s "How do you even live like this?"
 
-    "Sure, go ahead. Wound my pride even more..."
+    "{i}Sure, go ahead. Wound my pride even more...{/i}"
 
-    mc "Sayori, I appreciate your concern, but trust me, I'm fine the way I am."
+    mc "Sayori, I appreciate your concern, but trust me, I'm fine."
     show sayori 4h with dissolve_chr
     s "Come oooon, [player]! You really need to have something else to brighten up your everyday life!"
     s "You know, something to look forward to whenever you go to school!"
@@ -313,7 +313,7 @@ label ch1:
     "Look forward to going to school? Now that's a joke to remember..."
 
     show sayori 1n with dissolve
-    "As I keep myself immersed in my thoughts, Sayori's face suddenly changes as if she's remembered something important."
+    "Sayori's face suddenly looks as if she's remembered something important."
 
     s "..."
 
@@ -337,7 +337,7 @@ label ch1:
     show sayori 1j with dissolve_chr
     s "And I keep doing it until you say something like..."
     show sayori 1o with dissolve_chr
-    s "{i}I'll think about it...{/i}"
+    s "'I'll think about it...'"
     show sayori 1j with dissolve_chr
     s "...and then you do nothing!"
     show sayori 2h with dissolve_chr
@@ -352,13 +352,13 @@ label ch1:
     show sayori 4e with dissolve_chr
     s "Pretty-pretty please??"
 
-    "Nuh-uh. Not this time around."
-    "I put my hand on her head, shielding her eyes, then use my other hand to gently get her out of my way."
+    "{i}Nuh-uh. Not this time around.{/i}"
+    "I put my hand on her head, shielding her eyes, then use my other hand to gently move her out of my way."
 
     show sayori 4m at hf11
     s "H-Huh?!"
 
-    "As I pass her, I can barely hold myself from laughing at her stupefied expression."
+    "As I pass her, I can barely hold myself from laughing at her stunned expression."
 
     show sayori 4p  at t11
     $ renpy.say(s, "YOU'RE SUCH A MEANIE, {name}!".format(name=persistent.playername.upper()))
@@ -366,11 +366,11 @@ label ch1:
     show sayori zorder 1 at thide
     hide sayori
 
-    "I chuckle to myself and wave her goodbye, without even turning back."
-    "I have to admit, I feel kinda bad for alienating her like that, especially since she's just trying to help..."
+    "I chuckle to myself and wave goodbye."
+    "I have to admit, I feel kinda bad for leaving her like that, especially since she's just trying to help..."
     "But I'm really not in the mood right now..."
 
-    mc "*sigh*"
+    mc "Sigh..."
     mc "Sorry, Sayori, but I'm better off this way..."
 
     "I adjust the straps of my backpack and finally enter the building."
@@ -380,23 +380,23 @@ label ch1:
     scene bg class_day with wipeleft_scene
     play music t2  # Ohayou Sayori!
 
-    "I spend most of the school day trying to shake off the remnants of my sleepiness."
+    "I spend most of the school day trying to shake off what remains of my sleepiness."
     "Other than that, it's as ordinary as ever, and it's over before I know it."
     "I wave goodbye to some of my classmates as they leave the classroom."
     "Meanwhile, I'm still sitting at my desk, lazily packing up my things."
-    "No matter what I do, Sayori's upset face still haunts me."
+    "No matter what I do, I can't get the image of Sayori's upset face out of my head."
 
     mc "Ughhh..."
-    mc "Maybe I should consider joining some club, after all..."
+    mc "Maybe I should join a club, after all..."
 
-    "I mean, I understand that it's not obligatory..."
-    "But the main purpose of those clubs (at least in theory) is to help people with the same interests become more social and get involved in something they all enjoy."
-    "Unfortunately, I'm not the type of guy suited for any major commitments..."
+    "I mean, I know it's not required..."
+    "But the main purpose of those clubs is to help people with similar interests become more social and get involved in something they all enjoy."
+    "Unfortunately, I'm not the kind of guy suited for any major commitments..."
     "Besides, based on my interests, where would I even go? The Anime Club?"
 
     mc "Pfff... Yeah, sure..."
 
-    "Even though it sounds like something right up my alley, I don't think it's such a good idea after all..."
+    "Even though it sounds like something right up my alley, an entire club dedicated to it isn't really my thing."
 
     $ s_name = "???"
     s "Huh? [player]?"
@@ -404,7 +404,7 @@ label ch1:
     "...?"
 
     show sayori 1b zorder 2 at t11
-    "My solitude is suddenly interrupted by a familiar, cheerful voice."
+    "My thoughts are suddenly interrupted by a familiar, cheerful voice."
 
     mc "Sayori? What are you doing here?"
 
@@ -412,7 +412,7 @@ label ch1:
     show sayori 1c with dissolve_chr
     s "That's funny, I was going to ask you the same thing..."
 
-    mc "Huh? Why would y-{w=0.5}{nw}"
+    mc "Huh? Why would y--"
     mc "Oh."
 
     show sayori 1b with dissolve_chr
@@ -433,7 +433,7 @@ label ch1:
     mc "Just... n-not now..."
 
     show sayori 4j with dissolve_chr
-    s 4j "Oh, come oooon! That's the exact same excuse you {i}always{/i} give me!"
+    s "Oh, come oooon! That's the exact same excuse you {i}always{/i} give me!"
 
     "{i}Well, it's been working so far...{/i}"
 
