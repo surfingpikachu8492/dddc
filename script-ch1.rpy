@@ -420,7 +420,7 @@ label ch1:
     "Well, apart from Sayori, that is."
 
     mc "Yeah, I just kinda spaced out for a moment."
-    mc "But you still haven't answered my question: Why are {i}you{/i} here?"
+    mc "But you still haven't answered my question: Why are you here, Sayori?"
 
     show sayori 2c with dissolve_chr
     s  "Well, I was planning to catch you coming out of the classroom, but then I saw you just sitting here, so I came in."
@@ -433,7 +433,7 @@ label ch1:
     mc "Just... n-not now..."
 
     show sayori 4j with dissolve_chr
-    s "Oh, come oooon! That's the exact same excuse you {i}always{/i} give me!"
+    s "Oh, come oooon! That's the exact same excuse you always give me!"
 
     "{i}Well, it's been working so far...{/i}"
 
@@ -461,12 +461,12 @@ label ch1:
     s "You wouldn't...{w=0.3} want to make a cute girl upset, right??"
 
     "..."
-    "No..."
-    "NO! You can't be serious!"
-    "You don't get to pull {i}that{/i} trick on me!"
+    "{i}No...{/i}"
+    "{i}No! You can't be serious!{/i}"
+    "{i}You don't get to pull that trick on me!{/i}"
 
     mc "Seriously, Sayori?"
-    mc "You're {i}seriously{/i} trying to get me into {i}your{/i} club by guilt-tripping me?"
+    mc "You're seriously trying to get me into your club by guilt-tripping me?"
 
     show sayori 5b with dissolve_chr
     s "Ehehehe..."
@@ -477,23 +477,23 @@ label ch1:
     "Besides, I'm pretty sure the main reason for her being so enthusiastic about it was just the opportunity to help start a new club."
 
     show sayori 5a with dissolve_chr
-    s "I just thought that it could help you make up your mind..."
-    s "And I've already told everyone that I would bring a new member with me..."
+    s "I just thought it could help you make up your mind..."
+    s "And I already told everyone that I would bring a new member with me..."
 
-    "Huh?"
+    "{i}Huh?{/i}"
 
     show sayori 5b with dissolve_chr
-    s "Natsuki even brought her cupcakes, so the timing was perfect..."
+    s "Plus, Natsuki even brought some homemade cupcakes today, so it's the perfect day for you to stop by..."
 
     "Wait, WHAT?!"
 
-    mc "Sayori, are you being serious right now?!"
+    mc "Sayori, are you serious right now?!"
 
     show sayori at s11
     s "Ehehehe..."
 
-    mc "So after having just {i}one{/i} conversation with me, and without even inviting me to join {i}your{/i} club in particular..."
-    mc "You've already told your clubmates that I'd definitely join?!"
+    mc "So after one conversation with me, just this morning..."
+    mc "You already told your clubmates that I'd definitely join?!"
 
     s "Ehehe..."
     show sayori 5a with dissolve_chr
@@ -524,7 +524,7 @@ label ch1:
     show sayori 3r at t11
     s "Oh, don't worry, it's way easier to get into than you think, trust me!"
     show sayori 1x with dissolve_chr
-    s "What {i}is{/i} important, is that you get to hang out with us!"
+    s "What is important, though, is that you get to meet new people!"
     show sayori 4r with dissolve_chr
     s "We'll make you feel right at home!"
 
@@ -532,7 +532,7 @@ label ch1:
 
     scene black with close_eyes
 
-    "I cover my face with my hands, hoping that this annoying girl will just disappear if I stop looking at her."
+    "I cover my face with my hands, hoping that she'll just disappear if I stop looking at her."
     "..."
 
     scene bg class_day
@@ -541,31 +541,31 @@ label ch1:
 
 
     "Nope, she's still there..."
-    mc "*sigh*"
-    mc "{i}Fine{/i}..."
+    mc "Sigh..."
+    mc "Fine..."
     mc "I'll do it...."
 
     # add screen shake effect
     show sayori 4r at hf11
     s "YAY!"
 
-    "Sayori suddenly hugs me, almost making me fall from my chair."
+    "Sayori suddenly hugs me, making me almost fall from my chair."
 
     show sayori 4s with dissolve_chr
     s "Thank you, thank you, thank you!"
 
     "I want to say that I'm only stopping by and have no intention of actually joining her club..."
-    "But... I just don't have the guts to say that out loud."
+    "But I just don't have the guts to say that out loud."
     "I realize that it's been a while since I last got to hang out with Sayori."
-    "For the past few months, we've almost never even seen each other."
-    "Yet there once was a time when we used to walk to school together every morning."
+    "For the past few months, we've hardly never even seen each other."
+    "But we actually used to walk to school together every morning."
     "Or just wander around, trying to kill time..."
     "Man, we even had sleepovers..."
-    "At her place, mostly, since an airhead like herself would usually keep her house a complete mess and she'd always rely on me for help."
-    "And that's where my caring personality comes in handy..."
-    "Even if it {i}is{/i} buried deep below layers upon layers of cynicism."
+    "At her place, mostly, since her house was usually a complete mess and she'd always ask me for help."
+    "And luckily for her, I've always been there for her."
+    "Even if it sometimes feels like she's doing it on purpose."
     "..."
-    "Well, guess there's no use in denying that I... missed her."
+    "Well, guess there's no use in denying that I missed her."
     "I let out a chuckle and finally hug her back."
 
     mc "Okay, okay..."
@@ -578,24 +578,24 @@ label ch1:
     s "Come on, then! You won't be disappointed, I promise!"
     s "You'll get along with everyone just fine! And you'll like our room, too, and our president..."
 
-    s "And-{w=0.3}{nw}"
+    s "And--"
     show sayori 4n with dissolve_chr
-    s "OOOOOOOH!{w=0.7}{nw}"
+    s "OOOOOOOH!"
     show sayori 4x with dissolve_chr
     s "Did I tell you about the cupcakes?!"
 
-    mc "Ummm, yeah, you mentioned them... Something about the perfect timing..."
+    mc "Um, yeah. You mentioned them..."
 
     show sayori 4r with dissolve_chr
-    s "They are to {i}die{/i} for! Seriously! Natsuki is {i}super{/i} good at baking!"
+    s "They are to die for! Seriously! Natsuki is super good at baking!"
     show sayori 1x with dissolve_chr
-    s "You're lucky that she decided to bring them today!"
+    mc "Alright, alright. Consider me convinced..."
 
     show sayori 1a at d11
     "As I stand up, Sayori grabs my backpack and hands it to me."
 
     show sayori 1r with dissolve_chr
-    s "Come on! I can't wait!"
+    s "Come on, I can't wait!"
 
     show sayori zorder 1 at thide
     hide sayori
@@ -609,11 +609,10 @@ label ch1:
     "As we leave the classroom, one of my classmates, Kenji, notices us."
     show kenji p1 at t11
 
-    k "Oh, hey, [player]! You're still here?"
+    kenji "Oh, hey, [player]! You're still here?"
 
     "To be fair, hanging out with that weirdo isn't exactly my idea of a good time."
-    "Despite being in the same class, we almost never talk. I always found him to be a person...{w=0.5} {i}not of this world{/i}...{w=0.5} I can't put my finger on why..."
-    "It might be his looks... {w=0.5}or his behavior... {w=0.5}or both, I don't know."
+    "From the few times I've talked to him, he seems like he's... not of this world... though I can't figure out why."
 
     mc "Yeah, sort of. I'm just being forced into eternal servitude in some club..."
 
@@ -621,13 +620,13 @@ label ch1:
     show kenji at t22
     s "[player], stop it!"
     show kenji p3 with dissolve_chr
-    k "Ahahah! Really? And what cl-{w=0.7}{nw}"
+    kenji "Ahahah! Really? And what cl--"
     show kenji p2 with dissolve_chr
-    k "Wait a minute..."
+    kenji "Wait a minute..."
 
     "He turns his head to Sayori, obviously remembering her from somewhere."
 
-    k "You're from the Literature Club, aren't you?"
+    kenji "You're from the Literature Club, aren't you?"
     show sayori 1a with dissolve_chr
 
     "Sayori's face lights up as he mentions her club."
@@ -639,36 +638,37 @@ label ch1:
     s "Would you like to join? We are always happy to see new faces!"
 
     show kenji p3 with dissolve_chr
-    k "Nah, I... think I'll pass on that one, thanks."
+    kenji "Nah, I... think I'll pass on that one, thanks."
     show sayori 1k at t21
     s "Awwww..."
     show kenji p4 with dissolve_chr
-    k "Either way, I've gotta go! Rest in peace, [player]!"
+    kenji "Either way, I've gotta go! Rest in peace, [player]!"
     mc "Yeah, sure. When they ask for my epitaph, tell them to write something like... I don't know..."
-    mc "{i}Here lies [player], who sold his soul for a cupcake.{/i}"
+    mc "'Here lies [player], who sold his soul for a cupcake.'"
     show sayori 1j with dissolve_chr
     show kenji at t22
     s "[player]!"
     show sayori
     show kenji p5 with dissolve_chr
-    k "Hah! Will do! See ya later, pal!"
+    kenji "Hah! Will do! See ya later, pal!"
     mc "Later."
 
     show kenji zorder 1 at thide
     hide kenji
     $ renpy.pause(0.5)
     show sayori 1i at t11
-    "Leaving Kenji behind, I dejectedly follow Sayori, still hoping that the ordeal I'm about to go through will be over before it starts to get dangerous."
+    "Leaving Kenji behind, I dejectedly follow Sayori, still hoping that this ordeal will be over quickly."
     show sayori zorder 1 at thide
     hide sayori
-    "{i}Remember: Get in, get the cupcake, and get out before Sayori gets a chance to sink her puppy teeth into you...{i}"
+    "{i}Remember: Get in, get the cupcake, and get out before things get out of hand...{i}"
+    "{i}Who knows how far Sayori will go to make me stay?{/i}"
 
     stop music fadeout 7.0
     scene bg corridor with wipeleft_scene
 
     "I can barely keep up with Sayori, who is clearly far more enthusiastic than I am about this whole situation."
     "I follow her across the school and upstairs, to the section of the school that is generally used for third-year classes and activities."
-    "Eventually, she leads me to a door of yet another completely unremarkable classroom."
+    "Eventually, she leads me to a door of another completely unremarkable classroom."
 
     show sayori 1x at t11
     s "We're here!"
@@ -682,16 +682,16 @@ label ch1:
 
 
     if persistent.playthrough == 0:
-        "As she opens the classroom door, I feel some fleeting and extremely weird feeling."
+        "As she opens the classroom door, I feel some fleeting and extremely strange feeling."
         "A feeling of..."
-        "{i}Déjà vu...{/i}"
+        "...déjà vu."
         "..."
-        "Still oblivious to the reason of {i}why{/i} all of it feels so familiar, I follow Sayori into the clubroom."
+        "Still oblivious to the reason of why all of it feels so familiar, I follow Sayori into the clubroom."
     else:
-        "Sayori opens the classroom door with such enthusiasm as if she's entering a candy store."
+        "Sayori opens the classroom door as much enthusiasm as if she's entering a candy store."
         "She leaves it wide open, so I guess that means I have to follow her."
 
-        mc "*sigh*"
+        mc "Sigh..."
         mc "Well..."
         mc "Cupcakes, here I come..."
 
@@ -710,14 +710,14 @@ label ch1:
 
     $ y_name = "Girl 1"
     show yuri 2t at t11
-    y "Oh... I-It's a pleasure meeting you."
+    y "Oh... It's a pleasure meeting you."
 
     "The first member I see is a tall girl with long purple hair, sitting at a desk near the window."
-    "She appears to have been reading a book, and by looking at her behavior, I can clearly see that she's not entirely comfortable with me being here."
+    "She appears to have been reading a book, and looking at her behavior, I can clearly see that she's not entirely comfortable with me being here."
 
     show yuri 2A at t33
     $ n_name = "Girl 2"
-    n "*pant* *pant*"
+    n "Sigh..."
     n "Seriously, Sayori?"
 
     "That other voice comes from a closet in the far corner of the room."
@@ -725,19 +725,20 @@ label ch1:
     show natsuki 4g at t32
     "She has short pink hair, and her equally short and small figure makes me think she's probably a first year."
     show natsuki 4b with dissolve_chr
-    n "You know, when you said you were going to bring a new member, I certainly didn't expect you to bring your boyfriend!"
+    n "You know, when you said you were going to bring a new member, I really didn't expect you to bring your boyfriend!"
 
     show natsuki at t32
     show sayori 1l at t31
 
     s "H-Hey! I never said he was my boyfriend!"
     show natsuki 5e with dissolve_chr
-    n "Oh, so it's just some random boy, then? Great! Way to ruin the atmosphere, Sayori!"
-    "The atmosphere...?"
+    n "Oh, so it's just some random boy, then? Great..."
+    n "Way to ruin the atmosphere, Sayori."
+    "The... 'atmosphere'?"
     "..."
     "Wait..."
-    "Does that imply that the members of this club..."
-    "Are {i}all{/i} girls?"
+    "Does that mean that the members of this club..."
+    "Are all girls?"
 
     $ m_name = "???"
     m "[player]?"
@@ -747,18 +748,18 @@ label ch1:
     show yuri 2B with dissolve_chr
     mc "...?"
 
-    "Okay, now {i}that's{/i} a voice I didn't expect to hear."
+    "Okay, now that's a voice I didn't expect to hear."
     show sayori zorder 1 at thide
     show natsuki zorder 1 at thide
     show yuri zorder 1 at thide
     hide sayori
     hide natsuki
     hide yuri
-    "But as I turn to the teacher's desk, my assumptions are confirmed."
+    "I turn to the teacher's desk, only to confirm my suspicions."
 
     $ m_name = "Monika"
     show monika 2b at t11
-    m "Oh my gosh, I did not expect it to be you!"
+    m "Oh my gosh, I didn't expect it to be you!"
     show monika 2k with dissolve_chr
     m "What a nice surprise!"
 
@@ -771,7 +772,7 @@ label ch1:
     show monika 2a at t22
 
     s "Whoa, you two know each other?"
-    mc "Yeah, we... were in the same class last year."
+    mc "Not that well, but we were in the same class last year."
     mc "We didn't get to talk much, though..."
     show monika 1n with dissolve_chr
     m "Yeah... that's true..."
@@ -786,11 +787,11 @@ label ch1:
     # A hint to Monika's backstory? Who knows? Surfing Pikachu 8492, the Monika route writer, is being cryptic again!
     # "I'm not sure whether she's an exchange student or maybe some of her parents have foreign backgrounds..."
     # "What I {i}do{/i} remember, however, is that since the day she transferred here, she started climbing the popularity ranks rapidly, gaining favor among both the teachers and the other students."
-    "Ever since the day she transferred here, Monika started climbing the popularity ranks rapidly, gaining favor among both the teachers and the other students."
+    "Ever since she transferred here, Monika has been one of the most popular students in the school, among both the teachers and the other students."
     "Her confidence, charisma and trademark smile quickly earned her certain recognition."
     "Add her intelligence, good looks, and athletic ability into the mix, and you'll get the full picture."
     "..."
-    "...a picture of a girl, who is completely out of my league, hence our scarce communication."
+    "One of a girl who is completely out of my league, which explains us not talking very often."
 
     show monika 4k with dissolve_chr
     m "But I guess that's about to change, now that you're here!"
@@ -803,39 +804,42 @@ label ch1:
 
     show monika zorder 1 at thide
     hide monika
-    show sayori 2q at t31
+    show sayori 2q at t41
 
     s "Buuuuut..."
 
     "Sayori grabs my arm and turns me around to face the two girls I didn't recognize."
 
-    show natsuki 2A at t32
-    show yuri 4C at t33
+    show natsuki 2A at t42
+    show yuri 4C at t43
 
     "...who are already standing right in front of me."
-    "...I also hear Monika behind me, standing up from the teacher's desk."
-
-    mc "*gulp*"
-
-    "I'm standing in the middle of the classroom, surrounded by four..."
+    show monika 1a at t44
+    "Monika soon joins them, coming up from the teacher's desk."
+    
+    "I'm standing in the middle of the classroom, surrounded by..."
     show sayori 1a with dissolve_chr
-    "{i}Incredibly...{/i}"
+    "...four..."
     show natsuki 5i with dissolve_chr
-    "{i}Cute...{/i}"
+    "...incredibly..."
     show yuri 4D with dissolve_chr
-    "{i}Girls!{/i}"
+    "...cute..."
+    show monika 2A with dissolve_chr
+    "...girls!"
 
-    show sayori 1q at f31
-    s "So, everyone, this is my good friend, [player]!"
+    show sayori 1q at f41
+    s "So, again, this is my good friend, [player]!"
     show sayori 2x with dissolve_chr
     s "[player], I would like you to meet our dear Natsuki, always full of energy!"
 
     show sayori zorder 1 at thide
     show yuri zorder 1 at thide
+    show monika zorder 1 at thide
     hide sayori
     hide yuri
+    hide monika
     $ n_name = "Natsuki"
-    show natsuki 5t2 at t32
+    show natsuki 5t2 at t11
     n "Hmph!"
 
     "Ah, so {i}that's{/i} Natsuki, the one who supposedly brought cupcakes today, according to Sayori..."
