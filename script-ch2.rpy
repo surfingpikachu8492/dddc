@@ -782,22 +782,22 @@ label ch2:
     s "Ehhhhh?! What do you mean, 'no meaning'? It's all about your emotions!"
     show sayori 1i with dissolve_chr
     show natsuki 4g with dissolve_chr
-    s "Poems don't always have to be about some... drama or... deep thought-provoking stuff!"
+    s "Poems don't always have to be about some drama or deep thought-provoking stuff!"
     show sayori 4c with dissolve_chr
     show yuri 1A with dissolve_chr
-    s "It could be about something as simple as the little things that make us a bit happier!"
+    s "They could describe the beauty of our everyday lives and those little things that make us a bit happier!"
 
     show sayori at t31
     show natsuki 1r at f32
-    n "But... t-that's just..."
+    n "But... th-that's just..."
 
     show natsuki at t32
     show yuri 2w at f33
-    y "Natsuki, I really think you should be a bit more tolerant to other people's opinions..."
+    y "Natsuki, I really think you should be a bit more tolerant of other people's opinions..."
 
     show natsuki 4e at f32
     show yuri at t33
-    n "Oh, {i}you're{/i} one to talk!"
+    n "Oh, you're one to talk!"
 
     show yuri 3o with dissolve_chr
     y "I-I..."
@@ -823,22 +823,22 @@ label ch2:
 
     "I almost choke on my tea."
 
-    mc "H-Hey! Don't bring me into all this!"
+    mc "H-Hey! Don't bring me into all this! I'm the 'new guy' here, remember?"
 
     show natsuki 4e with dissolve_chr
-    n "Why not? You're one of us now and we're obviously at a stalemate here!"
-    n "So we could use another opinion!"
+    n "So what? You're a member to, and we're obviously at a stalemate here!"
+    n "We need another opinion!"
     show natsuki 3q with dissolve_chr
     n "{i}Even if it's yours...{/i}"
 
     show yuri 3t with dissolve_chr
-    y "N-Natsuki, there's no need, really..."
+    y "Natsuki, there's no need, really..."
 
     show natsuki 3c with dissolve_chr
-    n "Oh, come on! He got a look at all of our writing styles and heard what we've got to say!"
+    n "Oh, come on! Like he said, he's new here."
 
     show natsuki 5g with dissolve_chr
-    n "And while he's definitely not an expert, at least his opinion shouldn't be biased, right?"
+    n "I mean, okay, he's definitely not an expert or anything, but at least he shouldn't be biased, right?"
     show natsuki 5c with dissolve_chr
     n "So what do you say, [player]?"
 
@@ -846,17 +846,17 @@ label ch2:
     show sayori zorder 2 at t42
     show natsuki zorder 2 at t43
     show yuri zorder 2 at t44
-    m "I know what {i}I{/i} would like to say, Natsuki."
+    m "I know what I would like to say, Natsuki."
 
     show sayori 1b with dissolve_chr
     show natsuki 3k with dissolve_chr
     show yuri 3f with dissolve_chr
     $ renpy.pause(1)
     show monika 2r with dissolve_chr
-    m "You see, it's hard for me to tell what I find more concerning:"
+    m "You know, it's hard for me to tell what I find more concerning:"
     m "The three of you arguing over such a trivial thing..."
     show monika 4i with dissolve_chr
-    m "Or the fact that you're acting like that in front of a newcomer!"
+    m "Or the fact that you're acting like this in front of a newcomer!"
 
     show sayori 1k with dissolve_chr
     s "..."
@@ -868,10 +868,10 @@ label ch2:
     n "..."
 
     show monika 2e with dissolve_chr
-    m "Listen, when it comes to any sort of art, there's no such thing as the \"right way.\" There are always multiple options!"
+    m "Listen, when it comes to any sort of art, there's no such thing as the 'right way.' There are always multiple options!"
     show monika 4b with dissolve_chr
-    m "And each of those options has its own advantages {i}and{/i} disadvantages, much like your approaches to poetry!"
-    m "We're all unique in our own little ways, so there's no need to argue about whose style is better."
+    m "And each of those options has its own advantages and disadvantages, much like your approaches to poetry!"
+    m "We're all unique in our own ways, so there's no need to argue about whose style is better."
     show monika 4k with dissolve_chr
     m "After all, I didn't work so hard to get four amazing and talented people into this club just so they could jump at each other's throats over something so trivial!"
     show yuri 3w with dissolve
@@ -893,15 +893,17 @@ label ch2:
     show natsuki zorder 2 at t43
     s "Yeah, sorry about that... I shouldn't have gotten involved at all..."
     show sayori 3l with dissolve_chr
-    s "In fact, I should've prevented it in the first place...{w=0.3} so much for being a good vice president..."
+    s "Actually, I should've stopped it from happening..."
+    s "So much for being a good vice president..."
 
     show monika 2j zorder 3 with dissolve_chr
     show sayori zorder 2 at t42
-    m "Don't worry, we all make mistakes from time to time..."
+    m "Don't worry, we all make mistakes from time to time."
+    m "I should have stepped in earlier, myself. So I also owe you all an apology."
     show sayori 1y with dissolve_chr
     show yuri 2A with dissolve_chr
     show monika 4b with dissolve_chr
-    m "And speaking of vice president...{w=0.3} Sayori, I could use your help."
+    m "But speaking of vice president...{w=0.3} Sayori, I could use your help."
 
     show sayori 1b with dissolve_chr
     s "Huh?"
@@ -921,7 +923,7 @@ label ch2:
     show natsuki at t21
     show yuri at t22
 
-    "I'm still a bit surprised by how quickly Monika managed to resolve the situation."
+    "I'm still surprised by how quickly Monika managed to resolve the situation."
     "Honestly, things probably would've gone much worse if not for her interference."
     show yuri 2v at f22
     y "Natsuki..."
@@ -932,7 +934,7 @@ label ch2:
     show yuri 2w with dissolve_chr
     y "Please forgive me for acting so brash..."
     show yuri 3t with dissolve_chr
-    y "I'm afraid I may have been lost in the heat of the moment..."
+    y "I'm afraid I got lost in the heat of the moment..."
 
     show natsuki 5m with dissolve_chr
     n "..."
@@ -944,7 +946,7 @@ label ch2:
     show yuri 1m with dissolve
     $ renpy.pause(0.5)
     show yuri 1m at t22
-    "Yuri exhales and a calm smile appears on her face."
+    "Yuri exhales and takes a sip of tea."
     show natsuki 5G with dissolve_chr
     "I suppose the crisis is finally over..."
 
@@ -969,19 +971,20 @@ label ch2:
     show monika 1c with dissolve_chr
     m "Hmm? Of course!"
 
-    mc "Did I hear you correctly? Did you say \"{i}four{/i} amazing and talented people,\" just a minute ago?"
+    mc "Did I hear you correctly? Did you say 'four' amazing and talented people?"
 
     show monika 2C with dissolve_chr
     "Monika chuckles, just loud enough for me to hear."
     show monika 2a with dissolve_chr
     m "I did, [player], and I'm glad you noticed it."
 
-    mc "Heh... thanks."
+    mc "Oh, um. Th-thanks..."
+    show monika 2j with dissolve_chr
+    "I look away with a flustered smile written on my face."
 
     "We spend the next few seconds in silence, the overall mood finally becoming more pleasant."
     "I wonder... Do the girls really see me as one of their own already?"
     "Or is Monika just trying her best to accomodate me?"
-    "..."
     "Either way, I'm just glad with how the things are going so far."
     "I mean, I wouldn't say they're going completely smoothly, but so far, it's fine."
 
@@ -1000,38 +1003,49 @@ label ch2:
     m "Thanks."
 
     show monika zorder 1 at thide
+    show natsuki zorder 1 at thide
+    show yuri zorder 1 at thide
+    hide natsuki
     hide monika
+    hide yuri
 
-    show natsuki at t21
-    show yuri at t22
-
-    "We watch as Monika goes back to continue her chat with Sayori."
+    "I watch as Monika goes back to continue her chat with Sayori."
+    
+    show sayori 1a at t11 with dissolve_chr
+    show monika 1a at t22 with dissolve_chr
+    
     "No matter how weird it is, it looks like they've managed to make quite a nice duo."
-    "And I'm actually genuine when I say this. Monika might be an overachiever here, but I know for sure that Sayori is full of surprises as well."
+    "I mean, Monika might be an overachiever here, but I know for sure that Sayori is full of surprises as well."
     "So it's really nice to see them working as a team, even if they're almost complete opposites."
+
+    show sayori zorder 1 at thide
+    show monika zorder 1 at thide
+    hide sayori
+    hide monika
 
     show natsuki 5H with dissolve_chr
     show yuri 1u with dissolve_chr
+    
     "..."
-    "But I guess they're definitely not the only ones here who fall into that category..."
-    "I mean, just look at those two: as different as night and day, and yet both are in the same club."
+    "But I guess they're not the only ones here who fall into that category."
+    "Just look at those two, as different as night and day, and yet both of them are in the same club."
     "Of course, I can't call them close friends or anything, especially after what I've witnessed just a few minutes ago."
-    "But they still manage to get along just fine. And I'm glad that now I, too, got a chance to join all four of them."
-    mc "Heh..."
-    "Guess I owe Sayori some thanks for bringing me here, after all..."
+    "But they still manage to get along most of the time. And I'm glad that I got a chance to join all four of them."
+    "Well..."
+    "Guess I owe Sayori some thanks for bringing me here, after all."
 
     show yuri 1i with dissolve_chr
-    "As we all sit in silence, immersed in our thoughts, Yuri pours what's left of the tea into our cups."
+    "As the three of us sit in silence, immersed in our thoughts, Yuri pours what's left of the tea into our cups."
     mc "Thank you, Yuri."
     show yuri 1m at f22
     y "You're welcome, [player]."
     show yuri 2i with dissolve_chr
-    y "To be fair, I wish we had something that would go well with tea..."
+    y "I do wish we had something that would go well with tea..."
 
     show natsuki 5k with dissolve
     n "Huh?"
 
-    mc "You have a point. Tea alone is good, of course, but having something extra to it..."
+    mc "Yeah, that's a good point. Tea alone is good, of course, but having something extra with it..."
 
     show natsuki 5t at f21
     show yuri at t22
@@ -1041,7 +1055,7 @@ label ch2:
     "Yuri and I both let out a giggle."
 
     show natsuki 5d with dissolve_chr
-    n "Tell you what... How about I bring some homemade cookies for tomorrow? It's been a while since I made some..."
+    n "Tell you what... How about I bring some homemade cookies for tomorrow? It's been a while since I made some."
 
     show natsuki at t21
     show yuri 3c at f22
@@ -1060,9 +1074,9 @@ label ch2:
 
     show natsuki at t21
     show yuri 2i at f22
-    y "I agree. Monika did ask us to call it a day..."
+    y "I agree. Monika did ask us to call it a day."
     show yuri 2b with dissolve_chr
-    y "I suggest we put away the tea set first and then together we-{w=0.5}{nw}"
+    y "I suggest we put away the tea set first and then together we--"
 
     show natsuki 3y at f21
     show yuri at t22
@@ -1070,21 +1084,21 @@ label ch2:
     n "Hold that thought right there, Yuri."
     show yuri 2B with dissolve_chr
     show natsuki 3d with dissolve_chr
-    n "I have nothing against your plan except for the whole \"we\" part."
+    n "I have nothing against your plan except for the whole 'we' part."
 
     show yuri 2e with dissolve_chr
-    y "Ummm... pardon me?"
+    y "Um... pardon me?"
 
     mc "Yeah, I'm not sure I follow, either."
-    mc "Oh wait! Let me guess: You don't want to overwork your poor newcomer, right?"
+    mc "Oh, wait! Let me guess: You don't want to overwork your poor newcomer, right?"
 
     show natsuki 4z with dissolve_chr
-    n "Quite the opposite, actually!"
+    n "It's pretty much the opposite, actually!"
     show yuri 1B with dissolve_chr
     show natsuki 4d with dissolve_chr
-    n "{i}We{/i} as in \"Yuri and I,\" are going to gather all the stuff from our tea party."
+    n "We, as in 'Yuri and I,' are going to gather all the stuff from our tea party."
     show natsuki 4y with dissolve_chr
-    n "While our \"poor newcomer,\" being the only boy here, is going to move all the desks back!"
+    n "While our 'poor newcomer,' being the only boy here, is going to move all the desks back!"
 
     mc "Huh?"
 
@@ -1120,16 +1134,15 @@ label ch2:
     show yuri 1c with dissolve_chr
     y "I'm sorry, [player], but I'm afraid you're in the minority."
 
-    mc "B-But!{w=0.5}{nw}"
+    mc "B-But!"
 
     show yuri at thide
     hide yuri
 
     "..."
-    "The only answer I get is Yuri's barely audible giggle and the sound of tea cups chinking."
-    "..."
-    mc "Ughhh..."
-    "And here I started warming up to them..."
+    "The only response I get is Yuri's barely audible giggle and the sound of tea cups clinking."
+    mc "Sigh..."
+    "And here I had started warming up to them..."
     "...?"
     "I hear a much louder giggle behind me."
 
@@ -1138,7 +1151,7 @@ label ch2:
 
     "..."
     "Of course they heard it all."
-    "Yeah, yeah, laugh all you want. I know you all planned this!"
+    "{i}Yeah, yeah, laugh all you want. I know you all planned this!{/i}"
     "I stick my tongue out at them and turn away."
 
     show sayori at thide
@@ -1146,8 +1159,9 @@ label ch2:
     hide sayori
     hide monika
     "..."
-    "Apparently, that only made them laugh even more..."
-    "After letting out the most frustrated sigh ever recorded in history, I start with my \"heavy\" labor."
+    "Though that only makes them laugh even more..."
+    "After letting out a frustrated sigh, I start moving the desks."
+    "I roll my eyes and mutter quietly to myself."
 
     mc "{i}Girls...{/i}"
 
@@ -1161,18 +1175,18 @@ label ch2:
     show monika 3b at t11
     m "Okay, everyone, it's time to finish our meeting!"
     show monika 4b with dissolve_chr
-    m "I'm very proud of all of you today, all of you! I understand that it wasn't easy, but I had my faith in you and you managed not to disappoint!"
+    m "I'm very proud of all of you today! I understand that it wasn't easy, but I had faith in you and you certainly didn't disappoint!"
     show monika 4k with dissolve_chr
-    m "I also think that we should make it a part of our everyday routine! Seeing how everyone was sharing their work today really filled my heart with joy."
+    m "I also think that we should make it a part of our everyday routine! Seeing everyone share their work today really filled my heart with joy."
     show monika 2a with dissolve_chr
     m "No one is uncomfortable with it, right?"
 
     "I glance around the clubroom. Surprisingly enough, it really seems that everyone is actually okay with that."
 
     show monika 2k with dissolve_chr
-    m "Wonderful! Then the assignment remains the same: write another poem!"
+    m "Wonderful! Then our assignment remains the same: write another poem!"
     show monika 4b with dissolve_chr
-    m "The more practice we all get by writing {i}and{/i} sharing, the more confident each of us will be!"
+    m "The more practice we get by writing and sharing, the more confident each of us will be!"
     show monika 3b with dissolve_chr
     m "Which brings us to Monika's Writing Tip of the Day!"
 
@@ -1180,25 +1194,25 @@ label ch2:
 
     "I snort, barely able to restrain myself from laughing."
 
-    mc "{i}Really{/i}?"
+    mc "Really?"
 
     show monika 5b with dissolve
     m "Hey! Don't ruin the moment!"
 
     "The rest of us share a small giggle."
-    "Which feels only natural. With Monika's constant teasing, don't we all deserve a chance to give her a dose of her own medicine at least once?"
+    "Which feels only natural. With Monika's constant teasing, don't we all deserve a chance to return the favor every once in a while?"
 
     show monika 3r with dissolve
-    m "*sigh*"
+    m "Sigh..."
     show monika 3a with dissolve
     m "Okay, so some of you might find yourselves in a situation where you don't know if you're doing the right thing..."
     show monika 4a with dissolve_chr
-    m 4a "Which means that you're uncertain if you're making the right choices or if your choices even matter."
-    m "But you have to understand that we all make mistakes when we start something new -- it's a natural part of a new experience."
+    m "Which means that you're uncertain if you're making the right choices or if your choices even matter."
+    m "But you have to understand that we all make mistakes when we start something new. It's a natural part of a new experience."
     show monika 4b with dissolve_chr
     m "So there's no need to overthink! Just go with the flow, and once your time comes, you'll have it all figured out!"
     show monika 2a with dissolve_chr
-    m "What you're doing right now is basically just... baby-steps, drafts! And they will hardly have any far-reaching consequences..."
+    m "What you're doing right now is basically just... baby steps, drafts! And they will hardly have any far-reaching consequences..."
     show monika 2k with dissolve_chr
     m "I understand that they might seem like a big deal right now, but, trust me, it's just a matter of time until you laugh about how anxious you were!"
     show monika 2j with dissolve_chr
@@ -1211,7 +1225,8 @@ label ch2:
     show monika at thide
     hide monika
     "We all start packing up."
-    "It was truly a new experience to me. My first day at the club, my first poem ever... It all feels {i}new.{/i}"
+    "It was truly a new experience to me. My first day in the club, my first poem ever..."
+    "It all feels new."
     "And I can't deny that, so far, I'm actually having fun."
     "Natsuki is the first one to leave the clubroom. She waves us goodbye and leaves in a hurry."
     "Yuri follows shortly after."
@@ -1238,18 +1253,17 @@ label ch2:
     scene bg bedroom_evening with dissolve_cg
     "..."
     "I just got back home and it's evening already..."
-    mc "*yawn*"
-    "Oh, no. Don't you dare!"
-    "It's way too early!"
-    "I start rubbing my eyes, trying my best not to look at my...{w=0.7} soft...{w=0.7} comfy...{w=0.7} bed..."
-    "..."
-    "{i}Get yourself together, will you?!{/i}"
+    "Tired from today's events, I start rubbing my eyes, trying my best not to look at my...{w=0.7} soft...{w=0.7} comfy...{w=0.7} bed..."
+    "{i}Oh, no. Don't you dare!{/i}"
+    "{i}It's way too early!{/i}"
     "{i}You've got a poem to write, remember?{/i}"
     mc "Yeah... that's true..."
-    "It wasn't so bad, now that I think of it."
-    "I should definitely give it another try."
-    "After all, I've heard a lot of stuff from the others today and learned so much new..."
-    "So who knows, it might even turn out better than the last one..."
-    "...but I wouldn't hold my breath on it."
+    "Now that I think of it, the whole idea of sharing poems wasn't so bad, after all."
+    "And I suppose the same can be said about my poem."
+    "Or, at least, the others didn't consider it a complete disaster, despite my expectations."
+    "So I should definitely give it another try."
+    "After all, I've heard a lot from the others today and learned so much new stuff."
+    "So who knows? This poem might even turn out better than the last one..."
+    "...but I guess only time will tell."
 return
 # Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
