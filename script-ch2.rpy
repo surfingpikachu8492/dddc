@@ -4,52 +4,50 @@ label ch2:
     scene bg corridor with fade
     play music t2
 
-    "Have you ever noticed how cruel time is?"
-    "Whenever you wish for a boring chore to be over as fast as possible, the time goes slower than Sayori gets dressed in the morning..."
-    "(which is really slow. I would sometimes wait for her outside her door for at least twenty minutes, maybe even half an hour.)"
-    "But when you're asking time to slow down, willing to either enjoy the moment you're having {i}or{/i} to delay something imminent for just a bit longer..."
+    "Time is a really cruel thing..."
+    "Whenever you want a boring chore to be over as fast as possible, time passes slower than Sayori gets dressed in the morning..."
+    "But when you're asking time to slow down, willing to either enjoy the moment you're having or to delay something for just a bit longer..."
     "...it flies like a goddamn rocket."
 
     mc "Ughhh..."
 
     "And here I am, standing in front of the door of the club."
-    "Or, rather, {i}my{/i} club, since now I'm a part of it as well..."
+    "Or, rather, \"my\" club, since now I'm a part of it as well..."
     "I hardly even remember how I spent the first half of the day."
-    "All of my thoughts were focused on the embarrassment I'd have to deal with at the club meeting."
+    "The whole time, I was focused on the embarrassment I'd have to deal with at the club meeting."
     "I reach out to open the door..."
     "..."
     "But I hesitate with my hand on the door handle..."
-    mc "{i}Damn it...{/i}"
-    "Okay, calm down now. Take long, deep breaths..."
-    "Everything is going to be juuuust fine..."
-    "All you have to do is get in there, get those scribbles you call a \"poem\" out of your backpack..."
-    "...and share them with your new clubmates..."
-    "...who are all cute girls..."
-    "..."
-    "{i}Not helping!{/i}"
+    mc "Damn it..."
+    
+    "{i}Okay, calm down now. Take long, deep breaths...{/i}"
+    "{i}Everything is going to be juuuust fine...{/i}"
+    "{i}All you have to do is get in there, get those scribbles you call a \"poem\" out of your backpack...{/i}"
+    "{i}...and share them with your new clubmates...{/i}"
+    "{i}...who are all cute girls...{/i}"
 
     show monika 2k at l41
     m "Gotcha!"
 
     "...!"
-    "She clearly has a habit of sneaking up on people and grabbing them by their shoulders."
+    "Jeez... Does she always have to sneak up on people like that?"
 
     mc "Monika, was that really necessary?! You almost gave me a heart attack!"
 
     show monika 2a at t11
     m "Well, normally I wouldn't do that, but after seeing you standing there daydreaming, I thought I should take the lead."
     show monika 5a with dissolve_chr
-    m "Tell me, you weren't possibly... {i}afraid{/i} of going in there, were you?"
+    m "Tell me, you weren't possibly... afraid of going in there, were you?"
 
-    mc "Wha?? Pfff!! W-What are you even talking about? I was just..."
+    mc "Wha? Pfff! W-What are you even talking about? I was just..."
 
     show monika 2k with dissolve_chr
     m "Ahahaha!"
     show monika 4k with dissolve_chr
-    m "Sorry, but you're not a very good liar, [player]."
+    m "Sorry, [player], but you're not a very good liar."
 
-    mc "*sigh*"
-    mc "Can we please pretend this never happened and just go in there already?"
+    mc "Sigh..."
+    mc "Can we just go in there already and keep this whole thing a secret?"
 
     show monika 1a with dissolve_chr
     m "Of course!"
@@ -60,7 +58,7 @@ label ch2:
     show monika 1j with dissolve_chr
     m "No can do."
     show monika 3j with dissolve_chr
-    m "As a responsible club president I can't possibly risk any members running away on their first day just because they got too embarrassed."
+    m "As a responsible club president, I can't possibly risk any members running away on their first day just because they got too embarrassed."
 
     mc "I assume I'm not the first one, then..."
 
@@ -72,9 +70,9 @@ label ch2:
     show monika 2m with dissolve_chr
     m "Yeah, I guess it wasn't hard to connect the dots..."
     show monika 2j with dissolve_chr
-    m "But it doesn't matter now! If I've managed to get {i}her{/i} into this club, then getting you here should be a piece of cake in comparison!"
+    m "But it doesn't matter now! If I've managed to get her into this club, then getting you in here should be a piece of cake in comparison!"
 
-    "I... don't know whether I should feel insulted or not..."
+    "{i}I don't know whether I should feel insulted or not...{/i}"
     show monika zorder 1 at thide
     hide monika
     stop music fadeout 4.0
@@ -88,7 +86,8 @@ label ch2:
     m "Hello, everyone!"
 
     show sayori 1x at t22
-    s "Oh! Hi there, Mo- {w=0.5}{nw}"
+    s "Oh! Hi there, Monika!"
+    s "Wait..."
     show sayori 1b with dissolve_chr
     s "[player]?"
     show sayori 4r at h22
@@ -152,41 +151,41 @@ label ch2:
     show sayori 1a at t31
     show natsuki 3a at t32
     show yuri 1a at t33
-    mc "Mind if I join you?"
+    mc "I, um... hope no one minds if I join you."
 
     show sayori 4r at f31
-    s "Of course, silly! Do you really think I brought you to this club so that you would spend all of our meetings sitting alone in the corner?"
+    s "Of course not, silly! Do you really think I brought you to this club just so that you could spend all of our meetings sitting alone in the corner?"
     show sayori 1x with dissolve_chr
     s "This is what clubs are for, remember? Of course we would be glad if you joined us!"
 
     show sayori at t31
     show natsuki 3w at f32
-    n "Yeah! Sorry to disappoint you, but this isn't just some cafeteria where you can drop by and grab a cupc- {w=0.7}{nw}"
+    n "Yeah! Sorry to disappoint you, but this isn't just some cafeteria where you can drop by and grab a cupcake!"
+    n "Though, to be honest, I didn't expect you to show up at all..."
 
     show natsuki at t32
     show yuri 2l at f33
-    y "Natsuki..."
+    y "Natsuki, please..."
 
     show natsuki 5s with dissolve_chr
-    n "Hmph!"
+    n "Hmph..."
 
     show sayori 1q with dissolve_chr
     show yuri 2s with dissolve_chr
     y "At any rate, I would like to thank you for keeping your promise, [player]."
     show sayori 1a with dissolve_chr
     show yuri 1u with dissolve_chr
-    y "I know it all can be a bit overwhelming, but... I assure you we'll do our best to make you feel comfortable here..."
+    y "I know it all can be overwhelming, but... I assure you we'll do our best to make you feel comfortable here."
 
-    "Wow, {i}you{/i} of all people, are worried about {i}me{/i} being comfortable? Now that's ironic..."
+    "I can't say I'm not surprised to hear that from Yuri, of all people."
+    "Haven't I been the one making her feel uncomfortable so far?"
 
     show sayori 2x at f31
     show yuri at t33
     s "Don't worry, Yuri! [player] always gives it his best as long as he's having fun."
 
     show sayori 1s with dissolve_chr
-    s "Of course, he might come off as just some weeaboo..."
-
-    "Ahem!"
+    s "Of course, he might seem all grumpy and a bit of a loner at first..."
 
     show sayori 2x with dissolve_chr
     s "But he is really nice and genuine when you get to know him."
@@ -209,10 +208,10 @@ label ch2:
     show sayori 1l at s31
     s "Ehehe~"
     show natsuki 6h with dissolve
-    mc "Or how you almost set your house on fire once? Your first attempt at cooking almost became your last..."
+    mc "Or how you almost set your house on fire when you tried cooking that one time?"
 
     show sayori 5b with dissolve_chr
-    s "Y-Yeah... that did happen..."
+    s "Y-Yeah... That did happen..."
 
     show natsuki 6c with dissolve_chr
     n "Ehehehe..."
@@ -222,10 +221,10 @@ label ch2:
 
     show sayori 1d with dissolve_chr
     show yuri 1u with dissolve_chr
-    y "You two seem to be really good friends..."
+    y "You two seem to be wonderful friends..."
     show natsuki 3a with dissolve
     show yuri 3u with dissolve_chr
-    y "I... m-might be a little jealous..."
+    y "I might be a little jealous..."
 
     show yuri at t33
     show sayori 1x at f31
@@ -234,7 +233,7 @@ label ch2:
     show yuri 3n at s33
     y "O-Oh..."
     show yuri 3o with dissolve_chr
-    y "Ummm..."
+    y "Um..."
     show sayori 4q with dissolve_chr
     s "I'm sure you have something in common!"
     show sayori 1x with dissolve_chr
@@ -244,46 +243,46 @@ label ch2:
     s "And [player] is quite smart too!"
 
     "..."
-    "{i}Did you deliberately leave out the adjective about MY looks?{/i}"
+    "{i}Did you deliberately avoid mentioning my looks?{/i}"
 
     show sayori 3l with dissolve_chr
     s "Okay, he doesn't read as much as you do..."
     show sayori 3x with dissolve_chr
-    s "But he sure is smart and he has some hobbies of his own! He even helped me out with my homework when we were younger."
+    s "But he sure is smart, and he has some hobbies of his own! He even helped me out with my homework when we were younger."
 
-    mc "{i}Sayori...{/i}"
+    mc "Sayori..."
 
     show sayori 1b with dissolve_chr
     s "Hmm?"
 
-    "As usual, Sayori seems completely oblivious to the awkwardness of the situations she sometimes puts me into."
+    "As usual, Sayori is completely oblivious to the awkwardness of the situation."
 
     show sayori at t31
     show natsuki 5y at f32
-    n "Yeah, cut it out, Sayori. You're putting our Miss Shy on the spot here..."
+    n "Yeah, cut it out, Sayori. You're putting Miss Shy on the spot here..."
 
     show yuri 3p at h33
     y "N-Natsuki!"
-    "...and Natsuki isn't much help, either..."
+    "...and Natsuki isn't much help, either."
 
     show natsuki 5y at t32
     show sayori 1r at f31
     show yuri 3o with dissolve_chr
-    s "Oh, and all of that actually goes for you too, Natsuki!"
+    s "Oh, Natsuki! All of that actually goes for you, too!"
 
     show natsuki 3c with dissolve_chr
-    n "W-What do you mean?"
+    n "What do you mean?"
 
     show sayori 1x with dissolve_chr
     s "I think you and [player] also have a lot in common!"
     show sayori at t31
     show natsuki 4p at f32
-    n "W-What?! We're not..."
+    n "W-What? We're not..."
 
     show yuri 2B with dissolve_chr
     show sayori 1b with dissolve_chr
     show natsuki 5w with dissolve_chr
-    n "How could you {i}possibly{/i} think that {i}I{/i} have something in common with {i}him{/i}?!"
+    n "What makes you think we'd have something in common in the first place?"
 
     show sayori 3c at f31
     show natsuki at t32
@@ -295,7 +294,7 @@ label ch2:
     show natsuki 4s with dissolve_chr
     n "..."
     show sayori 1s with dissolve_chr
-    s 1s "...and you both like cupcakes, though I guess that's something we all have in common."
+    s "...and you both like cupcakes, though I guess that goes for all of us."
 
     show yuri 1u with dissolve_chr
 
@@ -304,7 +303,7 @@ label ch2:
     n "Yeah, well... Guess you're right about that..."
 
     show sayori 1a at t31
-    mc "Sayori does have a point, though. I may not have much experience with lit-{w=0.5}... reading {i}books{/i}, but I do read manga."
+    mc "Sayori does have a point, though. I may not have much experience with reading in general, but I do read manga."
 
     show sayori at t31
     show natsuki 5w at f32
@@ -312,7 +311,7 @@ label ch2:
     show natsuki 5s with dissolve_chr
     "..."
     show natsuki 5q with dissolve_chr
-    n "You wouldn't expect me to... just because of {i}that{/i}..."
+    n "You wouldn't expect me to... just because of that..."
 
     mc "Expect you to...?"
     show natsuki 1p with dissolve_chr
@@ -327,7 +326,7 @@ label ch2:
     show natsuki 1q with dissolve_chr
     n "I'll... go and do something..."
     show natsuki 1s with dissolve_chr
-    n "Poke me once Monika is finally done with... whatever it is she's doing..."
+    n "Let me know when Monika's finally done with... whatever it is she's doing..."
 
     show natsuki at lhide
     hide natsuki
@@ -343,8 +342,8 @@ label ch2:
 
     mc "..."
 
-    "An awkward smile starts appearing on my face."
-    "While it's nice to see that Yuri cares about Natsuki, that statement feels a little hypocritical, coming from her."
+    "A smile starts appearing on my face."
+    "While it's nice to see that Yuri cares about Natsuki, her statement feels a little hypocritical."
 
     show monika 2b at t31
     show sayori 1a at t32
@@ -358,9 +357,10 @@ label ch2:
     play sound "sfx/slap.ogg"
     show monika 2a with dissolve_chr
 
-    mc "*facepalm*"
+    mc "..."
     show sayori 1b with dissolve_chr
-    "{i}Thanks,{/i} Sayori..."
+    "I heave a sigh and facepalm."
+    mc "Thanks, Sayori..."
 
     show yuri 1c with dissolve_chr
     show monika 2l at f31
@@ -377,7 +377,7 @@ label ch2:
     s "S-Sorry, Monika, I totally forgot about it..."
 
     show monika 2r with dissolve_chr
-    m "*sigh*"
+    m "Sigh..."
 
     show sayori 4p with dissolve_chr
     s "Sorry-sorry-sorry! I'm on it already!"
@@ -385,10 +385,10 @@ label ch2:
     show monika 3p at t21
     show yuri 1B at t22
     show sayori 4p at t41
-    m "Wait, Sayori! There's no need to-{w=0.5}{nw}"
+    m "Wait, Sayori! There's no need to--"
 
     show sayori 4A with dissolve_chr
-    s "I'll be back in a minute!{w=0.5}{nw}"
+    s "I'll be back in a minute!"
 
     show sayori zorder 1 at lhide
     hide sayori
@@ -400,19 +400,21 @@ label ch2:
     show monika 3n with dissolve_chr
     m "Yeah, sorry for interrupting your chat like that..."
     show monika 1e with dissolve_chr
-    m "I just really need Sayori's help to come up with a plan of what our club's contribution for the upcoming festival will be..."
+    m "I just really need Sayori's help to come up with a plan of what our club's contribution for the upcoming festival will be."
     show monika 2e with dissolve_chr
-    m "You should understand that it is very important for us."
+    m "You should understand that this even is very important for us."
     show monika 4j with dissolve_chr
-    m "Not only are we a club, but we're a {i}Literature{/i} Club, after all!"
+    m "Not only are we a club, but we're the Literature Club, after all!"
 
 
-    "Ah, yes, {i}the{/i} festival..."
+    "{i}Ah, yes, the festival...{/i}"
     show monika 2a with dissolve_chr
     "The annual part of our school's life, and one I'm not particularly fond of..."
     "I mean, while I enjoy having a variety of tasty snacks at the booths that other clubs make, the rest of festival activities hardly interest me."
-    "However, I get what Monika's trying to say. Since it's dedicated to the national Culture Day, the nature of our club obligates us to give it the best we've got."
-    "{i}Ughhh... I still can't believe Sayori managed to drag me into this...{/i}"
+    "However, I get what Monika's trying to say. Since it's dedicated to the national Culture Day, really should give it our all."
+    
+    mc "Sigh..."
+    "{i}I still can't believe Sayori managed to talk me into this...{/i}"
 
     show sayori 4p at l31
     show monika 2d at t32
@@ -422,10 +424,10 @@ label ch2:
     show monika 4d with dissolve_chr
     show yuri 2f with dissolve_chr
     "..."
-    "Does she have some teleportation-like powers or something?!"
+    "Okay, she might not be a time traveler, but apparently she can teleport."
 
     show monika at f32
-    m "Sayori, h-how did you..."
+    m "Sayori, how did you..."
 
     show sayori 2p at f31
     show monika at t32
@@ -447,12 +449,12 @@ label ch2:
     m "I... suppose some things are better left without explanation..."
     mc "When it's about Sayori? Trust me, it's for the best."
     show monika 2l with dissolve_chr
-    m 2l "Hahaha! Yeah, I guess I'll trust your expertise on that matter."
+    m "Hahaha! Yeah, I guess I'll trust your expertise on that matter."
     show monika 1a with dissolve_chr
-    m 1a "Now if you'll excuse us, we need to go discuss something."
+    m "Now if you'll excuse us, we need to go discuss something."
 
     show yuri 1a with dissolve_chr
-    y "And I'll go water flowers in the meantime."
+    y "Of course. Let us know if you need any help."
     show monika 1b with dissolve_chr
     m "Sure! Thanks, Yuri."
 
@@ -463,7 +465,7 @@ label ch2:
     hide monika
     "..."
 
-    mc "Ummm..."
+    mc "Um..."
 
     show monika 3l at t21
     m "Don't worry, [player], it won't take long."
@@ -482,10 +484,9 @@ label ch2:
     m "Okay, everyone!"
     m "I think it's time for us to share our poems!"
 
-    mc "*gulp*"
+    mc "Sigh..."
 
     "Well, here it goes..."
-    "Monika's timing is simply {i}perfect,{/i} since I've spent the last few minutes sitting and reviewing my sorry excuse for a poem."
 
     show monika 5a with dissolve_chr
     m "What's the matter, [player]? You don't seem too excited."
@@ -548,29 +549,30 @@ label ch2:
 
     "Wow, Monika sure is the president here."
     show sayori 4r at t21
-    s "Who's gonna go first?"
+    s "Yeah, who's going first?"
     show monika 2a with dissolve_chr
     m "I don't know. Anyone want to volunteer?"
     show sayori at t31
     show monika at t32
     show yuri 3n at t33
-    y "Um... You d-don't mean we'll have to... p-perform right now, do you?"
+    y "Um... You don't mean we'll have to... perform right now, do you?"
     show monika 3d with dissolve_chr
-    m 3d "W-Well, I... thought it would be obvious..."
+    m "Well, I... thought that would be obvious..."
 
     show yuri 3o with dissolve_chr
-    y "Ummm..."
+    y "Y-Yes, I suppose... but..."
 
     show natsuki 3m zorder 3 at f41
     show sayori 1b zorder 2 at t42
     show monika 2c zorder 2 at t43
     show yuri 3o zorder 2 at t44
-    n "Wait, what? As in \"perform\" perform?"
-    n "I-In front of everybody?"
+    n "Wait a minute..."
+    n "As in 'perform' perform?"
+    n "In front of everybody?"
 
     show sayori 3c zorder 3 at f42
     show natsuki zorder 2 at t41
-    s "Well, yeah. Is there a problem with it?"
+    s "Oh, come on! It'll be fun!"
 
     show natsuki 1u with dissolve_chr
     n "B-But..."
@@ -579,10 +581,10 @@ label ch2:
 
     show sayori 1b at t42
     show monika 4l zorder 3 at f43
-    m "Okay, okay, no need to worry about it!"
+    m "Okay, okay. There's no need to worry about it!"
     show yuri 3E with dissolve_chr
     show monika 4n with dissolve_chr
-    m "I'll admit it, it's my mistake. And since it's our first time, I didn't think this through."
+    m "It's my mistake. Since it's our first time, I didn't fully think this through."
     show natsuki 1n with dissolve_chr
     show monika 4b with dissolve_chr
     m "As an alternative, I suggest we do it like this:"
@@ -613,7 +615,7 @@ label ch2:
     $ renpy.pause(0.5)
     "I wait for the girls to go and get their poems."
     "..."
-    "Well, I guess there's no turning back now..."
+    "{i}Well, no turning back now...{/i}"
 
     call poemresponse_start
 
@@ -638,57 +640,57 @@ label ch2:
     "Oh, well, I guess tea will have to do..."
 
     show natsuki 2r at f32
-    n "{i}Jeez, what's with this language...?!{/i}"
+    n "Jeez, what's with this language...?"
     "Natsuki furrows her eyebrows in frustration."
 
     show natsuki at t32
     show yuri 2e at f33
     y "Huh?"
     show yuri 2f with dissolve_chr
-    y "Umm... Did you say something?"
+    y "Um... Did you say something?"
 
     show natsuki 2s with dissolve_chr
     n "N-Nothing!"
 
+    "It looks like Natsuki's a bit irritated by Yuri's poem for some reason."
     show yuri 2B with dissolve_chr
     y "..."
 
     show yuri 2A at t33
-    "Yuri gets back to reading Natsuki's poem..."
-    "It's obvious that she had some higher expectations..."
+    "Yuri obviously had some higher expectations as well..."
     show natsuki 5C with dissolve_chr
-    "And I guess that Natsuki's also irritated for a reason."
 
     show natsuki 5w at f32
-    n "Well, I guess you could say it's...{w=0.3} {i}fancy.{/i}"
-    "Natsuki dismissively hands Yuri her notebook."
+    n "Well, I guess you could say it's...{w=0.3} 'fancy.'"
+    "Natsuki dismissively returns Yuri's notebook."
 
     show natsuki at t32
     show yuri 2i at f33
-    y "Ah... T-Thanks..."
+    y "Ah... Th-Thanks..."
     show yuri 2j with dissolve_chr
     y "Yours is...{w=0.1} cute..."
 
     show sayori 1n at h31
     show natsuki 1p at f32
     show yuri 2B at t33
-    n "C-Cute?!"
+    n "W-What?!"
 
     show sayori 1b with dissolve_chr
     show natsuki 4e with dissolve_chr
-    n "D-Did you completely miss the symbolism or something?!"
+    n "You think it's 'cute'?!"
+    n "Did you completely miss the symbolism or something?!"
     show yuri 2t with dissolve_chr
-    n "I was writing about people not caring about you and taking all that you do for granted!"
+    n "It's obviousy about people not caring about you and taking everything you do for granted!"
     show natsuki 4w with dissolve_chr
-    n "It's basically a cry from the heart and all you can say is that it's \"cute\"?!"
+    n "It's a cry from the heart and all you can say is that it's 'cute'?!"
 
     show yuri 3o at s33
-    y "I-I... I know that..."
+    y "I know that..."
     y "It's just..."
     y "Your style... and the language you used..."
 
     show natsuki 5e with dissolve_chr
-    n "What about it?"
+    n "What about them?"
 
     show natsuki at t32
     show yuri 2g at f33
@@ -696,21 +698,21 @@ label ch2:
     show yuri 2h with dissolve_chr
     y "It's... a bit simplistic..."
     show yuri 1t with dissolve_chr
-    y "But I do have a couple of suggestions, i-if you would like to hear them..."
+    y "But I do have a couple of suggestions, if you would like to hear them..."
 
     show natsuki 5w at f32
     show yuri at t33
     n "Thanks, but no thanks!"
     show natsuki 5e with dissolve_chr
-    n "If I was looking for suggestions, I would have asked someone who actually liked it."
+    n "If I actually needed suggestions for my poem, then people wouldn't have liked it in the first place!"
     show natsuki 5D with dissolve_chr
-    n "Which people {i}did{/i}, by the way!"
+    n "Which they did, by the way!"
     n "Sayori liked it."
     show natsuki 5e with dissolve_chr
     n "And even [player] liked it, too!"
     show natsuki 5w with dissolve_chr
     n "So based on that, I'd say I can easily give you some suggestions of my own!"
-    n "First of all-{w=0.5}{nw}"
+    n "First of all--"
 
     show natsuki at t32
     show yuri 2k at f33
@@ -718,7 +720,7 @@ label ch2:
     show natsuki 5h with dissolve_chr
     y "I appreciate the offer, but I've spent a long time establishing my writing style."
     show yuri 2h with dissolve_chr
-    y "And I don't expect it to change anytime soon, unless, of course, I come across something {i}particularly{/i} inspiring..."
+    y "And I don't expect it to change anytime soon, unless, of course, I come across something particularly inspiring..."
     show yuri 1l with dissolve_chr
     y "...which I haven't yet."
 
@@ -730,28 +732,28 @@ label ch2:
     y "He even told me he was impressed by it."
 
     show sayori 3g with dissolve_chr
-    s "Girls, please..."
+    s "Come on, you guys. There's no need to argue..."
 
     show natsuki 4x at f32
     show yuri at t33
     n "Grrr!"
-    n "That's not the point here!"
+    n "That's not the point!"
     show sayori 1g with dissolve_chr
     show natsuki 4e with dissolve_chr
-    n "Yuri, can you please explain why most people think that poetry has to be so complicated?"
+    n "Yuri, can you please explain why everyone thinks poetry has to be so complicated?"
     show yuri 1A with dissolve_chr
     n "The point isn't to make the reader fall asleep, trying to understand what you had to say!"
     show natsuki 5e with dissolve_chr
-    n "Poetry is a way of expressing yourself, you know? To {i}let{/i} people know what you're thinking, not make them guess!"
+    n "Poetry is a way of expressing yourself, you know? To let people know what you're thinking, not make them guess!"
 
     show natsuki at t32
     show yuri 3w at f33
-    y "That {i}is{/i} true, but..."
+    y "That is true, but..."
     show yuri 3v with dissolve_chr
     y "There's a reason we have so many deep and expressive words in our language!"
     y "They are what allow us convey complex feelings and meanings most effectively."
     show yuri 1t with dissolve_chr
-    y "Avoiding them is not only unnecessarily limiting yourself... it's also a waste!"
+    y "Avoiding them is not only limiting yourself unnecessarily, it's also a waste!"
 
     show sayori 2c at f31
     show yuri at t33
@@ -759,17 +761,17 @@ label ch2:
 
     show natsuki 3c with dissolve_chr
     show yuri 1f with dissolve_chr
-    "Whoa, and Sayori, too?"
-    "{i}Where's my goddamn popcorn?!{/i}"
+    "{i}Whoa, Sayori too?{/i}"
+    "Now this is really starting to get out of hand..."
 
-    s "Poetry has to come from one's heart! It should come out easily. You shouldn't have to force it!"
+    s "Poetry has to come from the heart! You shouldn't have to force it!"
 
     show sayori at t31
     show natsuki 4w at f32
     n "Oh, don't you even start, Sayori!"
     show sayori 1b with dissolve_chr
     show natsuki 4b with dissolve_chr
-    n "Just because it's easier for you that way doesn't mean it's the way to go!"
+    n "Just because it's easier for you that way doesn't mean that's the best way to go!"
     show yuri 1B with dissolve_chr
     show natsuki 4e with dissolve_chr
     n "It's like I told you when we were sharing our poems: You can't just make it all carefree and... casual, with no meaning to it!"
@@ -777,10 +779,10 @@ label ch2:
 
     show sayori 3j at f31
     show natsuki at t32
-    s "Ehhhhh?! What do you mean \"no meaning?\" It's all about emotions behind it!"
+    s "Ehhhhh?! What do you mean, 'no meaning'? It's all about your emotions!"
     show sayori 1i with dissolve_chr
     show natsuki 4g with dissolve_chr
-    s "And poems don't always have to be about some... drama or... deep thought-provoking stuff!"
+    s "Poems don't always have to be about some... drama or... deep thought-provoking stuff!"
     show sayori 4c with dissolve_chr
     show yuri 1A with dissolve_chr
     s "It could be about something as simple as the little things that make us a bit happier!"
