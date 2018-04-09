@@ -443,7 +443,7 @@ label ch1:
     s "I've just got a brilliant idea!"
 
     "I highly doubt it's even close to being brilliant..."
-    "But I guess I have no choice but to hear her out."
+    "...but I guess I have no choice but to hear her out."
 
     mc "I'm all ears..."
 
@@ -690,7 +690,6 @@ label ch1:
     else:
         "Sayori opens the classroom door as much enthusiasm as if she's entering a candy store."
         "She leaves it wide open, so I guess that means I have to follow her."
-
         mc "Sigh..."
         mc "Well..."
         mc "Cupcakes, here I come..."
