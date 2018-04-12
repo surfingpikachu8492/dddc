@@ -711,92 +711,104 @@ label poemresponse_2_yuri_appeal_monika:
 
 label poemresponse_2_natsuki:
     if poemsread == 0:
-        "While the whole idea of poem-sharing obviously belongs to Monika..."
-        "...I was the one who gave her the idea, and {i}I,{/i} in turn, should thank Natsuki for that."
-        "So I guess it would be wise to start with her. I told her that I'd like to see her poems, after all."
-        "Besides, I'm actually curious what sort of poems a girl like her would write..."
+        "While the whole idea of sharing our poems obviously belongs to Monika..."
+        "...I was the one who gave her the idea, and I, in turn, have Natsuki to thank for that."
+        "So I guess it would be smart to start with her. I did tell her that I'd like to see her poems, after all."
+        "Besides, I'm pretty curious what sort of poems a girl like her would write..."
 
     show natsuki 3c at t11
     mc "Hey, Natsuki."
     show natsuki 4w with dissolve_chr
-    n "Let me guess, you're here to see my poem?"
-    mc "Bravo, Mr. Holmes! I never doubted your deductive skills!"
-
-    show natsuki 5w with dissolve_chr
-    n "Okay, listen here, funny guy, I don't know wha-{w=0.7}{nw}"
+    n "..."
+    n "You're here to share your poem with me, I guess..."
+    mc "Well, yeah. Anything wrong with that?"
+    n "N-No..."
+    mc "..."
+    "I can tell she's not exactly thrilled about this."
+    
     mc "Natsuki..."
 
     show natsuki 5h with dissolve_chr
+    mc "I know you don't particularly like me, but..."
     n "Huh?"
-    mc "I know that you don't particularly like me..."
 
     show natsuki 1p with dissolve_chr
-    n "W-Whaa?!"
-    n "Why would you expect me to {i}like{/i} you at all in the first place?!"
-    mc "I meant \"don't particularly like me being around here\", Natsuki..."
+    n "W-What? 'Like' you?!"
+    n "Why would you expect me to like you in the first place?!"
+    mc "Yeah, that didn't come out as planned..."
+    mc "I meant to say, ' you don't particularly like me being around here,' Natsuki..."
 
     show natsuki 5q with dissolve_chr
-    n "Ah? O-Oh... hmph..."
+    n "Oh... Hmph..."
     show natsuki 5w with dissolve_chr
-    n "Well it still doesn't change much!"
+    n "Well, it still doesn't change much!"
 
     "Oh boy..."
-
-    n "How can you expect me to feel good about it when Sayori just brought you here all of a sudden and not a minute later, you are already a new member!"
+    n "Of course I'm not okay with it! I'm not used to it!"
+    n "How can you expect me to feel good about it when Sayori just brought you here all of a sudden and not a minute later, you're already a new member!"
+    mc "Natsuki..."
+    n "It was just the four of us for quite a while, and I didn't expect anyone new barging in like this, let alone a boy!"
     show natsuki 5e with dissolve_chr
-    n "And here you are! Roaming around {i}our{/i} club, eating {i}my{/i} cupcakes and..."
-    mc "Ughhhh...{w=0.3}{nw}"
+    n "And here you are! Roaming around our club, eating my cupcakes and..."
+    mc "Ughhhh..."
 
     # add screen shake effect
     play sound "sfx/table_hit.ogg"
     show natsuki 1p at h11
-    "*SLAM!*"
-
+    "..."
+    "I let my head hit the desk. Not one of my brightest ideas, to be fair..."
     show natsuki 4I with dissolve_chr
     n "Hey, what do you think you're doing?!"
 
-    "Desperate to get through that wall of stubbornness, I let my head hit the desk... Not one of my best ideas, to be fair, but I'm just helpless at this point."
+    "...but I need to get her attention somehow."
 
-    mc "{i}Natsuki, we're not making any progress...{/i}"
+    mc "Natsuki, we're not making any progress..."
 
     show natsuki 4w with dissolve_chr
-    n "Well, hitting your dumb head against school furniture won't help, either!"
+    n "Well, hitting your head against school furniture won't help, either!"
     show natsuki 3y with dissolve_chr
-    n "Besides, if you want to hit your head so badly, you should get some {i}professional{/i} help!"
+    n "Besides, if you want to do it so badly, you should get some professional help!"
     show natsuki 3z with dissolve_chr
     n "I'd be more than happy to give you a hand! Who knows? It might even make you smarter!"
     "I raise my head, rubbing my forehead and chuckling."
-    mc "Whatever it takes, Natsuki, whatever it takes..."
+    mc "Whatever it takes, Natsuki. Whatever it takes..."
 
     show natsuki 3t with dissolve_chr
-    n "Hahaha..."
-    n "Haaah... okay, you do have a point, though. We should really get this over with..."
+    n "Hehehe~"
+    n "Okay, you do have a point, though. We really should get this over with..."
     mc "As long as it doesn't involve any more physical harm to me, I'm all for it."
 
     show natsuki 1l with dissolve_chr
-    n "Well, that depends on you!"
-    mc "Let me guess. Still uncomfortable about sharing poems?"
+    n "Hey! It was your idea, not mine!"
+    mc "Sigh..."
+    mc "Let me guess. Still don't feel like sharing?"
+    n "And you do?"
 
-    show natsuki 5q with dissolve
-    n "Well, not exactly... I mean, I'm not Yuri, after all..."
-    mc "Yeah, that you are. Still, I think I owe you an apology."
+    mc "Not really, to be honest."
+    mc "On one heand, it's my first time, so I don't have to worry about ruining my image or anything..."
+    mc "But on the other..."
+    mc "...yeah, I still feel you."
+    mc "So don't worry. You're not in this alone."
+    n "I-I'm not worried! I'm just... not used to it, that's all."
+    mc "Figures..."
+    mc "Either way, I think I owe you an apology."
 
     show natsuki 5k with dissolve_chr
     n "An apology? For what?"
-    mc "Well... if I wasn't so curious about your poem, Monika wouldn't have come up with all this..."
+    mc "Well, if I wasn't so curious about your poem yesterday, Monika wouldn't have come up with all this."
 
     show natsuki 5m with dissolve_chr
-    n "Yeah... I guess you're right about that."
+    n "Hmm..."
+    n "Yeah, you're totally right on that one."
     show natsuki 5y with dissolve_chr
-    n "Thanks for pointing that out, actually! Now I know who to bla-{w=0.7}{nw}"
+    n "Thanks for pointing that out, actually! Now I at least know who to blame!"
 
     mc "Natsuki..."
-    mc "Don't you even start..."
 
     show natsuki 6c with dissolve
-    n "Hehehe... okay, okay, I'm done."
+    n "Hehehe... Okay, okay..."
     show natsuki 7a with dissolve
-    n "I think you've met your quota for today."
+    n "I'll let you off the hook for now."
     mc "Just let me know when when you're done with this hazing, will you?"
 
     show natsuki 4y with dissolve_chr
@@ -818,8 +830,8 @@ label poemresponse_2_natsuki:
 
     # REJOIN:
     "Natsuki hands me a sheet of paper with her poem."
-    "It's... written in pink ink..."
-    "Seriously, how can she expect someone {i}not{/i} to consider her cute when she acts like this even with the smallest things?"
+    "It's... written in pink ink."
+    "Seriously, how can she expect people to not consider her cute when she acts this way for even with the smallest things?"
 
     call showpoem(poem_n_1)  # "Not Your Cupcakes!"
 
@@ -832,52 +844,51 @@ label poemresponse_2_natsuki:
     mc "Eh? I haven't even said anything yet..."
 
     show natsuki 4w with dissolve_chr
-    n "There's no need to! I can already see it!"
+    n "There's no need to! I can already tell!"
 
-    mc "Sheesh... You sure enjoy jumping to conclusions, don't you?"
+    mc "You sure do like jumping to conclusions, don't you?"
 
     show natsuki 4e with dissolve_chr
-    n "That's only because I'm usually right!"
+    n "Well... That's because I'm usually right, you know?"
 
-    mc "Well, not this time around..."
+    mc "Well, not this time..."
 
     show natsuki 5e with dissolve_chr
-    n "Really now? So you mean to tell me you actually like it?"
+    n "Really now? So you mean you actually like it?"
 
-    mc "Yes, and I'm pretty sure I get what you were talking about just a minute ago..."
-    mc "Brief format, with little show-off and a clear message. Simple and efficient."
+    mc "Yeah, and now I think I get what you were saying just a minute ago..."
+    mc "It's brief, but it still carries a strong message without getting too cluttered."
 
     show natsuki 2h with dissolve_chr
-    n "W-Well... yeah... roughly speaking..."
+    n "Well, yeah... More or less..."
 
-    mc "So... let me take a wild guess, did you use me as an inspiration for your poem?"
+    mc "So... Let me take a wild guess: Did you use me as an inspiration for your poem?"
     show natsuki 1o with dissolve_chr
-    n "...?!"
+    n "Excuse me?!"
 
-    "{i}Fire in the hole!{/i}"
+    "Here we go again..."
 
-    show natsuki 1v at h11
-    n "WWWWHAT?!?!?!"
+    show natsuki 1e with dissolve_chr
+    n "What exactly are you trying to say?!"
 
-    mc "I {i}meant{/i} that {i}I{/i} am that hypothetical person who takes your cupcakes without paying you any mind, correct?"
+    mc "It just sounds like you might have based this poem off of me coming in here and taking your cupcakes without a second thought."
 
     show natsuki 1o with dissolve_chr
     n "..."
     show natsuki 1r with dissolve_chr
     n "..."
     show natsuki 1o with dissolve_chr
-    n "W-Well... y-yeah! So?!"
-
-    mc "So I guess you really don't like being taken for granted, same goes for people not taking you seriously."
+    n "W-Well... Yeah! So?!"
+    n "Maybe I just don't like being taken for granted!"
 
     show natsuki 1h with dissolve
-    n "Y-Yeah... kinda..."
-
-    mc "And the cupcakes represent what you are and what you want to share with other people, all of it made presentable just to get people's attention..."
+    mc "Seems like most people don't take you seriously, do they?"
+    n "Um... Maybe..."
+    mc "An the cupcakes represent how you wish people would notice you for more than just your appearance?"
 
     show natsuki 1m with dissolve
-    n "Ummm... uh-huh..."
-    mc "...but most of those people won't even try to look behind that cover? Won't even try to get the meaning to all this? To see the heart and soul put into it?"
+    n "Um... uh-huh..."
+    mc "...but most of them won't even try to look past that cover? Won't even try to see your personality through that shell of yours?"
 
     show natsuki 1k with dissolve_chr
     n "..."
@@ -886,21 +897,21 @@ label poemresponse_2_natsuki:
     show natsuki 1s with dissolve_chr
     n "..."
 
-    mc "Umm, hello? Earth to Natsuki!"
+    mc "Umm, hello? Earth to Natsuki?"
 
     show natsuki 2x with dissolve
     n "Grrr! W-Well, yeah! That's... pretty much what I meant..."
     show natsuki 2s with dissolve
-    n "Still surprised you actually understood at least something..."
+    n "Still surprised you actually understood anything..."
 
     mc "I did, and I'm sorry you see me that way."
 
     show natsuki 1m with dissolve_chr
     n "...?"
 
-    mc "I understand that I just popped up here, seemingly out of nowhere, and that I'm kinda making you uncomfortable..."
-    mc "But I didn't come here to make enemies, and I think you and I... kinda got off on the wrong foot."
-    mc "I know there's no reason for you to trust me at this point, but I assure you I'll try my best not to be a jerk..."
+    mc "I get that I just showed up here, seemingly out of nowhere, and that I'm making you uncomfortable..."
+    mc "But I think we got off on the wrong foot."
+    mc "I know there's no reason for you to trust me yet, but I promise I'll try my best not to be a jerk..."
 
     show natsuki 1o with dissolve_chr
     n "...!"
@@ -909,16 +920,16 @@ label poemresponse_2_natsuki:
     show natsuki 5u with dissolve
     n "..."
 
-    "Ughhh... another side note to myself: Approaching Natsuki kindly when she's pissed (actually, is there a time when she's not pissed?) seems to cause her to malfunction..."
+    "Hmm, I guess Natsuki just isn't used to being treated kindly. Especially when she's acting so irritated herself."
 
-    mc "You're going to be okay here?"
+    mc "You going to be okay there?"
 
     n "J-Just... go already..."
 
     show natsuki zorder 1 at thide
     hide natsuki
 
-    "I shrug and stand up. Guess it's really best to leave her alone for the time being."
+    "I heave a sigh and stand up, feeling a bit upset. Guess it really is best to leave her alone for the time being."
 
     return
 
@@ -928,7 +939,7 @@ label poemresponse_2_natsuki_appeal_sayori:
     show natsuki 3d with dissolve_chr
     n "Well, that's pretty much what I expected from you."
 
-    mc "I don't think there's any hidden compliment there, right?"
+    mc "I oubt there's any hidden compliment there, huh?"
 
     show natsuki 4y with dissolve_chr
     n "Pfff! You wish!"
@@ -937,34 +948,35 @@ label poemresponse_2_natsuki_appeal_sayori:
     mc "Okay, then. So what exactly did you expect from me?"
 
     show natsuki 5y with dissolve_chr
-    n "Well, for starters, it's pretty bland! It hardly has any message in it."
+    n "Well, for starters, it's pretty bland. I expected you to have at least some message in it."
+    n "I mean, that's what poetry's all about!"
 
-    mc "Yep, sounds just like me."
+    mc "Yep, 'bland' sounds just like me."
 
     show natsuki 5t with dissolve_chr
-    n "But on the other hand, at least you're not over your head."
+    n "But on the other hand, at least you're not in over your head."
     show natsuki 5q with dissolve_chr
-    n "You didn't try to go all {i}sophisticated{/i} and stuff... like some people..."
+    n "You didn't try to go all 'sophisticated,' like some people..."
 
     mc "Hmm? What do you mean?"
 
     show natsuki 4w with dissolve_chr
     n "Never mind!"
     show natsuki 4h with dissolve_chr
-    n "The point is, until you get some skill, don't even bother trying to write some {i}real{/i} poetry!"
+    n "The point is, until you get some skill, don't even bother trying to write some real poetry!"
 
-    mc "Oh? I guess {i}you{/i} can show me how it's done, huh?"
+    mc "Oh? I guess you can show me how it's done, then?"
 
     show natsuki 1e with dissolve_chr
-    n "Wha?? Well y-yes I can! Are you doubting my writing skills?!"
+    n "Wha? Well, yes I can! Are you doubting my writing skills?!"
 
-    mc "No, but I think that for someone who got as red as a tomato the last time-{w=0.7}{nw}"
+    mc "No, but I think that for someone who turned as red as a tomato the last time--"
 
     show natsuki 4w with dissolve_chr
     n "Stop quoting Monika, will you? At least have the decency of coming up with something on your own!"
 
-    mc "*sigh*"
-    mc "Can I just see your poem already?"
+    mc "Sigh..."
+    mc "Can I just read your poem already?"
 
     show natsuki 5s with dissolve_chr
     n "Hmph!"
@@ -976,23 +988,23 @@ label poemresponse_2_natsuki_appeal_natsuki:
     n "D-Did..."
     n "Did somebody tell you..."
 
-    mc "Um... did somebody tell me what?"
+    mc "Um... Did somebody tell me what?"
 
     show natsuki 1r with dissolve_chr
-    n 1r "D-Doesn't matter!"
+    n "I-It doesn't matter!"
     show natsuki 4w with dissolve_chr
-    n "And now that I think of it, did you even write it yourself?!"
+    n "And now that I think of it, did you even write this yourself?!"
 
-    mc "Whoa, now that's a pretty harsh accusation, even for you."
-    mc "Care to explain what made you so mad?"
+    mc "Whoa. Now where's this coming from?"
+    mc "What about it made you so mad?"
 
     show natsuki 1p with dissolve_chr
-    n "I-I'm not mad! What makes you say-{w=0.5}{nw}"
+    n "I-I'm not mad! What makes you say--"
 
-    mc "Natsuki, you're really confusing me right now. I didn't expect my poem to make you act like this."
+    mc "Natsuki, I'm completely confused at this point. Could you, please, explain what made you react like this?"
 
     show natsuki 2s with dissolve_chr
-    n "*sigh*"
+    n "Sigh..."
     show natsuki 2q with dissolve_chr
     n "Well, it's just... weird..."
     n "I didn't expect you to write anything like this..."
@@ -1000,7 +1012,7 @@ label poemresponse_2_natsuki_appeal_natsuki:
     mc "So... does that mean you actually like it?"
 
     show natsuki 5w with dissolve_chr
-    n 5w "Don't get full of yourself! It's obviously still lacking!"
+    n "Don't get full of yourself! It's obviously still lacking!"
 
     show natsuki 5s with dissolve_chr
     "Natsuki starts looking through my poem once again."
@@ -1010,126 +1022,121 @@ label poemresponse_2_natsuki_appeal_natsuki:
 
     show natsuki 5r with dissolve_chr
     "She's starting to get more irritated, as if she's forcing herself to find imperfections in my poem..."
-    "...which really shouldn't be hard to do, to be fair."
+    "...which shouldn't be hard very to do."
 
     show natsuki 2w with dissolve_chr
-    n "Well, as I said, it's still far from perfect!"
+    n "Well, like I said, it's still nowhere near perfect!"
     show natsuki 2e with dissolve
-    n "And I'm still not sure if you wrote it like this on purpose or just by accident!"
-    mc "If it makes things easier, I suggest we stick to the latter."
-    mc "It actually sounds more plausible. I hardly know what I'm doing at this point..."
+    n "And I still can't tell if you wrote it like this on purpose or just by accident!"
+    mc "If it makes things easier, it's likely the second one."
+    mc "I hardly know what I'm doing at this point, after all."
 
     show natsuki 2b with dissolve_chr
     n "Then I suggest you figure it out. The sooner, the better!"
-    n "You need to learn how to make a poem brief but also carry a strong message! Short and sweet, you know?"
+    n "You need to learn how to make a poem short but also have a strong message! Short, sweet, and to the point!"
 
-    "I start snickering."
+    "I laugh to myself."
 
-    mc "{i}Short{/i} and {i}sweet{/i}, huh?"
+    mc "'Short' and 'sweet,' huh?"
 
     show natsuki 4w with dissolve_chr
-    n "Dont even start, you wannabe-comedian!"
+    n "Don't even start, you wannabe-comedian!"
 
-    "I raise my hands in defeat and show that I zip my mouth."
+    "I raise my hands in defeat."
 
     show natsuki 3w with dissolve_chr
     n "Anyway, as I was saying..."
 
     show natsuki 3c with dissolve_chr
-    n "Writing poetry isn't just some game! You need to have a clear picture in front of you and a clear, trademark style to your work!"
+    n "Writing poetry isn't just some game! You need to have clear plan in mind! There's no point in just writing some random stuff!"
 
-    mc "I'm pretty sure it's way too early for that."
-    mc "But, tell you what? Why don't you show me your poem now? You're obviously the one here who has things figured out."
+    mc "I'll try to keep it in mind."
+    mc "Tell you what, how about you show me your poem now? You're obviously the one here who has things figured out."
 
     show natsuki 3q with dissolve_chr
-    n "Well... yeah... I guess you could say that..."
+    n "Well, yeah. Obviously!"
     return
 
 label poemresponse_2_natsuki_appeal_yuri:
     show natsuki 5g at t11
     n "..."
     show natsuki 5w with dissolve_chr
-    n "Ughhh... jeez, you too?"
+    n "Jeez... You too...?"
 
-    mc "Ummm, what?"
+    mc "What?"
 
     show natsuki 5q with dissolve_chr
-    n "Why does everyone think that poetry always have to be so complicated?!"
+    n "Why does everyone think poetry always has to be so complicated?!"
 
-    mc "Um... Natsuki?"
+    mc "Huh?"
 
     show natsuki 5r with dissolve_chr
-    n "Seriously, it's like no one even understands what it's about! They're all just going for those fancy words, as if it makes the poem good by default!"
+    n "Seriously, it's like no one even understands what it's about! You all just go for those fancy words, as if it's all you need for a good poem!"
 
-    mc "Natsuki!"
-
-    show natsuki 1o with dissolve_chr
-    n "What?!"
-
-    mc "You kinda lost me there a few seconds ago. Don't mean to interrupt your rant, but I could use some {i}actual{/i} feedback, you know?"
+    mc "Natsuki, hold up. What's going on?"
 
     show natsuki 3w with dissolve_chr
-    n "Ughhh... fine!"
-    n "Well, first of all... you don't even have the skill to write things {i}that{/i} way!"
+    n "Sigh..."
+    n "Well, first of all... you don't even have the skill to write things this way..."
 
-    mc "{i}Which{/i} way, Natsuki?"
+    mc "Which way, Natsuki?"
 
     show natsuki 4e with dissolve_chr
-    n "Oh, you know... the way people like you overcomplicate stuff, always making it sound so metaphorical and completely confusing the reader!"
+    n "The way you all overcomplicate stuff, always making it sound so metaphorical. You're just confusing the reader!"
 
-    mc "Well, what's the point of making it plain and straightforward? That's hardly poetic in any way."
-    mc "I mean, how would it make it any different from a casual chat?"
+    mc "Well, poetry shouldn't just be completely plain, should it? Otherwise, wouldn't you be just as well off in a normal conversation?"
 
     show natsuki 4w with dissolve_chr
-    n "And {i}there{/i} is that point of view I've been talking about!"
+    n "Oh, come on, [player]!"
     show natsuki 4e with dissolve_chr
-    n "Don't you understand, [player]? It's not about putting up this... \"front...\" It's about the message you're trying to deliver!"
+    n "Don't you understand? It's not about making it look or sound pretty... It's about the message you're trying to deliver!"
     show natsuki 4b with dissolve_chr
-    n "You need to make your point clear and strong, not force the reader to guess what you even had in your mind while writing all this!"
+    n "You need to make your point clear and strong, not force the reader to guess what you had in your mind!"
     show natsuki 3q with dissolve_chr
-    n "And you need more than just some fancy words to nail that..."
+    n "And you need more than just some fancy words for that..."
 
-    mc "I... think I get what you mean..."
+    mc "Hmmm, I... think I get what you mean..."
 
     show natsuki 5C with dissolve_chr
-    n "You'd better... or else you won't appreciate my poems..."
+    n "You'd better... or else you'll never understand my poems..."
 
     "She mumbles that last part so I can barely hear what she says."
 
     mc "Well, we'll never know unless I try, right?"
 
     show natsuki 5w with dissolve_chr
-    n "Yeah, yeah, here you go..."
+    n "Yeah, I guess. Here you go..."
     return
 
 label poemresponse_2_natsuki_appeal_monika:
     show natsuki 3h at t11
     n "..."
-    n "Ughhh... why do you all make things so difficult?"
-    mc "Um... going to need some context."
+    n "Sigh..."
+    mc "Um... Is something wrong?"
 
     show natsuki 5h with dissolve_chr
-    n "It's just the way you're... overcomplicating things, making it so abstract, so... weird and confusing..."
+    n "It's just the way you're... overcomplicating things and making it so abstract..."
+    n "It makes it more confusing than it needs to be..."
     show natsuki 5s with dissolve_chr
-    n "You're not going completely overboard... {i}thankfully{/i}..."
+    n "You're not going completely overboard, thankfully..."
     show natsuki 5h with dissolve_chr
-    n "But I still think it's a very weird starting point! I mean, you {i}are{/i} a complete newbie when it comes to poetry, right?"
+    n "But I still think it's a weird starting point! I mean, you are a complete newbie when it comes to poetry, right?"
 
-    mc "You're sitting in the presence of the walking definition of \"newbie\", Natsuki..."
-    mc "As for my poem... well... I honestly don't even know how it turned out the way it did. I was just writing... {i}something...{/i}"
+    mc "You're sitting in the presence of the walking definition of 'newbie,' Natsuki..."
+    mc "As for my poem... I honestly don't even know how it turned out the way it did. I was just writing, well, something..."
 
     show natsuki 3g with dissolve_chr
-    n  "Well, just so you know, it's very rough around the edges! And that's not surprising, given your skill level..."
-    n "That's why I'm telling you that this is a very tough way to start!"
+    n  "Well, just so you know, it's very rough around the edges! And that's not surprising, given your skill level."
+    n "That's why I'm saying that this is a very tough way to start!"
     show natsuki 3h with dissolve_chr
-    n "Besides, poetry isn't about making things classy, it's about having a clear message! A simple but deep one!"
-    n "People don't read poems to fall asleep trying to figure out what the writer had in mind!"
+    n "Besides, poetry isn't about making things fancy, it's about having a clear message. A simple but deep one!"
+    n "People don't read poems just to get a headache trying to figure out what the writer had in mind!"
 
     mc "Okay, okay, I understand. Keep it simple, fewer words, but more meaning to them. Got it."
-    mc "Could you show me your poem now? I'm pretty sure I'll understand you better with a clear example in front of me."
+    mc "Could you show me your poem now? I'll probably understand you better with a clear example in front of me."
 
     show natsuki 3s with dissolve_chr
-    n "Hmph... okay... guess it's worth a shot..."
+    n "Hmph... Okay, I guess it's worth a shot..."
     return
 
 # ======================================================================================================================================================================================================
@@ -1139,60 +1146,58 @@ label poemresponse_2_natsuki_appeal_monika:
 label poemresponse_2_monika:
     if poemsread == 0:
         "I think I'm going to start with Monika..."
-        "First of all, she was the one who came up with this idea, and she looked somewhat eager to seeing my poem in particular."
-        "Second, she's the president here. I would even call her some sort of a mentor figure for others."
-        "So I hope she won't judge me too hard, especially since it's my first time..."
+        "After all, she was the one who came up with this idea, and she did say yesterday that she was eager to see my poem in particular."
+        "Besides, she's the president here. I would even call her a sort of mentor figure for the others."
+        "So I hope she won't judge me too harshly, especially since it's my first time..."
 
     show monika 2j at t11
     m "So, [player], ready to share your poem with me?"
 
-    mc "Do I at least get a last wish?"
+    mc "Um... Sure, I guess?"
 
     show monika 2r with dissolve_chr
-    m "*sigh*"
+    m "Sigh..."
     show monika 4i with dissolve_chr
-    m "[player], you should really ease up a little..."
+    m "[player], you really should ease up a little..."
     show monika 4e with dissolve_chr
     m "I mean, you're in the club already. The toughest part is over!"
     show monika 2e with dissolve_chr
-    m "Seriously, I didn't expect you to have any problems with fitting in. Everyone seems to like you!"
+    m "Seriously, I never expected you to have any problems fitting in. I mean, everyone seems to like you already!"
     show monika 4n with dissolve_chr
-    m "Well, okay, Yuri and Natsuki might not look like they're... exactly happy to see you..."
+    m "Well, okay, Yuri and Natsuki might not look like they're exactly happy to see you..."
     show monika 4k with dissolve_chr
-    m "...but I assure you that they're actually really glad that you're now with us! I saw their smiles yesterday. I know what I'm talking about!"
+    m "But I assure you that they're actually glad that you joined the club! Trust me. I saw their smiles yesterday."
 
-    mc "So you mean to tell me that you expected a person who never wanted to join any clubs..."
-    mc"...to fit right into one just like that? Especially with members like these..."
+    mc "Wait, you really expected a person who never wanted to join any clubs to fit right in just like that?"
+    mc "Especially with members like these..."
 
     show monika 3d with dissolve_chr
     m "Huh? What do you mean?"
 
     mc "...!"
 
-    "Damn it, I {i}really{/i} shouldn't have said that..."
+    "{i}Damn it, I really shouldn't have said that...{/i}"
 
-    mc "W-What are you talking about, Monika?"
+    mc "W-Well, I..."
 
     show monika 2a with dissolve_chr
     m "Wait a minute..."
     show monika 5a with dissolve
     m "[player]..."
 
-    "Please... don't..."
+    "{i}Please don't...{/i}"
 
-    m "That last line of yours..."
+    m "What you just said..."
 
-    "Don't make me go through this!"
+    "{i}Don't make me go through this!{/i}"
 
-    m "You do understand that there are two ways to interpret it?"
-    m "With the first one implying that you don't like it here, because of us..."
+    m "You know that there are two ways to interpret it?"
+    m "That could either imply that you don't like it here, because of us..."
     show monika 5b with dissolve_chr
-    m "Which, in turn, implies that you don't like {i}us...{/i}"
-
-    "Mercy!"
+    m "Which, in turn, implies that you don't like us..."
 
     show monika 5a with dissolve_chr
-    m "While the second..."
+    m "Or..."
 
     mc "Monika, please!"
 
@@ -1200,109 +1205,111 @@ label poemresponse_2_monika:
     m "Uh-uh-uh! Now you're in for it, [player]. I won't leave you alone until you spit it all out!"
 
     mc "Ughhh..."
-    mc "{i}Damn my blabbering mouth...{/i}"
+    "{i}Curse my blabbering mouth...{/i}"
 
     show monika 2j with dissolve_chr
     m "Say it."
 
-    mc "Monika... please..."
+    mc "Monika, please..."
 
     show monika 4j with dissolve_chr
     m "Not until you say it!"
 
-    mc "*sigh*"
-    mc "Alright, fine... it's hard for me to fit in right from the start because... this club is full of... girls..."
+    mc "Sigh..."
+    mc "Alright, fine. it's hard for me to fit in right from the start because... this club is full of... girls..."
 
     show monika 2A with dissolve_chr
     m "...?"
 
     mc "..."
-    mc "...{i}very cute and interesting girls...{/i}"
+    mc "...very cute and interesting girls..."
 
     show monika 2j with dissolve_chr
     m "That's better!"
     show monika 5a with dissolve
     m "See, it wasn't so hard, right?"
 
-    "I glance around the clubroom. It seems that the others neither saw nor heard what Monika just made me go through, thankfully..."
+    "I glance around the clubroom. It seems that the others thankfully didn't hear Monika just made me go through."
 
     mc "Can we... just get back to the poem sharing now?"
 
     show monika 4j with dissolve
     m "And now you're also eager to share!"
     show monika 2b with dissolve_chr
-    m "Now you see that I never do anything without a reason, and encouraging the members of my club to be more open is one of my direct responsibilities..."
+    m "Now you see that I never do anything without a reason, and encouraging the members of my club to be more open is one of my direct responsibilities."
     show monika 2k with dissolve_chr
-    m "Even if it involves putting them on the spot for a second..."
+    m "Even if it does involve putting them on the spot for a second..."
 
-    "I just hope that you're not going to make me your test subject of sorts..."
+    "{i}I just hope that you're not going to make me your test subject of sorts...{/i}"
 
     show monika 3a with dissolve
     m "Okay. Now, let's get back to the topic at hand."
 
-    mc "Yeah... my thoughts exactly..."
+    mc "Yeah... That's a great idea..."
 
-    "I give Monika my poem, still avoiding eye contact."
+    "I give Monika my poem, avoiding eye contact."
 
     scene bg club_day with wipeleft_scene
     $ renpy.call("poemresponse_2_monika_appeal_{appeal}".format(appeal=poemwinner[0]))
 
     # REJOIN:
     "Monika hands me her notebook."
-    "As I leaf through the pages, I can see her pristine handwriting..."
-    "It makes sense: she never settles for second-best. Whenever she does something, it's always going to be top-class."
+    "Looking at her poem, I can see her pristine handwriting..."
+    "It makes sense: She never settles for second-best. Whenever she does something, it's always going to be top-notch."
 
-    call showpoem(poem_m_1)  # "Just Another World"
+    if persistent.playthrough == 0:
+        call showpoem(poem_m_1a)  # "Just Another World"
 
-    show monika 4a with dissolve
-    m "So, [player], I think it's time {i}I{/i} get some feedback from {i}you.{/i}"
+        show monika 4a with dissolve
+        m "So, [player], I think it's time I get some feedback from you."
 
-    mc "Well... I'm no expert, obviously, but I can definitely tell you have skill."
+        mc "Well, I'm no expert, obviously, but I can definitely tell that you have skill."
 
-    show monika 2a with dissolve_chr
-    m "Can you be a bit more... specific?"
+        show monika 2a with dissolve_chr
+        m "Can you be a bit more... specific?"
 
-    mc "It really is a beautiful poem -- the style, the meaning, the mood... all of it is so fine-tuned..."
-    mc "Mind if I ask you what you had in mind while writing it?"
+        mc "It really is a beautiful poem -- the style, the meaning, the mood... all of it is very fine-tuned..."
+        mc "But I'm not sure I really understand what it's about."
 
-    show monika 3p with dissolve_chr
-    m "It's hard to tell, to be honest... you see, I had a weird dream yesterday..."
-    show monika 3D with dissolve_chr
-    m "Or wait... was it the day before yesterday?"
-    show monika 1r with dissolve_chr
-    m "N-Never mind..."
-    show monika 3m with dissolve_chr
-    m "I can hardly remember what it was about, but it left me wondering..."
-    show monika 3e with dissolve_chr
-    m "...thinking about our lives and the question \"Are we even in control?\""
-    m "Is everything really up to us, as most people say? Or have our fates been predetermined from the very beginning?"
+        show monika 3p with dissolve_chr
+        m "Well, you see, I had a weird dream a few days ago..."
 
-    mc "I get what you're saying. Sometimes I also feel like I'm just some puppet in some stupid play..."
+        show monika 3m with dissolve_chr
+        m "I can hardly remember what it was about, but it left me wondering..."
+        show monika 3e with dissolve_chr
+        m "It made me think about our lives and wonder, 'Are we even in control?'"
+        m "Is anything really up to us, as people seem to think? Or were our fates predetermined from the very beginning?"
 
-    show monika 2d with dissolve_chr
-    m "You do? Hmmm... interesting..."
-    mc "And now that you've mentioned it, I also had a weird dream recently... but I'm pretty sure it was just me being extremely tired from midterms..."
+        mc "I get what you're saying. Sometimes I also feel like I don't have any real control over what happens."
 
-    show monika 2k with dissolve_chr
-    m "Ahaha! Yeah, yeah, you're definitely right. That does sound plausible. Pretty sure I can relate to that as well."
-    mc "Yeah... okay. I guess that's it, right?"
+        show monika 2d with dissolve_chr
+        m "You do? Hmm... Interesting..."
+        mc "And now that you've mentioned it, I also had a weird dream the other day, but I'm pretty sure it was just me being extremely tired from midterms."
+        mc "Stress and exhaustion do cause weird dreams at times, right?"
+
+        show monika 2k with dissolve_chr
+        m "Ahaha! Yeah, you might be right. Pretty sure I can relate to that as well."
+        mc "Yeah... Okay. I guess that's it, right?"
+    else:
+        call showpoem(poem_m_1b) # This is a Place of Happiness
+        # rest of call, still waiting to be approved
 
     show monika 2j with dissolve_chr
-    m "Yep! Thank you very much for sharing with me, [player]. I really hope you enjoy spending your time here!"
-    mc "You really seem worried about this, don't you?"
+    m "Yep! Thank you very much for sharing with me. I really hope you enjoy your time here!"
+    mc "You really seem worried about me, don't you?"
 
     show monika 2e with dissolve_chr
-    m "But of course I am, [player]! Sayori might have brought you here, but it was I who put the question point-blank and asked you to join us..."
+    m "Of course I am! Sayori might have brought you here, but I was the one who put the question point-blank and asked you to join us."
     show monika 4b with dissolve_chr
     m "Besides, it's my responsibility as president to make sure everyone feels comfortable around here!"
 
-    mc "I appreciate that, Monika. And please don't worry. It might seem like I'm having a hard time, but it's actually been a lot of fun so far..."
+    mc "I appreciate that, Monika. Don't worry, it's actually been a lot of fun so far."
 
     show monika 2j with dissolve_chr
-    m "It's a relief to hear that. Honestly, I'm {i}very{/i} glad."
+    m "It's a relief to hear that. Honestly, I'm glad."
     show monika 1b with dissolve_chr
-    m "Okay, now I'm afraid I have some work to do, but I'll chat with you later!"
-    mc "Sure."
+    m "Anyway, we should move on now. I'll chat with you later, okay?"
+    mc "Okay."
 
     show monika zorder 1 at thide
     hide monika
@@ -1320,38 +1327,33 @@ label poemresponse_2_monika_appeal_sayori:
     show monika 4j with dissolve_chr
     m "I'm saying that it's very close to what I expected from you, [player]."
 
-    mc "Still not an exactly detailed answer..."
+    mc "Realy? And what exactly did you expect?"
 
     show monika 3a with dissolve_chr
-    m "Well, I might be mistaken, of course. It's only your first attempt, after all. You could've written it that way completely unintentionally..."
+    m "Well, I might be mistaken, of course. It's only your first attempt, after all. You could've written it this way completely unintentionally..."
 
-    mc "Whoa, I was supposed to have some intentions? To be fair, I was just kinda... writing whatever popped up in my mind and that's all..."
+    mc "To be fair, I was just quite honest, I was just writing whatever popped up in my mind. That's all..."
 
     show monika 1j with dissolve_chr
-    m "Once again, just the way I expected..."
+    m "Once again, just the way I expected."
     show monika 1a with dissolve_chr
-    m "Okay, let me give you some actual feedback. It's a {i}start,{/i} and it's quite a simple one..."
-    m "...you decided to play it safe, to utilize something which is at least slightly familiar, without any bold experiments."
+    m "Okay, let me give you some actual feedback. It's a start, and it's quite a simple one..."
+    m "...It looks like you decided to play it safe, to use a method that's at least slightly familiar, without any bold experiments."
     show monika 3j with dissolve_chr
-    m "Don't get me wrong. It's not bad. Nobody said that poetry should always have a deep, thought-provoking message or a beautiful, extravagant style..."
+    m "Don't get me wrong. It's not bad. Not all poetry needs to have a deep, thought-provoking message or a beautiful, extravagant style..."
     show monika 3a with dissolve_chr
-    m "Sometimes, it's the simple things that can end up being the most heartwarming {i}or{/i} heartbreaking..."
-    m "And making the reader feel the emotions you had while writing this? It's a huge challenge, actually..."
+    m "Sometimes, it's the simple things that can end up being the most heartwarming. Or heartbreaking, for that matter."
+    m "And making the reader feel the emotions you had while writing this? It's a huge challenge."
 
     mc "..."
     mc "You know, I feel like you're my psychiatrist right now, and you're explaining the problems I didn't even know I had..."
 
-    show monika 2k with dissolve_chr
-    m "Ahaha! Well, then I hope you have your insurance because my services aren't cheap, you know?"
-
-    mc "Ahaha... yeah, I got it covered, no worries..."
-
     show monika 2j with dissolve_chr
-    m "Yeah..."
+    m "Ahaha! Yeah, sorry about that..."
     show monika 2a with dissolve_chr
-    m "Okay, we're getting a little distracted here. You've shown me your poem, now it's my turn."
+    m "Anyway, we're getting a little distracted here. You've shown me your poem, so now it's my turn."
 
-    mc "Go ahead, then. I'm pretty sure that unlike me, you have nothing to embarrassed about..."
+    mc "Go ahead, then. I doubt you'll have to be as embarrassed as I was."
     return
 
 label poemresponse_2_monika_appeal_yuri:
@@ -1361,57 +1363,28 @@ label poemresponse_2_monika_appeal_yuri:
     m "A bold choice, [player]..."
     m "Definitely not something I'd expect from someone's first attempt..."
 
-    mc "Context, Monika? My telepathic abilities are still lacking."
-
-    show monika 4k with dissolve_chr
-    m "Ahaha, you're so funny, [player]!"
-
-    mc "Ummm... well..."
-
-    show monika 2e with dissolve_chr
-    m "Sorry, I was just being sarcastic..."
-
-    mc "H-Hey! Come on, my sense of humour can't be {i}that{/i} bad!"
-
-    show monika 2j with dissolve_chr
-    m "I'm {i}still{/i} being sarcastic, [player]."
-
-    mc "..."
-    mc "Monika, please, quit it... I feel like a child right now..."
-
-    show monika 4a with dissolve_chr
-    m "I'm sorry, but sometimes I just can't help myself."
-    show monika 4j with dissolve_chr
-    m "When it's you, in particular. Your reactions are way too funny to miss out on!"
-
-    mc "Ughhh... can we go back to the whole poem feedback thing?"
-
-    show monika 2c with dissolve_chr
-    m "Right..."
+    mc "Is that a good thing or a bad thing?"
     show monika 3d with dissolve_chr
-    m "Well, first of all, as I was saying, you've made quite a bold choice, [player]..."
-    m "I understand that you most likely took inspiration from the works of some well-known authors, but trying to write something while keeping this style..."
+    m "Well, it's a bit of both. First of all, you've made quite a bold choice, [player]."
+    m "I understand that you may have taken inspiration from the works of some well-known authors, but trying to write something while keeping this style..."
     show monika 4d with dissolve_chr
-    m "...it can be very challenging for a rookie!"
+    m "...can be very challenging for a rookie!"
 
-    mc "Still not sure I follow..."
+    mc "I'm not sure I follow..."
 
     show monika 4e with dissolve_chr
-    m "You see, using metaphors and complex figures of speech takes skill and right now, you're setting yourself a very high standard even if you're certainly not ready to meet it yet."
-    show monika 2e with dissolve_chr
-    m "Are you sure you don't want to start with something more... simple?"
+    m "Using metaphors and complex figures of speech takes skill and right now, you're setting yourself a very high standard that you may or not be able to meet yet."
 
-    mc "Honestly, Monika, I don't have a slightest clue to what I'm even doing..."
+    mc "Honestly, Monika, at this point, I don't have a slightest clue what I'm even doing."
 
     show monika 3j with dissolve_chr
-    m "I'm sure you'll figure it out soon enough! And please don't let my words get to you. I never meant to discourage you!"
+    m "I'm sure you'll figure it out soon enough! And, please, don't let my words get to you. I never meant to discourage you!"
     show monika 3b with dissolve_chr
-    m "We all have our ways, and in case you feel this is the one you should take, go for it! I'm just warning you that it won't be an easy one..."
-
-    mc "Thanks, I'll try my best to make more... conscious choices from now on."
+    m "We all have our own paths to take, and in case you feel this is the one you for you, then go for it! I just want you to know that it won't be an easy one..."
+    mc "You're probably right. Maybe I'll try this again. Who knows?"
 
     show monika 2j with dissolve_chr
-    m "That's good with me! Okay, now I think it's my turn to share!"
+    m "That's fine by me! Okay, now I think it's my turn to share!"
 
     mc "You're the boss..."
     return
@@ -1420,48 +1393,49 @@ label poemresponse_2_monika_appeal_natsuki:
     show monika 2j at t11
     m "..."
     show monika 2k with dissolve_chr
-    m "Awww... now this just adorable!"
+    m "Awww... Now this just adorable!"
 
-    mc "Ahem! Not... quite used to hearing that word when it's about me, you know?"
+    mc "Ahem! I'm not exactly used to hearing that word when it's about me, you know?"
 
     show monika 3a with dissolve_chr
     m "Well, I was talking about your poem, rather than you..."
     show monika 5a with dissolve_chr
     m "But you know, now that I think about it..."
-    m "I guess that word {i}can{/i} be used to describe you as well, to a certain degree!"
+    m "I guess it could be used to describe you as well, to a certain degree!"
 
-    mc "Monika, enough is enough..."
+    mc "Um... Thanks, I suppose..."
 
     show monika 2l with dissolve_chr
-    m "Ahahah! S-Sorry, it just never gets old, does it?"
+    m "Ahahah! Sorry, teasing you just never gets old, does it?"
 
-    "I roll my eyes, not wanting to continue that discussion."
+    "I roll my eyes."
 
     show monika 3a with dissolve_chr
-    m "Okay, now let's get back to business..."
-    m "The path you chose might seem easy at first, but trust me, it's actually far more complicated than you think."
+    m "Okay, now let's get back to business."
+    m "The path you chose might seem easy at first, but trust me, it's actually far more challenging than you think."
     show monika 3b with dissolve_chr
-    m "Focusing all of your efforts on delivering the message and emotions you have while writing this is challenging on it's own..."
-    m "...but if you also sacrifice the style and overall length of the poem... you might leave yourself vulnerable."
+    m "Focusing all of your efforts on delivering the message and emotions you have while writing this can be difficult in itself."
+    m "But if you also sacrifice the style and overall length of the poem, you might leave yourself vulnerable."
     show monika 3d with dissolve_chr
-    m "You know, those things usually serve as some sort of distraction, a way to dull people's attention..."
-    m "And in case you ignore all of that completely, you'd also risk failing to make the message hit them hard enough..."
+    m "You know, those things usually serve to paint a picture or set a mood, or..."
+    mc "Well, can't they serve different purposes depending on the poem?"
+    m "They can, but if you ignore all of that completely, you risk failing to make the message hit the reader hard enough..."
     show monika 3n with dissolve_chr
-    m "Which has been... exactly the issue here, in that poem of yours..."
+    m "Which is what happened here in this poem of yours..."
 
-    mc "Ahahah! Man, that's a long way of telling someone that their work is subpar."
+    mc "Ha! Man, that's a long way of telling someone that their work is subpar."
 
     show monika 2e with dissolve_chr
-    m "My job is not to rub your nose into your mistakes, but rather help you realize them and find a possible way of improving yourself."
+    m "My job isn't to rub your nose into your mistakes, but rather, to help you realize them and find a possible way of improving yourself."
     show monika 4j with dissolve_chr
     m "Besides, I never said your poem was bad!"
-    m "Rough, unpolished? Yes. But bad?"
-    m "No, definitely not. And I'm certain you'll go far!"
+    m "Rough and unpolished, maybe, but definitely not bad."
+    m "And if you put forth the effort, I'm certain you'll go far!"
 
     mc "Well... thanks, I guess..."
 
     show monika 2a with dissolve_chr
-    m "Right, now I think it's high time you read my poem, don't you think?"
+    m "Right, now I think it's about time you read my poem, don't you think?"
 
     mc "Sure, why not?"
     return
@@ -1469,63 +1443,63 @@ label poemresponse_2_monika_appeal_natsuki:
 label poemresponse_2_monika_appeal_monika:
     show monika 3d at t11
     m "..."
-    m "A p-peculiar choice... to say the least..."
+    m "A peculiar choice... to say the least..."
 
-    mc "That isn't the way you pronounce \"completely random and unconscious\", Monika."
+    mc "That isn't the way you pronounce 'completely random and unconscious,' Monika."
 
     show monika 5a with dissolve_chr
-    m "Is that so? So you mean to tell me... you had {i}no{/i} idea what you were doing while writing this?"
+    m "Is that so? So, you really had no idea what you were doing while writing this?"
 
-    mc "Well... p-pretty much, yeah..."
+    mc "Well... Pretty much, yeah..."
 
-    "Why is she giving me that look?"
+    "{i}Why is she giving me that look?{/i}"
 
     show monika 2j with dissolve_chr
-    m "Hmmm, okay, if you say so..."
+    m "Hmm... Okay, if you say so..."
 
     mc "..."
-    mc "S-So... do I get any feedback or something?"
+    mc "So... do I get any feedback or anything?"
 
     show monika 4a with dissolve_chr
-    m "Well, for a moment I got a feeling that there's actually something more to it..."
+    m "Well, for a moment, I had a feeling that there was something more to it..."
     show monika 2o with dissolve_chr
     m "But then... alas, you've shattered all those hopes in an instant..."
 
     mc "Um.... hopes? I s-shattered... What are you even talking about?"
 
     show monika 2k with dissolve_chr
-    m "Ahaha! Don't read much into it!"
+    m "Ahaha! Don't read so much into it!"
     show monika 3m with dissolve_chr
     m "Okay, so... about your poem..."
-    m "It's... definitely not the thing I expected from you..."
-    m "You're raising the bar quite high, right from the start..."
+    m "It's... definitely not what I expected from you."
+    m "You're raising the bar quite high, right off the bat..."
     show monika 4n with dissolve_chr
-    m "I'm not saying it's a bad thing, but I'm just worried that if you fail to meet your own expectations, you'll lose your drive and give up on it completely..."
+    m "I'm not saying that's a bad thing, but I'm just worried that if you fail to meet your own expectations, you'll lose your drive and give up on it completely."
 
-    mc "I would be able to give you a clear answer if I had any clue what you're even on about..."
+    mc "I would be able to give you a clear answer if I knew what you're even talking about..."
 
     show monika 2e with dissolve_chr
-    m "You're... how should I put this?"
-    m "You're trying your best to maintain the balance, to keep everything beautiful, meaningful and still simple enough to understand, all at the same time..."
+    m "You're... How should I put this?"
+    m "You're trying your best to maintain the balance of everything in your poem, to keep everything beautiful, meaningful and, yet, still simple enough to understand."
     show monika 1m with dissolve_chr
-    m "You're trying to make things... {i}perfect{/i}... to satisfy every potential taste..."
+    m "You're trying to make things, well, perfect... to satisfy every possible taste..."
 
-    mc "Okaaay... isn't it a good thing?"
+    mc "Okay... but isn't that a good thing?"
 
     show monika 1l with dissolve_chr
-    m "I n-never said it's not! It's just... challenging... especially for a beginner..."
+    m "I never said it's not! It's just... challenging. Especially for a beginner..."
 
     mc "Well..."
 
     show monika 1n with dissolve_chr
     m "Yeah..."
 
-    "This is really getting awkward. I think it's the first time I've seen Monika acting like this..."
+    "This feels really strange. I think this is the first time I've ever seen Monika act like this..."
 
     mc "So..."
 
     show monika 3l with dissolve_chr
-    m "W-Would you like to see my poem now?"
+    m "Would you like to see my poem now?"
 
-    mc "Well, sure, I mean... it's your turn now, after all..."
+    mc "Well, sure, I mean... It's your turn now, after all..."
     return
