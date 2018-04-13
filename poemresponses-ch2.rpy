@@ -110,7 +110,7 @@ label poemresponse_2_sayori:
     mc "Well, excuse me, but you're the one here who's doing her homework while eating breakfast!"
 
     show sayori 3h with dissolve_chr
-    s "Eh? Writing poems isn't just {i}homework{/i}, you know?"
+    s "Eh? Writing poems isn't 'homework,' you know?"
 
     mc "I know."
     mc "But I also know that this isn't the first time you've done something like this."
@@ -166,7 +166,7 @@ label poemresponse_2_sayori_appeal_sayori:
     mc "Heh. After all the times you've accused me of that..."
     show sayori 3h with dissolve_chr
     s "It's not that, I just..."
-    s "...This is your first try? And you wrote it yourself, right?"
+    s "This is your first try? And you wrote it yourself, right?"
 
     mc "Wha? Of course I did, Sayori!"
 
@@ -809,20 +809,16 @@ label poemresponse_2_natsuki:
     n "Hehehe... Okay, okay..."
     show natsuki 7a with dissolve
     n "I'll let you off the hook for now."
-    mc "Just let me know when when you're done with this hazing, will you?"
-
-    show natsuki 4y with dissolve_chr
-    n "Call it an \"initiation\". And don't think you're getting away with just one day!"
-
-    mc "Figured as much..."
-
-    show natsuki 3a with dissolve_chr
-    mc "So... are we going to pull straws or..."
-    show natsuki 5w with dissolve_chr
-    n "Oh, just cut to the chase and give me those scribbles of yours already!"
-
-    "You don't even realize how perfectly you nailed the description of my poem..."
-    "I finally give Natsuki my notebook, which she takes with a look which you'd expect from someone grabbing a live cockroach..."
+    mc "Just let me know when we're finally done with this roleplaying, okay?"
+    n "Huh? What do you mean?"
+    mc "Well, it just feels like we're in the military or something."
+    mc "You know, with you being some sort of 'veteran' here, hazing a new recruit on his first day..."
+    
+    n "Heh... I guess you could put it that way."
+    n "Okay, then! Let's get to the drill!"
+    n "Hurry up and give me those scribbles you call a 'poem,' maggot!"
+    "I chuckle and hand her my notebook."
+    mc "You have no idea how perfectly you summed it up..."
 
     scene bg club_day with wipeleft_scene
 
@@ -1018,7 +1014,7 @@ label poemresponse_2_natsuki_appeal_natsuki:
     "Natsuki starts looking through my poem once again."
 
     show natsuki 5q with dissolve
-    n "This part could be better... and this one is kinda \"meh\" too..."
+    n "This part could be better... and this one is also kinda 'meh'..."
 
     show natsuki 5r with dissolve_chr
     "She's starting to get more irritated, as if she's forcing herself to find imperfections in my poem..."
@@ -1032,7 +1028,7 @@ label poemresponse_2_natsuki_appeal_natsuki:
     mc "I hardly know what I'm doing at this point, after all."
 
     show natsuki 2b with dissolve_chr
-    n "Then I suggest you figure it out. The sooner, the better!"
+    n "Then you'd better figure it out. And soon!"
     n "You need to learn how to make a poem short but also have a strong message! Short, sweet, and to the point!"
 
     "I laugh to myself."
@@ -1040,7 +1036,7 @@ label poemresponse_2_natsuki_appeal_natsuki:
     mc "'Short' and 'sweet,' huh?"
 
     show natsuki 4w with dissolve_chr
-    n "Don't even start, you wannabe-comedian!"
+    n "Don't you even start!"
 
     "I raise my hands in defeat."
 
@@ -1236,7 +1232,7 @@ label poemresponse_2_monika:
     show monika 4j with dissolve
     m "And now you're also eager to share!"
     show monika 2b with dissolve_chr
-    m "Now you see that I never do anything without a reason, and encouraging the members of my club to be more open is one of my direct responsibilities."
+    m "You see, encouraging the members of my club to be more open is one of my direct responsibilities."
     show monika 2k with dissolve_chr
     m "Even if it does involve putting them on the spot for a second..."
 
@@ -1386,7 +1382,8 @@ label poemresponse_2_monika_appeal_yuri:
     show monika 2j with dissolve_chr
     m "That's fine by me! Okay, now I think it's my turn to share!"
 
-    mc "You're the boss..."
+    mc "Go ahead, then. I bet you hand more luck with your poem."
+    m "Well, I guess we're about to find out."
     return
 
 label poemresponse_2_monika_appeal_natsuki:
@@ -1423,7 +1420,7 @@ label poemresponse_2_monika_appeal_natsuki:
     show monika 3n with dissolve_chr
     m "Which is what happened here in this poem of yours..."
 
-    mc "Ha! Man, that's a long way of telling someone that their work is subpar."
+    mc "Ha! Man, that's a long way of telling someone that their work is disappointing."
 
     show monika 2e with dissolve_chr
     m "My job isn't to rub your nose into your mistakes, but rather, to help you realize them and find a possible way of improving yourself."
@@ -1432,7 +1429,7 @@ label poemresponse_2_monika_appeal_natsuki:
     m "Rough and unpolished, maybe, but definitely not bad."
     m "And if you put forth the effort, I'm certain you'll go far!"
 
-    mc "Well... thanks, I guess..."
+    mc "Well... Thanks, I guess..."
 
     show monika 2a with dissolve_chr
     m "Right, now I think it's about time you read my poem, don't you think?"
@@ -1463,9 +1460,9 @@ label poemresponse_2_monika_appeal_monika:
     show monika 4a with dissolve_chr
     m "Well, for a moment, I had a feeling that there was something more to it..."
     show monika 2o with dissolve_chr
-    m "But then... alas, you've shattered all those hopes in an instant..."
+    m "But then you just shattered all those hopes in an instant..."
 
-    mc "Um.... hopes? I s-shattered... What are you even talking about?"
+    mc "Um... 'Hopes'...? What do you mean?"
 
     show monika 2k with dissolve_chr
     m "Ahaha! Don't read so much into it!"
