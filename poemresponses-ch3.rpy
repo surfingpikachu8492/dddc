@@ -1,10 +1,10 @@
-
-
-
+# ----------------------------------------------------------------------------------------------
+# All poem responses for all four girls (with all four appeals) for day 3 (Wednesday)
+# ----------------------------------------------------------------------------------------------
 
 label poemresponse_3_sayori:
     show sayori 1x at t11
-    s "So, [player], \"take two\", huh?"
+    s "So, [player], 'take two,' huh?"
     mc "You could say that."
 
     show sayori 1a with dissolve_chr
@@ -14,9 +14,9 @@ label poemresponse_3_sayori:
 
     show sayori 2b with dissolve_chr
     s "Oh, come on, you should have at least some faith in yourself."
-    s "I {i}will{/i} tell you what I think and I won't be too harsh. You can count on that..."
+    s "I'll tell you what I think and I won't be too harsh. You can count on that."
     show sayori 1b with dissolve_chr
-    s "...but you should still have at least some expectations of your own."
+    s "But you should still have at least some expectations of your own."
 
     mc "Well... what can I say..."
     mc "I tried my best. I listened to what all of you had to say and maybe even learned a lesson or two."
@@ -24,17 +24,17 @@ label poemresponse_3_sayori:
     show sayori 1q with dissolve_chr
     s "I'm sure you did!"
     show sayori 3x with dissolve_chr
-    s "I mean, you're not the brightest student in the school, of cour-{w=0.5}{nw}"
+    s "I mean, you're not the brightest student in the school, of cour--"
     show sayori 5b with dissolve_chr
     s "{i}O-Okay, now that's just mean...{/i}"
 
-    mc "I'd be offended if it wasn't the sad, but honest truth."
+    mc "I'd be offended if it wasn't the sad but honest truth."
 
     show sayori 5a with dissolve_chr
     s "I was just trying to say that I believe in you."
-    s "I know that you're not a fan of literature and all, but still -- I think you'll manage..."
+    s "I know that you're not a fan of literature and all, but still...I think you'll manage."
 
-    mc "I'll {i}manage{/i}, huh?"
+    mc "I'll 'manage,' huh?"
 
     show sayori 5b with dissolve_chr
     s "Ehehe..."
@@ -45,17 +45,17 @@ label poemresponse_3_sayori:
 
     s "Come on! I was just trying to help!"
 
-    mc "Well, you know what they say, \"the road to hell is paved with good intentions\"..."
+    mc "Well, you know what they say. 'The road to hell is paved with good intentions'..."
 
     show sayori 3b with dissolve
     s "...?"
 
     mc "..."
-    mc "Ughhh..."
+    mc "Sigh..."
     mc "In short, don't do that. Or, at least, don't do what you can't do."
 
     show sayori 1b with dissolve_chr
-    s "Oh... okay..."
+    s "Oh... Okay..."
 
     "Sayori was never good with idioms..."
 
@@ -75,7 +75,7 @@ label poemresponse_3_sayori:
     $ renpy.call("poemresponse_3_sayori_appeal_{appeal}".format(appeal=poemwinner[1]))
 
     "Sayori gives me a sheet with her poem."
-    mc "At least this one doesn't have any stains on it, that's a good sign."
+    mc "At least this one doesn't have any stains on it, so that's a good sign."
 
     show sayori 5a with dissolve
     s "Ehehehe..."
@@ -125,7 +125,7 @@ label poemresponse_3_sayori:
     "To be fair, when was the last time Sayori did something with a good explanation and reason behind it?"
 
     show sayori 1d with dissolve_chr
-    s "Well, not exactly. I knew I had {i}something{/i} in mind, but I just couldn't figure it out..."
+    s "Well, not exactly. I knew I had something in mind, but I just couldn't figure it out..."
     show sayori 1y with dissolve_chr
     s "I had an image... a memory of how I walked in the park... watching the clouds..."
     show sayori 1q with dissolve_chr
@@ -136,7 +136,7 @@ label poemresponse_3_sayori:
     s "...and in a matter of minutes I was already running back home, covering my head from raindrops."
 
     mc "..."
-    mc "W-Wait, Sayori, but you almost never walked to park on your own, when did tha-{w=0.7}{nw}"
+    mc "W-Wait, Sayori, but you almost never walked to park on your own. When did that--"
 
     show sayori 1f with dissolve
     s "..."
@@ -159,14 +159,14 @@ label poemresponse_3_sayori:
     s "After all..."
     s "{i}It's just a little raincloud...{/i}"
 
-    "She practically sings the line like it's a part of some light-hearted song, but I can still hear notes of sadness in her voice."
+    "She sings the line as if it were a part of a light-hearted song, but I can still hear notes of sadness in her voice."
 
-    mc "Thank you..."
+    mc "Sayori..."
 
     show sayori 1b with dissolve_chr
     s "Huh?"
 
-    mc "Thank you for bringing me here..."
+    mc "I'm not going to leave you, I promise."
 
     show sayori 1G with dissolve_chr
     s "..."
@@ -193,8 +193,8 @@ label poemresponse_3_sayori:
     show sayori 4F with dissolve_chr
     s "A f-f-fluffhead? Hahahahaha!"
 
-    mc "Well, yeah, I mean we both know that you're quite an airhead..."
-    mc "And your hair is kinda fluffy, so... yeah, fluffhead it is."
+    mc "Well, I was just thinking of your cheerful personality..."
+    mc "Plus, your hair is kinda fluffy, so... yeah. 'Fluffhead' it is."
 
     show sayori 4D with dissolve_chr
     s "Ahahahahaha!"
@@ -230,7 +230,7 @@ label poemresponse_3_sayori_appeal_sayori:
         show sayori 2l with dissolve_chr
         s "A bit... messy... but sweet..."
 
-        mc "I don't know about my poem, but the quality of {i}your{/i} feedback clearly hasn't improved so far."
+        mc "I don't know about my poem, but the quality of your feedback clearly hasn't improved so far."
 
         show sayori 1F with dissolve_chr
         s "Y-Yeah... yeah, I know..."
@@ -239,9 +239,9 @@ label poemresponse_3_sayori_appeal_sayori:
         show sayori 1G with dissolve_chr
         s "But I'm just happy to see that you're making progress."
         show sayori 1l with dissolve_chr
-        s "And that you don't let yourself be... i-influenced...{w=0.5}{nw}"
+        s "And that you don't let yourself be... i-influenced..."
         show sayori 1o with dissolve_chr
-        s "{i}That's the word, right?{/i}{w=0.5}{nw}"
+        s "{i}That's the word, right?{/i}"
         show sayori 1l with dissolve_chr
         s "...by anyone."
         show sayori 1y with dissolve_chr
@@ -259,7 +259,7 @@ label poemresponse_3_sayori_appeal_sayori:
 
         show sayori 1l with dissolve_chr
         s "Ehehehe..."
-        s "Okay, okay, you have a point there..."
+        s "Okay, okay. You have a point there..."
         show sayori 3y with dissolve_chr
         s "What I'm trying to say is that someone might say that your style is too simple..."
         show sayori 1G with dissolve_chr
@@ -273,19 +273,19 @@ label poemresponse_3_sayori_appeal_sayori:
         show sayori 1G with dissolve_chr
         s "...I'm glad to see that my advice helped."
 
-    mc "{i}Your{/i} advice?"
+    mc "Your advice?"
 
     show sayori 5b with dissolve
     s "Well, y-yeah... at least I hope it was mine..."
     s "I mean, you've listened to all of us yesterday..."
 
-    mc "Yeah... I {i}did{/i}... what about it?"
+    mc "Yeah... I did... What about it?"
 
     s "Ehehe..."
     s "[player]..."
 
     show sayori 5a with dissolve
-    s "I'm not {i}that{/i} bad when compared with the others, right?"
+    s "I'm not that bad when compared with the others, right?"
 
     mc "Huh?"
 
@@ -295,7 +295,7 @@ label poemresponse_3_sayori_appeal_sayori:
     s "...Natsuki can say in few words something that the others can only describe in a whole novel..."
     s "...and Monika is just overall perfect."
 
-    s "And I'm just-{w=0.3}{nw}"
+    s "And I'm just--"
 
     mc "...and you are my dear friend, Sayori."
 
@@ -303,7 +303,7 @@ label poemresponse_3_sayori_appeal_sayori:
     s "...?"
 
     mc "Really, Sayori, I kinda thought that I'm the one here who's the least confident about my skills..."
-    mc "...and yet now you're making me look like a writer with {i}years{/i} of experience!"
+    mc "...and yet now you're making me look like a writer with years of experience!"
 
     show sayori 1y with dissolve_chr
     s "Well, I can't say I'm that much more interested in literature than you..."
@@ -339,9 +339,9 @@ label poemresponse_3_sayori_appeal_sayori:
     mc "Besides, just like I said yesterday, I don't have even a slightest clue to what I'm doing and if I even have any style to begin with."
 
     show sayori 1a with dissolve
-    s "Yeah, you might be right. But even if your style changes once you actually... {i}find{/i} yourself, I'll still be happy."
+    s "Yeah, you might be right. But even if your style changes once you actually... find yourself, I'll still be happy."
     show sayori 4r with dissolve_chr
-    s "Because you're now here and {i}that's{/i} what really matters!"
+    s "Because you're now here and that's what really matters!"
 
     mc "I suppose you're right."
     mc "Okay, now how about you finally show me your poem?"
@@ -361,8 +361,8 @@ label poemresponse_3_sayori_appeal_natsuki:
         mc "You were laughing at my poem yesterday..."
         mc "And now you're doing the same, at this new one!"
         show sayori 4s with dissolve_chr
-        s "S-Sorry, I just can't help it, it's so cute!"
-        mc "C-Cute?!"
+        s "S-Sorry, I just can't help it. It's so cute!"
+        mc "W-What? 'Cute'?!"
         show sayori 1D at h11
         s "Bwahahahahaha!"
         mc "...?"
@@ -408,9 +408,9 @@ label poemresponse_3_sayori_appeal_natsuki:
         s "Well... now that you asked..."
         s "...it actually reminds me of someone..."
 
-    mc "Some...{i}one{/i}?"
+    mc "Someone?"
     show sayori 1r with dissolve_chr
-    s "Oh, you know, just look at your poem and tell me who likes writing them like this?"
+    s "Oh, you know. Just look at your poem and tell me who likes writing them like this?"
     show sayori 2n with dissolve
     s "Or at least she said she did. I've only seen two of her poems so far..."
 
@@ -441,7 +441,7 @@ label poemresponse_3_sayori_appeal_natsuki:
     mc "Besides, I'm pretty sure it's just a coincidence. We hardly know each other, so us having the same style sounds quite far-fetched."
 
     show sayori 1x with dissolve_chr
-    s "Hmmm... you know, now that I think about it, it might actually be a very good thing!"
+    s "Hmm... You know, now that I think about it, it might actually be a very good thing!"
 
     mc "How so?"
 
@@ -458,9 +458,9 @@ label poemresponse_3_sayori_appeal_natsuki:
 
     "We both start covering our mouths to at least somewhat muffle our laughter."
     "I really hope Natsuki didn't hear Sayori mocking her. Otherwise, we're both goners..."
-    mc "Ahahaha... phew... okay, Sayori, let's bring it down a notch..."
+    mc "Ahahaha... phew... Okay, Sayori, let's bring it down a notch..."
     show sayori 1l with dissolve
-    s "Ahaha... y-yeah... or else Natsuki will strangle us both..."
+    s "Ahaha... Yeah, or else Natsuki will strangle us both..."
     mc "Yeah..."
     show sayori 1y with dissolve_chr
     "We both settle down, finally."
@@ -480,8 +480,8 @@ label poemresponse_3_sayori_appeal_yuri:
         show sayori 1r with dissolve_chr
         s "Well, yes, I was talking about your poem..."
         show sayori 1s with dissolve_chr
-        s "...but now that you've mentioned it, I {i}still{/i} think that you watch too much anime!"
-        mc "Ughhh..."
+        s "...but now that you've mentioned it, I still think that you watch too much anime!"
+        mc "Sigh..."
         mc "Get to the point, Sayori."
         show sayori 3x with dissolve_chr
         s "Well, this poem is very similar to your previous one!"
@@ -498,7 +498,7 @@ label poemresponse_3_sayori_appeal_yuri:
     else:
         show sayori 1b at t11
         s "..."
-        s "Hmmm... now that was unexpected..."
+        s "Hmm... Now that was unexpected..."
         mc "What was, Sayori? I'm still having trouble reading your thoughts, you know?"
         show sayori 1q with dissolve_chr
         s "Ehehehe..."
@@ -508,7 +508,7 @@ label poemresponse_3_sayori_appeal_yuri:
         s "I mean, this one is different from your previous poem..."
         show sayori 3o with dissolve_chr
         s "You used so many complicated words and... metaphors and all that stuff..."
-        mc "No offense, Sayori, but I think that you and me have a slightly different level of \"complicated\", especially when it comes to words..."
+        mc "No offense, Sayori, but I think that you and I have a slightly different level of 'complicated,' especially when it comes to words..."
         show sayori 5c with dissolve
         s "Hey, no need to be mean about it!"
         mc "Wish I was, but I'm afraid that I'm just telling the truth."
@@ -528,7 +528,7 @@ label poemresponse_3_sayori_appeal_yuri:
         s "Waaaaait a minute..."
         show sayori 3E with dissolve_chr
         s "I think I finally understand where it's all coming from!"
-        mc "Well, then you've found out something even {i}I{/i} don't know, congrats."
+        mc "Well, then you've found out something even I don't know, congrats."
 
     show sayori 1q with dissolve_chr
     s "Ehehehe..."
@@ -553,7 +553,7 @@ label poemresponse_3_sayori_appeal_yuri:
     show sayori 2x with dissolve_chr
     s "If you two like this writing style, then that could be your common ground of sorts!"
 
-    mc "Ummm... I suppose..."
+    mc "Um... I suppose..."
 
     show sayori 4r with dissolve_chr
     s "I'm sure she'll love it!"
@@ -565,7 +565,7 @@ label poemresponse_3_sayori_appeal_yuri:
     mc "So all of that might be a mere coincidence at this point."
 
     show sayori 1y with dissolve_chr
-    s "Yeah... you might be right."
+    s "Yeah... You might be right."
     mc "..."
     s "..."
 
@@ -591,7 +591,7 @@ label poemresponse_3_sayori_appeal_monika:
         s "But to be fair, I think you're giving yourself quite a challenge."
         mc "I think I heard something similar yesterday..."
         show sayori 1x with dissolve_chr
-        s 1x "It's not surprising. You try to make your poems so serious, so complex, and yet so easy to understand!"
+        s "It's not surprising. You try to make your poems so serious, so complex, and yet so easy to understand!"
         s "It looks like you're dashing through, trying to be the best at everything!"
         mc "Do I succeed in it?"
         show sayori 3l with dissolve_chr
@@ -606,10 +606,10 @@ label poemresponse_3_sayori_appeal_monika:
         s "Wow, why the sudden change?"
         mc "What are you talking about?"
         show sayori 1c with dissolve_chr
-        s "Well, it's different from your previous poem, that's why I'm wondering."
-        mc "Define \"different\", Sayori."
+        s "Well, it's different from your previous poem. That's why I'm wondering."
+        mc "Define 'different,' Sayori."
         show sayori 1g with dissolve_chr
-        s "Ummm, I mean it's... not like the one you wrote before..."
+        s "Um, I mean it's... not like the one you wrote before..."
         mc "..."
         mc "Sayori, promise me one thing..."
         show sayori 4x at h11
@@ -619,7 +619,7 @@ label poemresponse_3_sayori_appeal_monika:
         s "A what?"
         mc "..."
         mc "I guess I'm fine with that answer..."
-        mc "Okay, can you now tell me {i}how{/i} is it different?"
+        mc "Okay, can you now tell me how it's different?"
         show sayori 1c with dissolve_chr
         s "Well, it feels like you were trying to reach some new heights..."
         show sayori 3c with dissolve_chr
@@ -639,13 +639,13 @@ label poemresponse_3_sayori_appeal_monika:
 
     show sayori 2q with dissolve_chr
     s "Oh, you know, nothing..."
-    mc "Sayori, you know that saying \"nothing\" in situations like this means there's actually something, right?"
+    mc "Sayori, you know that saying 'nothing' in situations like this means there's actually something, right?"
 
     show sayori 2r with dissolve_chr
-    s "Hehehe... of course I do, silly, that's why I'm doing it."
+    s "Hehehe... Of course I do, silly. That's why I'm doing it."
 
     mc "..."
-    mc "Spit it out already, I'm not in the mood for games..."
+    mc "Spit it out already. I'm not in the mood for games..."
 
     show sayori 1x with dissolve_chr
     s "Well, there's only one person I know who's constantly trying to be the best of the best!"
@@ -674,8 +674,8 @@ label poemresponse_3_sayori_appeal_monika:
     show sayori 3c with dissolve_chr
     s "Well, I think it makes sense..."
 
-    mc "You... {i}might{/i} have a point there, but I personally think there's less to it all than you think..."
-    mc "I mean, Monika has always been like this, why would I start looking up to her just now?"
+    mc "You... might have a point there, but I personally think there's less to it all than you think..."
+    mc "I mean, Monika has always been like this, so why would I start looking up to her just now?"
 
     show sayori 1r with dissolve_chr
     s "Because you're now in this club, silly. You get to see her everyday!"
@@ -686,9 +686,9 @@ label poemresponse_3_sayori_appeal_monika:
     mc "You know, I think we've been managing well enough so far."
 
     show sayori 1a with dissolve_chr
-    s "That's because she's the president. She has to be nice with everyone."
+    s "That's because she's the president. She has to be nice to everyone."
     show sayori 4x with dissolve_chr
-    s "But imagine if you two had more in common?"
+    s "But imagine if you two had more in common!"
 
     mc "..."
     "You have a talent for making things sound awkward, Sayori..."
@@ -696,8 +696,8 @@ label poemresponse_3_sayori_appeal_monika:
     mc "You know, how about we leave this discussion for another time?"
 
     show sayori 1b with dissolve_chr
-    s "Hmmm?"
-    s "Okay... if you say so..."
+    s "Hmm?"
+    s "Okay... If you say so..."
     show sayori 3x with dissolve_chr
     s "Actually, how about you see my poem now?"
     mc "Sounds good."
@@ -715,10 +715,10 @@ label poemresponse_3_yuri:
     y "[player]..."
     y "It's only our second time sharing, but it feels like we've been doing this for ages..."
 
-    mc "I... can't say I can relate, but I'm glad that you're at least more comfortable with it."
+    mc "I can't say I can relate, but I'm glad that you're at least more comfortable with it."
 
     show yuri 2u with dissolve_chr
-    y "Well... yes... I hope I am..."
+    y "Well, yes... I hope I am..."
 
     mc "Don't worry. Of the two of us, you're definitely not the one who should be shy about her poems."
 
@@ -747,26 +747,26 @@ label poemresponse_3_yuri:
     "And there's that defensive attitude again..."
 
     show yuri 2w with dissolve
-    y "I'm sorry, [player]. I understand that my... behavior may cause you some discomfort, but-{w=0.7}{nw}"
+    y "I'm sorry, [player]. I understand that my... behavior may cause you some discomfort, but--"
 
-    mc "Yuri, you said it yourself: {i}you have your reasons.{/i}"
+    mc "Yuri, you said it yourself: 'You have your reasons.'"
 
     show yuri 3t with dissolve_chr
     y "Huh?"
 
     show yuri 1u with dissolve
-    y "Y-yes... thank you, [player]..."
+    y "Y-yes... Thank you, [player]..."
 
     mc "How about we get to the whole... poem sharing thing? Monika said we don't have much time left."
 
     show yuri 1s with dissolve_chr
     y "It would be most logical."
 
-    mc "So... ladies fi-{w=0.5}{nw}"
+    mc "So... ladies fi--"
 
     show yuri 1m with dissolve_chr
     y "[player]..."
-    mc "Ahaha... sorry, had to try it."
+    mc "Ahaha... Sorry, had to try it."
     "I hand her my notebook."
 
     scene bg club_day with wipeleft_scene
@@ -780,15 +780,15 @@ label poemresponse_3_yuri:
     show yuri 3s with dissolve
     mc "..."
     show yuri 3t with dissolve_chr
-    y "Ummm, did you enjoy it?"
+    y "Um, did you enjoy it?"
     show yuri 3n with dissolve_chr
     y "It... d-didn't weird you out, did it?!"
     show yuri 3o with dissolve_chr
-    y "Oh gosh, I-{w=0.5}{nw}"
+    y "Oh gosh, I--"
 
     mc "Yuri, is there ever a time when you're not so self-critical?"
     show yuri 3n with dissolve_chr
-    y "I just... wanted to try something c-closer to my regular style this time..."
+    y "I just... wanted to try something closer to my regular style this time..."
     show yuri 3o with dissolve_chr
     y "And I was really worried that you might find it... confusing..."
     mc "Well, it's definitely closer to what I originally expected..."
@@ -796,9 +796,9 @@ label poemresponse_3_yuri:
     mc "It's really beautiful, though. Reminds me of what you were saying about the beauty of nature."
 
     show yuri 3u with dissolve_chr
-    y "Y-Yes... I personally think it's one of most gorgeous things you can possibly convey in any sort of art, especially in prose or poetry..."
+    y "Yes... I personally think it's one of most gorgeous things you can possibly convey in any sort of art, especially in prose or poetry..."
     show yuri 2u with dissolve_chr
-    y "I really love how some writers manage to describe a landscape... sometimes, you can almost {i}feel{/i} that you're actually standing there."
+    y "I really love how some writers manage to describe a landscape... sometimes, you can almost feel that you're actually standing there."
     mc "But this poem... it's not just about nature's beauty, is it?"
     show yuri 2A with dissolve_chr
     y "..."
@@ -874,17 +874,17 @@ label poemresponse_3_yuri_appeal_sayori:
     else:
         show yuri 2g at t11
         y "..."
-        y "Hmmm... now that's a bit unusual."
+        y "Hmm... now that's a bit unusual."
         mc "What is?"
         show yuri 2h with dissolve_chr
         y "You changed your style suddenly, and I'm trying to understand your reasoning behind it..."
         mc "A result of some completely spontaneous decision?"
         mc "Or just trying to experiment? I mean, that does sound like me."
         show yuri 2i with dissolve_chr
-        y "It... could've been that, if not for your choice of that... particular style..."
+        y "It could've been that, if not for your choice of that... particular style..."
         y "..."
         show yuri 1m with dissolve_chr
-        y 1m "No, I think I know where it comes from..."
+        y "No, I think I know where it comes from..."
 
     mc "Really? Enlighten me, then."
 
@@ -904,7 +904,7 @@ label poemresponse_3_yuri_appeal_sayori:
     show yuri 1m with dissolve_chr
     y "Then I guess it makes sense."
 
-    mc "What makes sen-... what do you mean, Yuri? What does Sayori have to do with my poems?"
+    mc "What makes sense? What do you mean, Yuri? What does Sayori have to do with my poems?"
 
     show yuri 1a with dissolve_chr
     y "I thought it would be obvious."
@@ -927,7 +927,7 @@ label poemresponse_3_yuri_appeal_sayori:
 
     show yuri 1c with dissolve_chr
     y "That it might be... interesting to observe you two."
-    mc "Wha-{w=0.3}{nw}"
+    mc "Wha--"
 
     show yuri 1k with dissolve_chr
     y "As for your writing skills, I would say that you should still work on your style."
@@ -945,7 +945,7 @@ label poemresponse_3_yuri_appeal_sayori:
     y "Perhaps. But I'm not going to change my mind, regardless."
 
     mc "..."
-    mc "*sigh*"
+    mc "Sigh..."
     mc "I... guess we'll just skip to your poem now?"
 
     y "Mhm."
@@ -970,16 +970,16 @@ label poemresponse_3_yuri_appeal_natsuki:
         y "Now that's something I certainly didn't expect..."
         show yuri 2f with dissolve_chr
         y "What inspired you to make such a drastic change?"
-        mc "Ummm... I think \"inspired\" is a strong word, Yuri."
-        mc "And what do you mean by \"change?\" Definitely not the quality, I'd wager."
+        mc "Ummm... I think 'inspired' is a strong word, Yuri."
+        mc "And what do you mean by 'change'? Definitely not the quality, I'd wager."
         show yuri 2h with dissolve_chr
-        y "It's the style, [player]... it's very different from the one you used yesterday..."
+        y "It's the style, [player]... It's very different from the one you used yesterday..."
         mc "Well... I did talk to all of you, so that might've had a certain effect..."
-        mc "I {i}am{/i} trying to improve, you know? To find my style?"
+        mc "I am trying to improve, you know? To find my style?"
         show yuri 1i with dissolve
-        y "Hmmm... yes, you might have a point..."
+        y "Hmm... Yes, you might have a point..."
         show yuri 1j with dissolve_chr
-        y "Actually, I believe I know {i}who{/i} had that effect on you..."
+        y "Actually, I believe I know who had that effect on you..."
 
     mc "Wait, you mean someone in particular?"
     show yuri 1u with dissolve_chr
@@ -1001,10 +1001,10 @@ label poemresponse_3_yuri_appeal_natsuki:
     y "But I remember our talk yesterday, and I agree with Monika. We all have our own paths."
 
     mc "At any rate, I think my poems are still far from Natsuki's level."
-    mc "Her poems... \"pack a punch\", so to speak, and I don't think mine are close to that level."
+    mc "Her poems... 'pack a punch,' so to speak, and I don't think mine are close to that level."
 
     show yuri 2q with dissolve_chr
-    y "That {i}is{/i} somewhat true, I'm afraid..."
+    y "That is somewhat true, I'm afraid..."
 
     mc "Besides, my style still might change in the future, right? As I said before, I hardly know what I'm doing."
 
