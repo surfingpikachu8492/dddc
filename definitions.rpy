@@ -1503,15 +1503,17 @@ image monika g2:
 
 
 define narrator = Character(ctc="ctc", ctc_position="fixed")
-define mc = DynamicCharacter('player', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define s = DynamicCharacter('s_name', image='sayori', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define mc = DynamicCharacter('player', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", who_outlines=[(2, "#000000", 1, 1)])
+define s = DynamicCharacter('s_name', image='sayori', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", who_outlines=[(2, "#277dba", 1, 1)])
+define m = DynamicCharacter('m_name', image='monika', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", who_outlines=[(2, "#2c8e31", 1, 1)])
+define n = DynamicCharacter('n_name', image='natsuki', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", who_outlines=[(2, "#a4295f", 1, 1)])
+define y = DynamicCharacter('y_name', image='yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", who_outlines=[(2, "#6c4681", 1, 1)])
+define ny = Character('Nat & Yuri', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", who_outlines=[(2, "#6c4681", -2, -2), (2, "#a4295f", 1, 1)])
+define ns = Character('Nat & Say', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", who_outlines=[(2, "#277dba", -2, -2), (2, "#a4295f", 1, 1)])
 
 define m_glitch = DynamicCharacter('m_glitch_name', image='monika', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
-define k = DynamicCharacter('k_name', image='kenji', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed")
+define kenji = DynamicCharacter('kenji_name', image='kenji', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", who_outlines=[(2, "#686868", 1, 1)])
+define kanami = DynamicCharacter('kanami_name', image='kanami', what_prefix='"', what_suffix='"', ctc="ctc", ctc_position="fixed", who_outlines=[(2, "#ffcc00", 1, 1)])
 
 
 define _dismiss_pause = config.developer
